@@ -1,0 +1,702 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33A122B56B7F30AE48747E73 /* Pods_Timi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42674F69973E7CA9EF620155 /* Pods_Timi.framework */; };
+		848649602AA6CC6700438552 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8486495F2AA6CC6700438552 /* AppDelegate.m */; };
+		848649662AA6CC6700438552 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848649652AA6CC6700438552 /* ViewController.m */; };
+		848649692AA6CC6700438552 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848649672AA6CC6700438552 /* Main.storyboard */; };
+		8486496B2AA6CC6800438552 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8486496A2AA6CC6800438552 /* Assets.xcassets */; };
+		8486496E2AA6CC6800438552 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8486496C2AA6CC6800438552 /* LaunchScreen.storyboard */; };
+		848649712AA6CC6800438552 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 848649702AA6CC6800438552 /* main.m */; };
+		8486497A2AA6F15900438552 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848649792AA6F15900438552 /* BaseNavigationController.m */; };
+		8486497F2AA6F4E000438552 /* UIColor+UIColor_hexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 8486497D2AA6F4E000438552 /* UIColor+UIColor_hexString.m */; };
+		848649852AA6FDA600438552 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848649842AA6FDA600438552 /* BaseTabBarController.m */; };
+		8486498F2AA701CD00438552 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8486498E2AA701CD00438552 /* HomeViewController.m */; };
+		848649962AA7027300438552 /* ShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848649952AA7027300438552 /* ShopViewController.m */; };
+		8486499D2AA702C900438552 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8486499C2AA702C900438552 /* MineViewController.m */; };
+		848649AD2AA82F6300438552 /* AccountBookVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 848649AC2AA82F6300438552 /* AccountBookVC.m */; };
+		848649B02AA8448100438552 /* QZHomeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 848649AF2AA8448100438552 /* QZHomeHeaderView.m */; };
+		848649B32AA8483C00438552 /* QZTimeLineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 848649B22AA8483C00438552 /* QZTimeLineCell.m */; };
+		848649B62AA86B5200438552 /* UNBorderLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 848649B52AA86B5200438552 /* UNBorderLabel.m */; };
+		848649BA2AA8761600438552 /* HomeTableInsertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 848649B92AA8761600438552 /* HomeTableInsertView.m */; };
+		848649BD2AA8792500438552 /* HomeTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 848649BC2AA8792500438552 /* HomeTableHeaderView.m */; };
+		848649BF2AA8867900438552 /* AlimamaAgileVF-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 848649BE2AA8867900438552 /* AlimamaAgileVF-Thin.ttf */; };
+		848649C32AA956F900438552 /* ReadMe.md in Resources */ = {isa = PBXBuildFile; fileRef = 848649C02AA956C100438552 /* ReadMe.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		42674F69973E7CA9EF620155 /* Pods_Timi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Timi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DAD560ED84A320735A748D8 /* Pods-Timi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Timi.release.xcconfig"; path = "Target Support Files/Pods-Timi/Pods-Timi.release.xcconfig"; sourceTree = "<group>"; };
+		8486495B2AA6CC6700438552 /* Timi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8486495E2AA6CC6700438552 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8486495F2AA6CC6700438552 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		848649642AA6CC6700438552 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		848649652AA6CC6700438552 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		848649682AA6CC6700438552 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8486496A2AA6CC6800438552 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8486496D2AA6CC6800438552 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8486496F2AA6CC6800438552 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		848649702AA6CC6800438552 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		848649782AA6F15900438552 /* BaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		848649792AA6F15900438552 /* BaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		8486497D2AA6F4E000438552 /* UIColor+UIColor_hexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+UIColor_hexString.m"; sourceTree = "<group>"; };
+		8486497E2AA6F4E000438552 /* UIColor+UIColor_hexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+UIColor_hexString.h"; sourceTree = "<group>"; };
+		848649822AA6F5C000438552 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		848649832AA6FDA600438552 /* BaseTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
+		848649842AA6FDA600438552 /* BaseTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
+		848649872AA6FE4C00438552 /* PriConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PriConfig.h; sourceTree = "<group>"; };
+		8486498D2AA701CD00438552 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		8486498E2AA701CD00438552 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		848649942AA7027300438552 /* ShopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShopViewController.h; sourceTree = "<group>"; };
+		848649952AA7027300438552 /* ShopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShopViewController.m; sourceTree = "<group>"; };
+		8486499B2AA702C900438552 /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		8486499C2AA702C900438552 /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		848649AB2AA82F6300438552 /* AccountBookVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountBookVC.h; sourceTree = "<group>"; };
+		848649AC2AA82F6300438552 /* AccountBookVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountBookVC.m; sourceTree = "<group>"; };
+		848649AE2AA8448000438552 /* QZHomeHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QZHomeHeaderView.h; sourceTree = "<group>"; };
+		848649AF2AA8448100438552 /* QZHomeHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QZHomeHeaderView.m; sourceTree = "<group>"; };
+		848649B12AA8483C00438552 /* QZTimeLineCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QZTimeLineCell.h; sourceTree = "<group>"; };
+		848649B22AA8483C00438552 /* QZTimeLineCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QZTimeLineCell.m; sourceTree = "<group>"; };
+		848649B42AA86B5200438552 /* UNBorderLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UNBorderLabel.h; sourceTree = "<group>"; };
+		848649B52AA86B5200438552 /* UNBorderLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UNBorderLabel.m; sourceTree = "<group>"; };
+		848649B72AA86C2800438552 /* FontConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontConfig.h; sourceTree = "<group>"; };
+		848649B82AA8761600438552 /* HomeTableInsertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeTableInsertView.h; sourceTree = "<group>"; };
+		848649B92AA8761600438552 /* HomeTableInsertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeTableInsertView.m; sourceTree = "<group>"; };
+		848649BB2AA8792500438552 /* HomeTableHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeTableHeaderView.h; sourceTree = "<group>"; };
+		848649BC2AA8792500438552 /* HomeTableHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeTableHeaderView.m; sourceTree = "<group>"; };
+		848649BE2AA8867900438552 /* AlimamaAgileVF-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AlimamaAgileVF-Thin.ttf"; sourceTree = "<group>"; };
+		848649C02AA956C100438552 /* ReadMe.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
+		CE2CFB13145DE35B4D34B352 /* Pods-Timi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Timi.debug.xcconfig"; path = "Target Support Files/Pods-Timi/Pods-Timi.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		848649582AA6CC6700438552 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33A122B56B7F30AE48747E73 /* Pods_Timi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5BF23EA1FC5F9750C745C94E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE2CFB13145DE35B4D34B352 /* Pods-Timi.debug.xcconfig */,
+				5DAD560ED84A320735A748D8 /* Pods-Timi.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		841D365C80BB6F7909847329 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42674F69973E7CA9EF620155 /* Pods_Timi.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		848649522AA6CC6700438552 = {
+			isa = PBXGroup;
+			children = (
+				848649C02AA956C100438552 /* ReadMe.md */,
+				8486495D2AA6CC6700438552 /* Timi */,
+				8486495C2AA6CC6700438552 /* Products */,
+				5BF23EA1FC5F9750C745C94E /* Pods */,
+				841D365C80BB6F7909847329 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8486495C2AA6CC6700438552 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8486495B2AA6CC6700438552 /* Timi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8486495D2AA6CC6700438552 /* Timi */ = {
+			isa = PBXGroup;
+			children = (
+				848649882AA7016300438552 /* Module */,
+				848649802AA6F4F300438552 /* AppDelegate */,
+				848649772AA6D57800438552 /* Base */,
+				8486497B2AA6F4B900438552 /* Utile */,
+				848649812AA6F55B00438552 /* System */,
+			);
+			path = Timi;
+			sourceTree = "<group>";
+		};
+		848649772AA6D57800438552 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				848649782AA6F15900438552 /* BaseNavigationController.h */,
+				848649792AA6F15900438552 /* BaseNavigationController.m */,
+				848649832AA6FDA600438552 /* BaseTabBarController.h */,
+				848649842AA6FDA600438552 /* BaseTabBarController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		8486497B2AA6F4B900438552 /* Utile */ = {
+			isa = PBXGroup;
+			children = (
+				848649862AA6FE3E00438552 /* private */,
+				8486497C2AA6F4E000438552 /* 3rdLib */,
+			);
+			path = Utile;
+			sourceTree = "<group>";
+		};
+		8486497C2AA6F4E000438552 /* 3rdLib */ = {
+			isa = PBXGroup;
+			children = (
+				8486497D2AA6F4E000438552 /* UIColor+UIColor_hexString.m */,
+				8486497E2AA6F4E000438552 /* UIColor+UIColor_hexString.h */,
+			);
+			path = 3rdLib;
+			sourceTree = "<group>";
+		};
+		848649802AA6F4F300438552 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				8486495E2AA6CC6700438552 /* AppDelegate.h */,
+				8486495F2AA6CC6700438552 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		848649812AA6F55B00438552 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				848649BE2AA8867900438552 /* AlimamaAgileVF-Thin.ttf */,
+				848649642AA6CC6700438552 /* ViewController.h */,
+				848649652AA6CC6700438552 /* ViewController.m */,
+				848649822AA6F5C000438552 /* PrefixHeader.pch */,
+				848649672AA6CC6700438552 /* Main.storyboard */,
+				8486496A2AA6CC6800438552 /* Assets.xcassets */,
+				8486496C2AA6CC6800438552 /* LaunchScreen.storyboard */,
+				8486496F2AA6CC6800438552 /* Info.plist */,
+				848649702AA6CC6800438552 /* main.m */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		848649862AA6FE3E00438552 /* private */ = {
+			isa = PBXGroup;
+			children = (
+				848649872AA6FE4C00438552 /* PriConfig.h */,
+				848649B72AA86C2800438552 /* FontConfig.h */,
+			);
+			path = private;
+			sourceTree = "<group>";
+		};
+		848649882AA7016300438552 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				848649972AA702A500438552 /* Mine */,
+				848649902AA7024000438552 /* Shop */,
+				848649892AA7017100438552 /* Home */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		848649892AA7017100438552 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				848649A72AA82F0F00438552 /* 账本 */,
+				8486498C2AA7018A00438552 /* Model */,
+				8486498B2AA7018100438552 /* View */,
+				8486498A2AA7017800438552 /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8486498A2AA7017800438552 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8486498D2AA701CD00438552 /* HomeViewController.h */,
+				8486498E2AA701CD00438552 /* HomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8486498B2AA7018100438552 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				848649AE2AA8448000438552 /* QZHomeHeaderView.h */,
+				848649AF2AA8448100438552 /* QZHomeHeaderView.m */,
+				848649B12AA8483C00438552 /* QZTimeLineCell.h */,
+				848649B22AA8483C00438552 /* QZTimeLineCell.m */,
+				848649B42AA86B5200438552 /* UNBorderLabel.h */,
+				848649B52AA86B5200438552 /* UNBorderLabel.m */,
+				848649B82AA8761600438552 /* HomeTableInsertView.h */,
+				848649B92AA8761600438552 /* HomeTableInsertView.m */,
+				848649BB2AA8792500438552 /* HomeTableHeaderView.h */,
+				848649BC2AA8792500438552 /* HomeTableHeaderView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8486498C2AA7018A00438552 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		848649902AA7024000438552 /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				848649932AA7025F00438552 /* Model */,
+				848649922AA7025600438552 /* View */,
+				848649912AA7024F00438552 /* Controller */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
+		848649912AA7024F00438552 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				848649942AA7027300438552 /* ShopViewController.h */,
+				848649952AA7027300438552 /* ShopViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		848649922AA7025600438552 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		848649932AA7025F00438552 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		848649972AA702A500438552 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				8486499A2AA702BC00438552 /* model */,
+				848649992AA702B600438552 /* view */,
+				848649982AA702B000438552 /* controller */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		848649982AA702B000438552 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				8486499B2AA702C900438552 /* MineViewController.h */,
+				8486499C2AA702C900438552 /* MineViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		848649992AA702B600438552 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		8486499A2AA702BC00438552 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		848649A72AA82F0F00438552 /* 账本 */ = {
+			isa = PBXGroup;
+			children = (
+				848649AA2AA82F3900438552 /* model */,
+				848649A92AA82F3300438552 /* view */,
+				848649A82AA82F2A00438552 /* controller */,
+			);
+			path = "账本";
+			sourceTree = "<group>";
+		};
+		848649A82AA82F2A00438552 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				848649AB2AA82F6300438552 /* AccountBookVC.h */,
+				848649AC2AA82F6300438552 /* AccountBookVC.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		848649A92AA82F3300438552 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		848649AA2AA82F3900438552 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8486495A2AA6CC6700438552 /* Timi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 848649742AA6CC6800438552 /* Build configuration list for PBXNativeTarget "Timi" */;
+			buildPhases = (
+				1F7AE6A0B72E43CA7E7DACCC /* [CP] Check Pods Manifest.lock */,
+				848649572AA6CC6700438552 /* Sources */,
+				848649582AA6CC6700438552 /* Frameworks */,
+				848649592AA6CC6700438552 /* Resources */,
+				4FF6AE2500A221DAABB54BD9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Timi;
+			productName = Timi;
+			productReference = 8486495B2AA6CC6700438552 /* Timi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		848649532AA6CC6700438552 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					8486495A2AA6CC6700438552 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 848649562AA6CC6700438552 /* Build configuration list for PBXProject "Timi" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 848649522AA6CC6700438552;
+			productRefGroup = 8486495C2AA6CC6700438552 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8486495A2AA6CC6700438552 /* Timi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		848649592AA6CC6700438552 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8486496E2AA6CC6800438552 /* LaunchScreen.storyboard in Resources */,
+				8486496B2AA6CC6800438552 /* Assets.xcassets in Resources */,
+				848649C32AA956F900438552 /* ReadMe.md in Resources */,
+				848649692AA6CC6700438552 /* Main.storyboard in Resources */,
+				848649BF2AA8867900438552 /* AlimamaAgileVF-Thin.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F7AE6A0B72E43CA7E7DACCC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Timi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FF6AE2500A221DAABB54BD9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Timi/Pods-Timi-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Timi/Pods-Timi-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Timi/Pods-Timi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		848649572AA6CC6700438552 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848649962AA7027300438552 /* ShopViewController.m in Sources */,
+				848649B02AA8448100438552 /* QZHomeHeaderView.m in Sources */,
+				848649AD2AA82F6300438552 /* AccountBookVC.m in Sources */,
+				8486497A2AA6F15900438552 /* BaseNavigationController.m in Sources */,
+				848649662AA6CC6700438552 /* ViewController.m in Sources */,
+				848649B32AA8483C00438552 /* QZTimeLineCell.m in Sources */,
+				8486499D2AA702C900438552 /* MineViewController.m in Sources */,
+				848649602AA6CC6700438552 /* AppDelegate.m in Sources */,
+				848649B62AA86B5200438552 /* UNBorderLabel.m in Sources */,
+				848649712AA6CC6800438552 /* main.m in Sources */,
+				848649852AA6FDA600438552 /* BaseTabBarController.m in Sources */,
+				848649BA2AA8761600438552 /* HomeTableInsertView.m in Sources */,
+				8486498F2AA701CD00438552 /* HomeViewController.m in Sources */,
+				8486497F2AA6F4E000438552 /* UIColor+UIColor_hexString.m in Sources */,
+				848649BD2AA8792500438552 /* HomeTableHeaderView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		848649672AA6CC6700438552 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				848649682AA6CC6700438552 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8486496C2AA6CC6800438552 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8486496D2AA6CC6800438552 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		848649722AA6CC6800438552 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		848649732AA6CC6800438552 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		848649752AA6CC6800438552 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE2CFB13145DE35B4D34B352 /* Pods-Timi.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24CPT4ADNM;
+				GCC_PREFIX_HEADER = /Users/rongbang/Desktop/Timi/Timi/System/PrefixHeader.pch;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Timi/System/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rongban.Timi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		848649762AA6CC6800438552 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DAD560ED84A320735A748D8 /* Pods-Timi.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24CPT4ADNM;
+				GCC_PREFIX_HEADER = /Users/rongbang/Desktop/Timi/Timi/System/PrefixHeader.pch;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Timi/System/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rongban.Timi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		848649562AA6CC6700438552 /* Build configuration list for PBXProject "Timi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				848649722AA6CC6800438552 /* Debug */,
+				848649732AA6CC6800438552 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		848649742AA6CC6800438552 /* Build configuration list for PBXNativeTarget "Timi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				848649752AA6CC6800438552 /* Debug */,
+				848649762AA6CC6800438552 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 848649532AA6CC6700438552 /* Project object */;
+}
