@@ -29,7 +29,7 @@
     return self;
 }
 - (void)setupUI {
-    self.backgroundColor = UIColor.greenColor;
+    
     self.layer.cornerRadius = 15;
     self.layer.masksToBounds = YES;
     self.layer.borderWidth = 1;
@@ -49,19 +49,11 @@
     }];
 }
 
-//- (UIImageView *)imgView {
-//    if (!_imgView) {
-//        _imgView = [UIImageView new];
-//        _imgView.image = [UIImage imageNamed:@"jycx-bak_n"];
-//        _imgView.contentMode = UIViewContentModeScaleAspectFill;
-//    }
-//    return _imgView;
-//}
 - (UILabel *)titleLabel {
     if (!_titleLabel) {
         _titleLabel = [UILabel new];
         _titleLabel.text = @"";
-        _titleLabel.textColor = [UIColor colorWithHexString:@"#222222"];
+        _titleLabel.textColor = [UIColor whiteColor];
         _titleLabel.font = Font14;
     }
     return _titleLabel;

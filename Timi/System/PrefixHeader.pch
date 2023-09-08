@@ -7,8 +7,12 @@
 
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
+
+#import "Tool.h"
 #import "FontConfig.h"
 #import "UIColor+UIColor_hexString.h"
+#import "UIView+Exention.h"
+#import "UIViewController+Extension.h"
 #import "PriConfig.h"
 #import <Masonry/Masonry.h>
 

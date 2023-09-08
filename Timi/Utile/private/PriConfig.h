@@ -63,4 +63,7 @@ NO)
 //大于等于10.0的版本
 #define UNIOS10_OR_LATER UNSYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"10.0")
 
+
+#define STR(str) [Tool isBlankString:str] ? @"" : str
+
 #endif /* PriConfig_h */

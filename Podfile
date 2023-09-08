@@ -7,6 +7,6 @@ target 'Timi' do
 pod 'Masonry'
 pod 'MMDrawerController'
 pod 'TYPagerController'
-
+pod 'FMDB'
 
 end

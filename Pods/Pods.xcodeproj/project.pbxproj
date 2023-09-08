@@ -7,88 +7,109 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00C9BA21B4E3A26D6C41F0624046FFA5 /* TYPagerViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 4968F39118DA8D96CBDD88B48400D040 /* TYPagerViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00C9BA21B4E3A26D6C41F0624046FFA5 /* TYPagerViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = DD880F27CC553D564F9F3C45A76862C5 /* TYPagerViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04BB5C66CD757513F3C705EE26F588AA /* Pods-Timi-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D9103A139385FA5F40A9BF3D30D56C /* Pods-Timi-dummy.m */; };
 		0838D249D73C10221C3B7E335C046D4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDD2AF2EE71C229BC9C64692BE5DE6C2 /* Foundation.framework */; };
-		0E8CCAE597756C61B2D7B60EEF4A29E4 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = F79D256BDBE4E64D7838A7F45FA807C4 /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		13ED5ECBCFCEBC5C14282EE7057E5316 /* TYPagerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 575FB0BD178414F8F2FB475705DFB1D2 /* TYPagerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1879E3B4AFEDB83F3E5821FA79E4BF65 /* TYPagerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D05A773BCAC38A7841FA1956529D254E /* TYPagerView.m */; };
-		19300CF68F5718C6F9C3476F1A98C1DC /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB0123B0CF22551DBF62F56B2E6F2CB /* MASCompositeConstraint.m */; };
-		1B433A1BF92BBD5811F61A000E4771C2 /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 80D6E09177B5E93748889A9D6A30CFEB /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1C256C84D93256799A9A8F31438BC634 /* Pods-Timi-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D9103A139385FA5F40A9BF3D30D56C /* Pods-Timi-dummy.m */; };
-		2839E3707C14798138E8A0C72ACE4C25 /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 101B20462736A6658A632DB273180405 /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E8CCAE597756C61B2D7B60EEF4A29E4 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E76DFC3D3CDE8A5AE3445067733A039 /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13ED5ECBCFCEBC5C14282EE7057E5316 /* TYPagerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 493E207771A15691DF839EC78D6445AD /* TYPagerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		176F8093A462DA87177AE2DC38C74F3A /* FMDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 181C808A49495CABAF20558115046B17 /* FMDB-dummy.m */; };
+		1879E3B4AFEDB83F3E5821FA79E4BF65 /* TYPagerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 700677AC2628797C0588C5317DD9EB9B /* TYPagerView.m */; };
+		19300CF68F5718C6F9C3476F1A98C1DC /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E0E301E0A3D0958731416FD6EFEF0C /* MASCompositeConstraint.m */; };
+		1B433A1BF92BBD5811F61A000E4771C2 /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = B4ED22CA0D5C53C0F19FCE785F85408A /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D91E03CA22CDD784B6C9B0D746E3D27 /* Pods-Timi-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A720B99B04BD760356AA782C5C4D5051 /* Pods-Timi-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24CA5241C775CE3C9E9DF46D10859EAA /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 197B6534EDF84FED5C5AB2F122DCA5B3 /* FMDatabaseAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2839E3707C14798138E8A0C72ACE4C25 /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D6FBFB5B3D600493FA5FB9483033FD6 /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2ACD1D9F0A5F5862B0C647AF0997DA26 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE7F427CA20FCF5EB55A191443C28288 /* QuartzCore.framework */; };
-		2C1544434CA5B6F55A432AE93D84E199 /* MMDrawerBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 6768D96556373269A3D4E0C1FE7EAA87 /* MMDrawerBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2C5A9D74E3CFF2819F03239BFA71808B /* TYPagerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E758E334B32696A6A778257A70CA29 /* TYPagerController-dummy.m */; };
-		31F7C35C8863FA25A741A884E21BE7D0 /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = 57C3FF68096F8514CF6D0D2E5E3F888C /* Masonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		377E0E861713EFA5149079CCE1E735EA /* TYPagerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 126688BD10FAA3D242822B295725A5CC /* TYPagerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3B5F9E3B71B067F39A9DBFBD1A5C1695 /* TYPagerController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A28426A6D32AAE7EB4777A7663374B9D /* TYPagerController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3D0EFFE30E3193932A034220E3C4C0FA /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B8678683CB1E92BAA4437268B84EF7C /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		406D5361534DC10047C7648F186ADEEE /* TYPagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 863BCC6C5E56E2944F6C24F877CE5D7B /* TYPagerController.m */; };
-		48A9FCF0A0ED336241155539CE017449 /* TYTabPagerBarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C1D550491B24A06ED5B1A5AAD3BDFC /* TYTabPagerBarCell.m */; };
-		4B2FA03E259A9C4C34A6F108BA91A0FA /* TYTabPagerBarCell.h in Headers */ = {isa = PBXBuildFile; fileRef = C109EE70EA77889839CB2A9596CF463A /* TYTabPagerBarCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4CC9B43AD90714A316815FAA71DC89A2 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = C459FCA4498D0AF49626D55F460BFBAC /* MASConstraintMaker.m */; };
+		2C1544434CA5B6F55A432AE93D84E199 /* MMDrawerBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F201CCA6BF681A7293BFFC64614516D /* MMDrawerBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C5A9D74E3CFF2819F03239BFA71808B /* TYPagerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB893DE2A28027BFBE5951AB8C73B24 /* TYPagerController-dummy.m */; };
+		31F7C35C8863FA25A741A884E21BE7D0 /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D57739D0BF1DE1AF733736B295992DD /* Masonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32B7E25EECD5D8CD154A0F6263A8EB4F /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C8BB031B998BEBD0E192EBB13D4A208 /* FMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		377E0E861713EFA5149079CCE1E735EA /* TYPagerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C0C33C06503CE40DB1FC92E4C5C4E85 /* TYPagerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B5F9E3B71B067F39A9DBFBD1A5C1695 /* TYPagerController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F735EB46F4C8FF300E83A685807AF37A /* TYPagerController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D0EFFE30E3193932A034220E3C4C0FA /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9799EF40F35A25DB9FB6D416BAA318E5 /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3EB06038EA8B2F16AA51FF27905876A7 /* FMDB-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4934998579119A114D9F17F548BDEB90 /* FMDB-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		406D5361534DC10047C7648F186ADEEE /* TYPagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FD6E4627ACDBFA3CB9F75823DF8ACA /* TYPagerController.m */; };
+		4585CF5705D4E00C8B158BE074FA1BF6 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2F7980AC1CD13D63471FDC255CCC21 /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		48A9FCF0A0ED336241155539CE017449 /* TYTabPagerBarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5EF8C39D77618FBBB3D4384AB867FF /* TYTabPagerBarCell.m */; };
+		4B2FA03E259A9C4C34A6F108BA91A0FA /* TYTabPagerBarCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 5748ACA28C4B9A258F0E397A19F928D3 /* TYTabPagerBarCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CC9B43AD90714A316815FAA71DC89A2 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 081A79B39801F0BF464E06734C86FD37 /* MASConstraintMaker.m */; };
 		51D4BA91533069CB4CAE03B53AB22A8A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDD2AF2EE71C229BC9C64692BE5DE6C2 /* Foundation.framework */; };
-		53305278F1654F968B4E02DF71B098BE /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = E463153A9127F5836064B3C3A4FE398F /* MASViewAttribute.m */; };
-		54BEFE9F75005D327641073B838C6776 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B446A3C4BF37D23DABB5B09F111BF4C5 /* MASLayoutConstraint.m */; };
-		567ABE0681AA82748435E32386DE12D7 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B558D41D2C3F41AAD1470C6C3A8EE90C /* ViewController+MASAdditions.m */; };
-		5BA415098F133EE041C518AE8D810049 /* TYTabPagerBar.h in Headers */ = {isa = PBXBuildFile; fileRef = AF1D5AD0FE6AEC2975C909D7D053B3AF /* TYTabPagerBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		61225B0B9AEC591476E30C9A575013B3 /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = FC9BE5E024A34645B5075189914A5379 /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		65A5832519C5FB63F6D595FB313037B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDD2AF2EE71C229BC9C64692BE5DE6C2 /* Foundation.framework */; };
-		6E64BD0775932D6D687ACFD0EAC56F72 /* TYTabPagerBarLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F5D25B561CB1AFDDC3D0852A760CE2F /* TYTabPagerBarLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		715AB2C777F6FCAB5EE0C667A909B698 /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 52E93E6762FDFE7310113956FF3548D9 /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7485B731ACD0665E6E47DC6423A8269B /* TYTabPagerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 253C48B6FF60128C43B9CB6D33A804CD /* TYTabPagerView.m */; };
-		74981D0A96500ECB2F82F8AC1DA4D29F /* MMDrawerController+Subclass.h in Headers */ = {isa = PBXBuildFile; fileRef = 78676226F4BCFD46D25B2B07FFDE1F1A /* MMDrawerController+Subclass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		53305278F1654F968B4E02DF71B098BE /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B8D0DB3FA569C61244B0D40355ABE1 /* MASViewAttribute.m */; };
+		54BEFE9F75005D327641073B838C6776 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCAB793A69DBAA84F82EB7E5AAB0D86 /* MASLayoutConstraint.m */; };
+		567ABE0681AA82748435E32386DE12D7 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E7620597A936130DED46B6953443A0A9 /* ViewController+MASAdditions.m */; };
+		58D385B7DBB612B6A3A06EA670C015F1 /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C29D6AAA2C330A0D8419E56F931C3EF /* FMDatabasePool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5BA415098F133EE041C518AE8D810049 /* TYTabPagerBar.h in Headers */ = {isa = PBXBuildFile; fileRef = A61A98A0C8D9F6DEF45A6A5E9AEFCA3F /* TYTabPagerBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F29492846530A428B1198F7A167EA91 /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = ADC053B38094331A95AF3CA74E3D1E67 /* FMDatabaseQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61225B0B9AEC591476E30C9A575013B3 /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 96CD2088B0A08D3D0EDBE2CB8767A7A2 /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E64BD0775932D6D687ACFD0EAC56F72 /* TYTabPagerBarLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 91AFD8817514A2912DC261A3005A7293 /* TYTabPagerBarLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		715AB2C777F6FCAB5EE0C667A909B698 /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E1FD23C11C919DD3D1E037147BE080F /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73C10CDFEAC1F11878A7B3AD41B9907C /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = FA510710C7F7FA504EE7BEEF5B50E31E /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7485B731ACD0665E6E47DC6423A8269B /* TYTabPagerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF06F6C94C0978112847D2E94B15FB3 /* TYTabPagerView.m */; };
+		74981D0A96500ECB2F82F8AC1DA4D29F /* MMDrawerController+Subclass.h in Headers */ = {isa = PBXBuildFile; fileRef = 643D1EE4C26E249E091BD8300E1A1159 /* MMDrawerController+Subclass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77BFEC0CB11BC106F2C8251E2E5D8578 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CD5E0540C4E3B9A539EE8CE119ACEC /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		78251F42EB680FB72F040A1986279CD2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDD2AF2EE71C229BC9C64692BE5DE6C2 /* Foundation.framework */; };
-		7B05A8DE072977F90AA84A0E98E23167 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B819A9EBA8A3B542FF5BA5DD1A5BE1CA /* MASConstraint.m */; };
-		7B4D39D6284E966E195C8CA62AD907C1 /* Pods-Timi-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A720B99B04BD760356AA782C5C4D5051 /* Pods-Timi-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78EF5DBC26214558CE262550869471EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDD2AF2EE71C229BC9C64692BE5DE6C2 /* Foundation.framework */; };
+		7B05A8DE072977F90AA84A0E98E23167 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0946F7D40B040F17A4C1D6248CAEB2 /* MASConstraint.m */; };
 		8171D105E2C5CD3C1357D544942B4446 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C27FDEB1FE0D148C2525409AF55CD9DD /* UIKit.framework */; };
-		8AE868BC3E2E6FC92F4717835180C47D /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 77A6D68042DE661E165AF658E6D996D6 /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		98924FD499584984D4585707FC520481 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD8EDB98311D114ED8989D12D76247D /* MMDrawerController.m */; };
-		9A06CCB46E5DD5A7AB466646792DBCE8 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 16CF1540ACA550DCCA83CB9CAD404A88 /* MMDrawerBarButtonItem.m */; };
-		9C516FF5229BC070A75559A2667C753A /* TYTabPagerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 69DCD3AB43FAD14CF249003C8977615E /* TYTabPagerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A1336977ADAAD492D6CFD089A8C6E358 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C55145510CAD5DABD17D5EB27538753 /* View+MASAdditions.m */; };
-		A2BB6AF8EB074E77033B80E7686F3C9A /* MMDrawerController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 39F7861913D8B9CB2206DE2D2108493B /* MMDrawerController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A83A6757F6C0003332D57B41FE24BEEA /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A733C741957FC78580376E8C883A422 /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B10646B6AF73D470221EF25A5DEEEB6F /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 53B84F73D0E9EC7423C12ABED739EC0E /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B4BE7728D87333785F811FED48CF134E /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = A014CC60DB7DFA2198A07D2037F7D86E /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B61AA5459C2B345AD6D84D8A5111C9CE /* Masonry-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EB6A9299F87266FFAA2D182FABF2543A /* Masonry-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BE050DABC9BF806B3379AFD2367F4194 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 617E4E2DB46A8D59029F52B405DA3DF5 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BEA99A49E5F8DA685E33DABA606041FF /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = F6B108D9464752FFD094476D157F1200 /* MASConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C7D83D99D755676EF8A09CC77845BAF4 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 449B9DE8EABE29B556CCF263BC0FFA33 /* NSLayoutConstraint+MASDebugAdditions.m */; };
-		C9375F078B54A9030D4B9C2E73222A5D /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E50138E3A3542EF98C16EB05553E6120 /* NSArray+MASAdditions.m */; };
-		CECDB459AFB5AD0040AF86378F2DBF97 /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F95CD775C3F24C005826CC4D49003E /* Masonry-dummy.m */; };
-		CEE7BDCC3F3073CBBF7A76BC6CF3E519 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 852C39B0B516F3E893A6C5DE31C37B9F /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D25B9A1C925C6389E59848A07CF5B9AF /* UIViewController+MMDrawerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A35CCC1AD6E241DF08C7F771F82FF78 /* UIViewController+MMDrawerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D7AA070FBBE12A7A7AC7A6B394D4C2C2 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A3F57D994E4F16FBA1AC438767FC9A7 /* MMDrawerVisualState.m */; };
-		DF711BE14F24B36558A45CC3F1CECFC8 /* TYTabPagerBarLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 71EF776E51F1916F9D4E26FACEC2DF97 /* TYTabPagerBarLayout.m */; };
-		E0069854E8EBDC24D5BE75176050FFC6 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B23B6D6AF3192B51D1FA5F36DFCD77 /* UIViewController+MMDrawerController.m */; };
-		E01CC559FB2FA854E45BB77FA91D5A84 /* MMDrawerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB9B4CF1D03F326F4D35BADCB9D666E /* MMDrawerController-dummy.m */; };
-		E53FCD0CD1526B53074ED4EEF00131E9 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 10B8EF6DDBC6CAA15E58111093840891 /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E6FB269534400D40C1CE67D18EDD8A9A /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2BE1DE5621736E3A0A047FBDE5AEA9 /* MASViewConstraint.m */; };
-		EC4BFFE60627DB00ED886D7465F60B61 /* TYTabPagerBar.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9B7395953DDB45CA3D68D9BAF9D510 /* TYTabPagerBar.m */; };
-		EF3284E02539E21613A4FCF0CB6A5396 /* TYTabPagerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 97E0AD364422C7861B57C4C1A217B551 /* TYTabPagerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F47394B62ED5FA64A43337FF58A4C365 /* TYTabPagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB13A805ABA52E8A1F1BA310C8DF4620 /* TYTabPagerController.m */; };
-		F7AECD54A42C9F1B731F3EE229267368 /* TYPagerViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDC7C2C374ABABDD4A45F3819B66133 /* TYPagerViewLayout.m */; };
-		FB54C0A8F9C5649BA1E58CCFC9E4D3FB /* MMDrawerVisualState.h in Headers */ = {isa = PBXBuildFile; fileRef = 37DB6F8A2E782C45092919DD43DD5DD7 /* MMDrawerVisualState.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FFD20F2C24C0B5099FCDEA1A51831B1D /* MMDrawerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 431D59FC57AB6F928E60C9ECDF387119 /* MMDrawerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8246D862087C7890593899AEA5898697 /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AC5C419E9897AFAA34AB4AE22C55290 /* FMResultSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8AE868BC3E2E6FC92F4717835180C47D /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = EFC42107658E2A774F552A3AC8C4DC66 /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8FC5684C4684961A4B867842E66D7798 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2FB27D3815796284B0E6C2CE523EBF /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		98924FD499584984D4585707FC520481 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DA2A570CA45D523ADA2C37A98C02AA /* MMDrawerController.m */; };
+		9A06CCB46E5DD5A7AB466646792DBCE8 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC55905F01BF655D5F8A1D87C4ED54E /* MMDrawerBarButtonItem.m */; };
+		9C516FF5229BC070A75559A2667C753A /* TYTabPagerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AB4C5AD522DD568D5523FDF85702EC0 /* TYTabPagerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1336977ADAAD492D6CFD089A8C6E358 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C35D76CB68D4AA855E807B7FD75D4223 /* View+MASAdditions.m */; };
+		A2BB6AF8EB074E77033B80E7686F3C9A /* MMDrawerController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A0FD42A5F7980FF2AD5CE73468AE847 /* MMDrawerController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A83A6757F6C0003332D57B41FE24BEEA /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = E1E8B353C83DB731B1D09F111FD3F288 /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B10646B6AF73D470221EF25A5DEEEB6F /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A0CFA546534548D733FF11576A159AB /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4BE7728D87333785F811FED48CF134E /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = B711B1D4EE716377EC4C1C9787DC6437 /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B61AA5459C2B345AD6D84D8A5111C9CE /* Masonry-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA363F30D3EB839C97B742ACDD46181 /* Masonry-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B8E9D06DC51EC50FD682E9678F8AE43D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDD2AF2EE71C229BC9C64692BE5DE6C2 /* Foundation.framework */; };
+		BE050DABC9BF806B3379AFD2367F4194 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = B3353F89145B614417848FA31D5F4A37 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEA99A49E5F8DA685E33DABA606041FF /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 43DE0AA1FBF512E6E990A378AF017C86 /* MASConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7D83D99D755676EF8A09CC77845BAF4 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 513C18BDC61189751CDA3B860CF3550C /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		C9375F078B54A9030D4B9C2E73222A5D /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA90246B844AF0AB7B2D05F24786C03 /* NSArray+MASAdditions.m */; };
+		CECDB459AFB5AD0040AF86378F2DBF97 /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E1A11FDD6652588185780B674DCA146 /* Masonry-dummy.m */; };
+		CEE7BDCC3F3073CBBF7A76BC6CF3E519 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = BF97F98511A594F28BCE69FB493EA4B8 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D25B9A1C925C6389E59848A07CF5B9AF /* UIViewController+MMDrawerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C1DE92922741982318F028C1D44BA4B /* UIViewController+MMDrawerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7AA070FBBE12A7A7AC7A6B394D4C2C2 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B145DEB68837E1E76D1B55C07778BB /* MMDrawerVisualState.m */; };
+		DF711BE14F24B36558A45CC3F1CECFC8 /* TYTabPagerBarLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC01557AD5B985170ADDE4301352780 /* TYTabPagerBarLayout.m */; };
+		E0069854E8EBDC24D5BE75176050FFC6 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD030C376AA39CC7CB0F88630DAAC3B /* UIViewController+MMDrawerController.m */; };
+		E01CC559FB2FA854E45BB77FA91D5A84 /* MMDrawerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4BA7110587BABA1759CD558F8B5BBD /* MMDrawerController-dummy.m */; };
+		E53FCD0CD1526B53074ED4EEF00131E9 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 23152AF04B8E9815379489E4A8C2BE51 /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6FB269534400D40C1CE67D18EDD8A9A /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBDE37DDC9CB6A434C79EC919675DC1 /* MASViewConstraint.m */; };
+		EC4BFFE60627DB00ED886D7465F60B61 /* TYTabPagerBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E3F5F3AD710E930FBC4F3BF77C97CF4E /* TYTabPagerBar.m */; };
+		EF3284E02539E21613A4FCF0CB6A5396 /* TYTabPagerView.h in Headers */ = {isa = PBXBuildFile; fileRef = F1392D9F4BF9D35F492BF45687B633AA /* TYTabPagerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EFBCD5F499464C4A8042EBCFAB4ACC1A /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD586B64084300466ABF499048BF320 /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F3959A6F13D70E595F272F07FB8B00BD /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D0A5B0AFEF230F3716CCE977B99512D /* FMDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47394B62ED5FA64A43337FF58A4C365 /* TYTabPagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3095BA4A8B39DBEE4CAB2949D41B635 /* TYTabPagerController.m */; };
+		F7AECD54A42C9F1B731F3EE229267368 /* TYPagerViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A5EB4223BB4BF4E9629D5F1447331CE2 /* TYPagerViewLayout.m */; };
+		FB54C0A8F9C5649BA1E58CCFC9E4D3FB /* MMDrawerVisualState.h in Headers */ = {isa = PBXBuildFile; fileRef = E64FBCD2980AF23011B5C01C980FF453 /* MMDrawerVisualState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFD20F2C24C0B5099FCDEA1A51831B1D /* MMDrawerController.h in Headers */ = {isa = PBXBuildFile; fileRef = B15E57EC20B0EBB3AA05934FDD6EC2FA /* MMDrawerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5841D04E5CF1F65E223A1634E0629110 /* PBXContainerItemProxy */ = {
+		363E2DC972CAC085323458648B7F5769 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8592E0E389D40AC17881400ADC67ABC0;
+			remoteInfo = FMDB;
+		};
+		3E29F7A49C67D5366FF884FE5262FB8C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 9F488B190830FB77035EF1E70DE82DA3;
 			remoteInfo = TYPagerController;
 		};
-		5A9CE40B92CFE15A2E38AAB40B0408AB /* PBXContainerItemProxy */ = {
+		9262DDD745A9E27D4ABCE314AB7CEB5D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C7E4C2A7FC80BA612284F4B22564355F;
 			remoteInfo = MMDrawerController;
 		};
-		AEC29D743C1E67557A2E3D6BEFBEF4EB /* PBXContainerItemProxy */ = {
+		9CBF51CC2AC206609F53E8BF281D8DA7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -98,102 +119,137 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05D004F9617BAB4EA435AA4F59BB9A65 /* TYPagerController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TYPagerController.debug.xcconfig; sourceTree = "<group>"; };
-		0A2BE1DE5621736E3A0A047FBDE5AEA9 /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
-		0A35CCC1AD6E241DF08C7F771F82FF78 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+MMDrawerController.h"; path = "MMDrawerController/UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
-		0EDC7C2C374ABABDD4A45F3819B66133 /* TYPagerViewLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TYPagerViewLayout.m; path = TYPagerControllerDemo/TYPagerController/TYPagerViewLayout.m; sourceTree = "<group>"; };
-		0FAF3C9D71083308BF33E9971A2BE1D9 /* TYPagerController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TYPagerController.release.xcconfig; sourceTree = "<group>"; };
-		101B20462736A6658A632DB273180405 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
-		10B8EF6DDBC6CAA15E58111093840891 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		126688BD10FAA3D242822B295725A5CC /* TYPagerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYPagerView.h; path = TYPagerControllerDemo/TYPagerController/TYPagerView.h; sourceTree = "<group>"; };
+		081A79B39801F0BF464E06734C86FD37 /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
+		0A748177D20450E5329CCBB06CF7DE28 /* TYPagerController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TYPagerController-prefix.pch"; sourceTree = "<group>"; };
+		0C0946F7D40B040F17A4C1D6248CAEB2 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
+		0D0A5B0AFEF230F3716CCE977B99512D /* FMDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = src/fmdb/FMDatabase.h; sourceTree = "<group>"; };
+		0D306D191EFC11914CBC0825AC6E4DEB /* MMDrawerController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController-prefix.pch"; sourceTree = "<group>"; };
+		0DF06F6C94C0978112847D2E94B15FB3 /* TYTabPagerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TYTabPagerView.m; path = TYPagerControllerDemo/TYPagerController/TabPager/TYTabPagerView.m; sourceTree = "<group>"; };
 		13B272AFF1ED883E1C95B8EE8A554536 /* Pods-Timi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Timi.debug.xcconfig"; sourceTree = "<group>"; };
-		1686C8BE2EF5117B2D3F9BDF32CB1E10 /* Masonry.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Masonry.modulemap; sourceTree = "<group>"; };
-		16CF1540ACA550DCCA83CB9CAD404A88 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMDrawerBarButtonItem.m; path = MMDrawerController/MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
-		18C1D550491B24A06ED5B1A5AAD3BDFC /* TYTabPagerBarCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TYTabPagerBarCell.m; path = TYPagerControllerDemo/TYPagerController/TabPager/TYTabPagerBarCell.m; sourceTree = "<group>"; };
-		1A3F57D994E4F16FBA1AC438767FC9A7 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMDrawerVisualState.m; path = MMDrawerController/MMDrawerVisualState.m; sourceTree = "<group>"; };
-		1F157655BE8C53D8B441F82BBB33958F /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
-		1F5D25B561CB1AFDDC3D0852A760CE2F /* TYTabPagerBarLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYTabPagerBarLayout.h; path = TYPagerControllerDemo/TYPagerController/TabPager/TYTabPagerBarLayout.h; sourceTree = "<group>"; };
+		181C808A49495CABAF20558115046B17 /* FMDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FMDB-dummy.m"; sourceTree = "<group>"; };
+		183FEFA2B4031563F4812ED16C403058 /* MMDrawerController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MMDrawerController.release.xcconfig; sourceTree = "<group>"; };
+		197B6534EDF84FED5C5AB2F122DCA5B3 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = src/fmdb/FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		1C1DE92922741982318F028C1D44BA4B /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+MMDrawerController.h"; path = "MMDrawerController/UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		1C5EF8C39D77618FBBB3D4384AB867FF /* TYTabPagerBarCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TYTabPagerBarCell.m; path = TYPagerControllerDemo/TYPagerController/TabPager/TYTabPagerBarCell.m; sourceTree = "<group>"; };
 		1FFED36A657123030ABB700256D73F15 /* Masonry */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Masonry; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		253C48B6FF60128C43B9CB6D33A804CD /* TYTabPagerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TYTabPagerView.m; path = TYPagerControllerDemo/TYPagerController/TabPager/TYTabPagerView.m; sourceTree = "<group>"; };
-		265B2681DD2D0CDC0F6A8CC59B600961 /* Masonry-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Masonry-Info.plist"; sourceTree = "<group>"; };
+		23152AF04B8E9815379489E4A8C2BE51 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		27D34639C3C83D23AC15B85BFCE83600 /* Pods-Timi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Timi.release.xcconfig"; sourceTree = "<group>"; };
-		2AB0123B0CF22551DBF62F56B2E6F2CB /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
+		2BA363F30D3EB839C97B742ACDD46181 /* Masonry-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-umbrella.h"; sourceTree = "<group>"; };
 		2C30633AFAF3157D15E47E24FE4BC17D /* Pods-Timi.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Timi.modulemap"; sourceTree = "<group>"; };
-		2C55145510CAD5DABD17D5EB27538753 /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
-		37DB6F8A2E782C45092919DD43DD5DD7 /* MMDrawerVisualState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMDrawerVisualState.h; path = MMDrawerController/MMDrawerVisualState.h; sourceTree = "<group>"; };
-		39F7861913D8B9CB2206DE2D2108493B /* MMDrawerController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController-umbrella.h"; sourceTree = "<group>"; };
-		421055A2B1733D2BEEE40E6FD83B27F4 /* TYPagerController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TYPagerController-prefix.pch"; sourceTree = "<group>"; };
-		431D59FC57AB6F928E60C9ECDF387119 /* MMDrawerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMDrawerController.h; path = MMDrawerController/MMDrawerController.h; sourceTree = "<group>"; };
-		449B9DE8EABE29B556CCF263BC0FFA33 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
-		4968F39118DA8D96CBDD88B48400D040 /* TYPagerViewLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYPagerViewLayout.h; path = TYPagerControllerDemo/TYPagerController/TYPagerViewLayout.h; sourceTree = "<group>"; };
-		4A733C741957FC78580376E8C883A422 /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
-		52E93E6762FDFE7310113956FF3548D9 /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
-		53B23B6D6AF3192B51D1FA5F36DFCD77 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+MMDrawerController.m"; path = "MMDrawerController/UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
-		53B84F73D0E9EC7423C12ABED739EC0E /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
-		575FB0BD178414F8F2FB475705DFB1D2 /* TYPagerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYPagerController.h; path = TYPagerControllerDemo/TYPagerController/TYPagerController.h; sourceTree = "<group>"; };
-		57C3FF68096F8514CF6D0D2E5E3F888C /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
-		5EB9B4CF1D03F326F4D35BADCB9D666E /* MMDrawerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MMDrawerController-dummy.m"; sourceTree = "<group>"; };
-		60D4055F330C165B1D1422485E98DFB1 /* MMDrawerController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MMDrawerController-Info.plist"; sourceTree = "<group>"; };
+		2CD586B64084300466ABF499048BF320 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = src/fmdb/FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		39C681954A60B24ABC7E12CBF1D00D90 /* FMDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FMDB.release.xcconfig; sourceTree = "<group>"; };
+		3BA90246B844AF0AB7B2D05F24786C03 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		3C0C33C06503CE40DB1FC92E4C5C4E85 /* TYPagerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYPagerView.h; path = TYPagerControllerDemo/TYPagerController/TYPagerView.h; sourceTree = "<group>"; };
+		3DD030C376AA39CC7CB0F88630DAAC3B /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+MMDrawerController.m"; path = "MMDrawerController/UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		3E2E2C2429DFEF17ECE2551B67908350 /* Masonry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.debug.xcconfig; sourceTree = "<group>"; };
+		43DE0AA1FBF512E6E990A378AF017C86 /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
+		4934998579119A114D9F17F548BDEB90 /* FMDB-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-umbrella.h"; sourceTree = "<group>"; };
+		493E207771A15691DF839EC78D6445AD /* TYPagerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYPagerController.h; path = TYPagerControllerDemo/TYPagerController/TYPagerController.h; sourceTree = "<group>"; };
+		4AC01557AD5B985170ADDE4301352780 /* TYTabPagerBarLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TYTabPagerBarLayout.m; path = TYPagerControllerDemo/TYPagerController/TabPager/TYTabPagerBarLayout.m; sourceTree = "<group>"; };
+		4AC5C419E9897AFAA34AB4AE22C55290 /* FMResultSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = src/fmdb/FMResultSet.h; sourceTree = "<group>"; };
+		4C28B973331B404308710CD28209BF95 /* Masonry-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Masonry-Info.plist"; sourceTree = "<group>"; };
+		4C29D6AAA2C330A0D8419E56F931C3EF /* FMDatabasePool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = src/fmdb/FMDatabasePool.h; sourceTree = "<group>"; };
+		4D2D4DB32660484780BE581BEE1C3539 /* TYPagerController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TYPagerController-Info.plist"; sourceTree = "<group>"; };
+		513C18BDC61189751CDA3B860CF3550C /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		522F196FD86756DDCC0AA97CF8697398 /* TYPagerController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TYPagerController.release.xcconfig; sourceTree = "<group>"; };
+		5748ACA28C4B9A258F0E397A19F928D3 /* TYTabPagerBarCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYTabPagerBarCell.h; path = TYPagerControllerDemo/TYPagerController/TabPager/TYTabPagerBarCell.h; sourceTree = "<group>"; };
+		57D69029477DDD2BD229AE9E656CB909 /* FMDB-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FMDB-Info.plist"; sourceTree = "<group>"; };
+		5A0AFCE2AA2E57C6F3A82FF1753DEBD8 /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
+		5D6FBFB5B3D600493FA5FB9483033FD6 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
+		5E1FD23C11C919DD3D1E037147BE080F /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
 		6139AA853B61ACDF1E35FB691F290A87 /* Pods-Timi-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Timi-acknowledgements.plist"; sourceTree = "<group>"; };
-		617E4E2DB46A8D59029F52B405DA3DF5 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
-		6768D96556373269A3D4E0C1FE7EAA87 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMDrawerBarButtonItem.h; path = MMDrawerController/MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
-		69DCD3AB43FAD14CF249003C8977615E /* TYTabPagerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYTabPagerController.h; path = TYPagerControllerDemo/TYPagerController/TabPager/TYTabPagerController.h; sourceTree = "<group>"; };
+		643D1EE4C26E249E091BD8300E1A1159 /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MMDrawerController+Subclass.h"; path = "MMDrawerController/MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		68F2A7ED1DC2ABB23BB5E82D06C8F761 /* TYPagerController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TYPagerController.debug.xcconfig; sourceTree = "<group>"; };
+		6A0FD42A5F7980FF2AD5CE73468AE847 /* MMDrawerController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController-umbrella.h"; sourceTree = "<group>"; };
 		6C74481CBCB87684F62CB0E10BA4B66E /* MMDrawerController */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MMDrawerController; path = MMDrawerController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		71EF776E51F1916F9D4E26FACEC2DF97 /* TYTabPagerBarLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TYTabPagerBarLayout.m; path = TYPagerControllerDemo/TYPagerController/TabPager/TYTabPagerBarLayout.m; sourceTree = "<group>"; };
-		72E758E334B32696A6A778257A70CA29 /* TYPagerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TYPagerController-dummy.m"; sourceTree = "<group>"; };
-		77A6D68042DE661E165AF658E6D996D6 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
-		78676226F4BCFD46D25B2B07FFDE1F1A /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MMDrawerController+Subclass.h"; path = "MMDrawerController/MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		6E76DFC3D3CDE8A5AE3445067733A039 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
+		700677AC2628797C0588C5317DD9EB9B /* TYPagerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TYPagerView.m; path = TYPagerControllerDemo/TYPagerController/TYPagerView.m; sourceTree = "<group>"; };
 		79D9103A139385FA5F40A9BF3D30D56C /* Pods-Timi-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Timi-dummy.m"; sourceTree = "<group>"; };
-		7B8678683CB1E92BAA4437268B84EF7C /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
-		80D6E09177B5E93748889A9D6A30CFEB /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
-		83F5ECE96AC2912AAB85BF3B8211D228 /* MMDrawerController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MMDrawerController.modulemap; sourceTree = "<group>"; };
-		852C39B0B516F3E893A6C5DE31C37B9F /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
-		863BCC6C5E56E2944F6C24F877CE5D7B /* TYPagerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TYPagerController.m; path = TYPagerControllerDemo/TYPagerController/TYPagerController.m; sourceTree = "<group>"; };
-		87568C26CDE5568EE40C7BBE642EF682 /* TYPagerController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TYPagerController.modulemap; sourceTree = "<group>"; };
+		7A0CFA546534548D733FF11576A159AB /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		7AB4C5AD522DD568D5523FDF85702EC0 /* TYTabPagerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYTabPagerController.h; path = TYPagerControllerDemo/TYPagerController/TabPager/TYTabPagerController.h; sourceTree = "<group>"; };
+		7C8BB031B998BEBD0E192EBB13D4A208 /* FMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = src/fmdb/FMDB.h; sourceTree = "<group>"; };
+		7F201CCA6BF681A7293BFFC64614516D /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMDrawerBarButtonItem.h; path = MMDrawerController/MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		85B145DEB68837E1E76D1B55C07778BB /* MMDrawerVisualState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMDrawerVisualState.m; path = MMDrawerController/MMDrawerVisualState.m; sourceTree = "<group>"; };
+		868EAABCB2E524AA9B80A122EB8A69C5 /* FMDB.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FMDB.modulemap; sourceTree = "<group>"; };
+		8AAD729F535DF9192A41528EA51E81FF /* FMDB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FMDB.debug.xcconfig; sourceTree = "<group>"; };
+		8D57739D0BF1DE1AF733736B295992DD /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
 		912BDB5FD39D1B6A69A9708A5F72EE19 /* Pods-Timi-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Timi-Info.plist"; sourceTree = "<group>"; };
-		97E0AD364422C7861B57C4C1A217B551 /* TYTabPagerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYTabPagerView.h; path = TYPagerControllerDemo/TYPagerController/TabPager/TYTabPagerView.h; sourceTree = "<group>"; };
+		91AFD8817514A2912DC261A3005A7293 /* TYTabPagerBarLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYTabPagerBarLayout.h; path = TYPagerControllerDemo/TYPagerController/TabPager/TYTabPagerBarLayout.h; sourceTree = "<group>"; };
+		96CD2088B0A08D3D0EDBE2CB8767A7A2 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		9799EF40F35A25DB9FB6D416BAA318E5 /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A014CC60DB7DFA2198A07D2037F7D86E /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
-		A28426A6D32AAE7EB4777A7663374B9D /* TYPagerController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TYPagerController-umbrella.h"; sourceTree = "<group>"; };
+		9E1A11FDD6652588185780B674DCA146 /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
+		A3A80BA70CFB7F75C5391BEBBBA8C9DA /* FMDB */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FMDB; path = FMDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A436848721DD73737EBFC708E037CFBA /* TYPagerController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TYPagerController.modulemap; sourceTree = "<group>"; };
+		A5EB4223BB4BF4E9629D5F1447331CE2 /* TYPagerViewLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TYPagerViewLayout.m; path = TYPagerControllerDemo/TYPagerController/TYPagerViewLayout.m; sourceTree = "<group>"; };
+		A61A98A0C8D9F6DEF45A6A5E9AEFCA3F /* TYTabPagerBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYTabPagerBar.h; path = TYPagerControllerDemo/TYPagerController/TabPager/TYTabPagerBar.h; sourceTree = "<group>"; };
 		A720B99B04BD760356AA782C5C4D5051 /* Pods-Timi-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Timi-umbrella.h"; sourceTree = "<group>"; };
-		AF1D5AD0FE6AEC2975C909D7D053B3AF /* TYTabPagerBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYTabPagerBar.h; path = TYPagerControllerDemo/TYPagerController/TabPager/TYTabPagerBar.h; sourceTree = "<group>"; };
+		ADC053B38094331A95AF3CA74E3D1E67 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = src/fmdb/FMDatabaseQueue.h; sourceTree = "<group>"; };
 		B0CDAD4C9D58A8A0BB3F86AAEC54305B /* Pods-Timi-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Timi-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B446A3C4BF37D23DABB5B09F111BF4C5 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
-		B558D41D2C3F41AAD1470C6C3A8EE90C /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
-		B5690DD7D76E060A1F48A824016E4891 /* Masonry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.release.xcconfig; sourceTree = "<group>"; };
-		B7F95CD775C3F24C005826CC4D49003E /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
-		B819A9EBA8A3B542FF5BA5DD1A5BE1CA /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
-		BE9B7395953DDB45CA3D68D9BAF9D510 /* TYTabPagerBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TYTabPagerBar.m; path = TYPagerControllerDemo/TYPagerController/TabPager/TYTabPagerBar.m; sourceTree = "<group>"; };
-		C109EE70EA77889839CB2A9596CF463A /* TYTabPagerBarCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYTabPagerBarCell.h; path = TYPagerControllerDemo/TYPagerController/TabPager/TYTabPagerBarCell.h; sourceTree = "<group>"; };
+		B15E57EC20B0EBB3AA05934FDD6EC2FA /* MMDrawerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMDrawerController.h; path = MMDrawerController/MMDrawerController.h; sourceTree = "<group>"; };
+		B1961AA9555A5D7EC4C58F9BD4E465A3 /* FMDB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-prefix.pch"; sourceTree = "<group>"; };
+		B1E0E301E0A3D0958731416FD6EFEF0C /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
+		B3353F89145B614417848FA31D5F4A37 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		B4ED22CA0D5C53C0F19FCE785F85408A /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
+		B711B1D4EE716377EC4C1C9787DC6437 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
+		BAC55905F01BF655D5F8A1D87C4ED54E /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMDrawerBarButtonItem.m; path = MMDrawerController/MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		BF97F98511A594F28BCE69FB493EA4B8 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
+		BFBDE37DDC9CB6A434C79EC919675DC1 /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
 		C27FDEB1FE0D148C2525409AF55CD9DD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		C459FCA4498D0AF49626D55F460BFBAC /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
-		C7085ED46DE48BB2F2609A337FF0B0C9 /* MMDrawerController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MMDrawerController.debug.xcconfig; sourceTree = "<group>"; };
+		C35D76CB68D4AA855E807B7FD75D4223 /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
+		CA4BA7110587BABA1759CD558F8B5BBD /* MMDrawerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MMDrawerController-dummy.m"; sourceTree = "<group>"; };
 		CA5B1DC27A0D90B44A8ADDD1DDD8BC56 /* Pods-Timi-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Timi-frameworks.sh"; sourceTree = "<group>"; };
+		CAB893DE2A28027BFBE5951AB8C73B24 /* TYPagerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TYPagerController-dummy.m"; sourceTree = "<group>"; };
+		CB2F7980AC1CD13D63471FDC255CCC21 /* FMDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = src/fmdb/FMDatabase.m; sourceTree = "<group>"; };
 		CFC1A590675B1E148B54700FD1CB6508 /* Pods-Timi */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Timi"; path = Pods_Timi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D05A773BCAC38A7841FA1956529D254E /* TYPagerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TYPagerView.m; path = TYPagerControllerDemo/TYPagerController/TYPagerView.m; sourceTree = "<group>"; };
-		D5FDF64D02F11DE0317F026EA2FD6471 /* TYPagerController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TYPagerController-Info.plist"; sourceTree = "<group>"; };
-		D96703B38F3A0647C33A8D1B6167FF24 /* Masonry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.debug.xcconfig; sourceTree = "<group>"; };
-		DF784A446FCC573C82306A94F7EC2B12 /* MMDrawerController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MMDrawerController.release.xcconfig; sourceTree = "<group>"; };
+		D173D4900A299D872BF693559F865798 /* MMDrawerController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MMDrawerController.modulemap; sourceTree = "<group>"; };
+		D6CD5E0540C4E3B9A539EE8CE119ACEC /* FMDatabaseQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = src/fmdb/FMDatabaseQueue.m; sourceTree = "<group>"; };
+		DCCAB793A69DBAA84F82EB7E5AAB0D86 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
+		DD880F27CC553D564F9F3C45A76862C5 /* TYPagerViewLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYPagerViewLayout.h; path = TYPagerControllerDemo/TYPagerController/TYPagerViewLayout.h; sourceTree = "<group>"; };
+		E16A99E2191E3CA9ED40DACA963851AE /* MMDrawerController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MMDrawerController.debug.xcconfig; sourceTree = "<group>"; };
 		E17A27C61C0D6057B87BE9B9FB822B29 /* TYPagerController */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TYPagerController; path = TYPagerController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E383DBA028E04BC5A58EEED36687CE44 /* MMDrawerController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController-prefix.pch"; sourceTree = "<group>"; };
-		E463153A9127F5836064B3C3A4FE398F /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
-		E50138E3A3542EF98C16EB05553E6120 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
-		EB6A9299F87266FFAA2D182FABF2543A /* Masonry-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-umbrella.h"; sourceTree = "<group>"; };
-		F6B108D9464752FFD094476D157F1200 /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
-		F79D256BDBE4E64D7838A7F45FA807C4 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
-		FAD8EDB98311D114ED8989D12D76247D /* MMDrawerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMDrawerController.m; path = MMDrawerController/MMDrawerController.m; sourceTree = "<group>"; };
-		FB13A805ABA52E8A1F1BA310C8DF4620 /* TYTabPagerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TYTabPagerController.m; path = TYPagerControllerDemo/TYPagerController/TabPager/TYTabPagerController.m; sourceTree = "<group>"; };
-		FC9BE5E024A34645B5075189914A5379 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		E1E8B353C83DB731B1D09F111FD3F288 /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
+		E3F5F3AD710E930FBC4F3BF77C97CF4E /* TYTabPagerBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TYTabPagerBar.m; path = TYPagerControllerDemo/TYPagerController/TabPager/TYTabPagerBar.m; sourceTree = "<group>"; };
+		E64FBCD2980AF23011B5C01C980FF453 /* MMDrawerVisualState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMDrawerVisualState.h; path = MMDrawerController/MMDrawerVisualState.h; sourceTree = "<group>"; };
+		E72DB13803DFC0CDD40A7E45F194D9D7 /* Masonry.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Masonry.modulemap; sourceTree = "<group>"; };
+		E7620597A936130DED46B6953443A0A9 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		EFC42107658E2A774F552A3AC8C4DC66 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		F1392D9F4BF9D35F492BF45687B633AA /* TYTabPagerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYTabPagerView.h; path = TYPagerControllerDemo/TYPagerController/TabPager/TYTabPagerView.h; sourceTree = "<group>"; };
+		F1B8D0DB3FA569C61244B0D40355ABE1 /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
+		F1BAA839628848D414BD6B4125603D9E /* Masonry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.release.xcconfig; sourceTree = "<group>"; };
+		F3095BA4A8B39DBEE4CAB2949D41B635 /* TYTabPagerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TYTabPagerController.m; path = TYPagerControllerDemo/TYPagerController/TabPager/TYTabPagerController.m; sourceTree = "<group>"; };
+		F6A6202CA387F72D8C97E5C99EBBEB76 /* MMDrawerController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MMDrawerController-Info.plist"; sourceTree = "<group>"; };
+		F6DA2A570CA45D523ADA2C37A98C02AA /* MMDrawerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMDrawerController.m; path = MMDrawerController/MMDrawerController.m; sourceTree = "<group>"; };
+		F735EB46F4C8FF300E83A685807AF37A /* TYPagerController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TYPagerController-umbrella.h"; sourceTree = "<group>"; };
+		F7FD6E4627ACDBFA3CB9F75823DF8ACA /* TYPagerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TYPagerController.m; path = TYPagerControllerDemo/TYPagerController/TYPagerController.m; sourceTree = "<group>"; };
+		FA510710C7F7FA504EE7BEEF5B50E31E /* FMDatabasePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = src/fmdb/FMDatabasePool.m; sourceTree = "<group>"; };
+		FD2FB27D3815796284B0E6C2CE523EBF /* FMResultSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = src/fmdb/FMResultSet.m; sourceTree = "<group>"; };
 		FDD2AF2EE71C229BC9C64692BE5DE6C2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		FE7F427CA20FCF5EB55A191443C28288 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1F761A39B220B463E3544A86584C51AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78EF5DBC26214558CE262550869471EE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		24F12E6A5474BD34CC3C93579403FFE9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0838D249D73C10221C3B7E335C046D4E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46CE7976A327A98FA11B937B79401E29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8E9D06DC51EC50FD682E9678F8AE43D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,14 +259,6 @@
 			files = (
 				51D4BA91533069CB4CAE03B53AB22A8A /* Foundation.framework in Frameworks */,
 				2ACD1D9F0A5F5862B0C647AF0997DA26 /* QuartzCore.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A34DD6191AA972F2528580A6EB54801C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				65A5832519C5FB63F6D595FB313037B2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,39 +282,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		070525BC5D6204921B2B0BEC3E3FAEE6 /* TYPagerController */ = {
+		0C737D30F677B92FC0EE31A6D2D577AF /* MMDrawerVisualStates */ = {
 			isa = PBXGroup;
 			children = (
-				575FB0BD178414F8F2FB475705DFB1D2 /* TYPagerController.h */,
-				863BCC6C5E56E2944F6C24F877CE5D7B /* TYPagerController.m */,
-				126688BD10FAA3D242822B295725A5CC /* TYPagerView.h */,
-				D05A773BCAC38A7841FA1956529D254E /* TYPagerView.m */,
-				4968F39118DA8D96CBDD88B48400D040 /* TYPagerViewLayout.h */,
-				0EDC7C2C374ABABDD4A45F3819B66133 /* TYPagerViewLayout.m */,
-				AF1D5AD0FE6AEC2975C909D7D053B3AF /* TYTabPagerBar.h */,
-				BE9B7395953DDB45CA3D68D9BAF9D510 /* TYTabPagerBar.m */,
-				C109EE70EA77889839CB2A9596CF463A /* TYTabPagerBarCell.h */,
-				18C1D550491B24A06ED5B1A5AAD3BDFC /* TYTabPagerBarCell.m */,
-				1F5D25B561CB1AFDDC3D0852A760CE2F /* TYTabPagerBarLayout.h */,
-				71EF776E51F1916F9D4E26FACEC2DF97 /* TYTabPagerBarLayout.m */,
-				69DCD3AB43FAD14CF249003C8977615E /* TYTabPagerController.h */,
-				FB13A805ABA52E8A1F1BA310C8DF4620 /* TYTabPagerController.m */,
-				97E0AD364422C7861B57C4C1A217B551 /* TYTabPagerView.h */,
-				253C48B6FF60128C43B9CB6D33A804CD /* TYTabPagerView.m */,
-				2A48082E40F7707A25345315ED2C9C33 /* Support Files */,
+				E64FBCD2980AF23011B5C01C980FF453 /* MMDrawerVisualState.h */,
+				85B145DEB68837E1E76D1B55C07778BB /* MMDrawerVisualState.m */,
 			);
-			name = TYPagerController;
-			path = TYPagerController;
-			sourceTree = "<group>";
-		};
-		0E523FC43732F04898CF78F9389E54D8 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2AAD6653ADCB9F4D80571323D6E4BAFE /* Masonry */,
-				71B1A52E4877C1E8332F902083D71371 /* MMDrawerController */,
-				070525BC5D6204921B2B0BEC3E3FAEE6 /* TYPagerController */,
-			);
-			name = Pods;
+			name = MMDrawerVisualStates;
 			sourceTree = "<group>";
 		};
 		101AD6E72B95681308E7F93F1D6ABC72 /* Pods-Timi */ = {
@@ -286,103 +308,83 @@
 			path = "Target Support Files/Pods-Timi";
 			sourceTree = "<group>";
 		};
-		147BDE8E07DDF38C741608113477CEA8 /* MMDrawerBarButtonItem */ = {
+		10998B3B06429D7B79F3EAA5E73D630C /* MMDrawerController */ = {
 			isa = PBXGroup;
 			children = (
-				6768D96556373269A3D4E0C1FE7EAA87 /* MMDrawerBarButtonItem.h */,
-				16CF1540ACA550DCCA83CB9CAD404A88 /* MMDrawerBarButtonItem.m */,
-			);
-			name = MMDrawerBarButtonItem;
-			sourceTree = "<group>";
-		};
-		2A48082E40F7707A25345315ED2C9C33 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				87568C26CDE5568EE40C7BBE642EF682 /* TYPagerController.modulemap */,
-				72E758E334B32696A6A778257A70CA29 /* TYPagerController-dummy.m */,
-				D5FDF64D02F11DE0317F026EA2FD6471 /* TYPagerController-Info.plist */,
-				421055A2B1733D2BEEE40E6FD83B27F4 /* TYPagerController-prefix.pch */,
-				A28426A6D32AAE7EB4777A7663374B9D /* TYPagerController-umbrella.h */,
-				05D004F9617BAB4EA435AA4F59BB9A65 /* TYPagerController.debug.xcconfig */,
-				0FAF3C9D71083308BF33E9971A2BE1D9 /* TYPagerController.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/TYPagerController";
-			sourceTree = "<group>";
-		};
-		2AAD6653ADCB9F4D80571323D6E4BAFE /* Masonry */ = {
-			isa = PBXGroup;
-			children = (
-				A014CC60DB7DFA2198A07D2037F7D86E /* MASCompositeConstraint.h */,
-				2AB0123B0CF22551DBF62F56B2E6F2CB /* MASCompositeConstraint.m */,
-				F6B108D9464752FFD094476D157F1200 /* MASConstraint.h */,
-				B819A9EBA8A3B542FF5BA5DD1A5BE1CA /* MASConstraint.m */,
-				4A733C741957FC78580376E8C883A422 /* MASConstraint+Private.h */,
-				80D6E09177B5E93748889A9D6A30CFEB /* MASConstraintMaker.h */,
-				C459FCA4498D0AF49626D55F460BFBAC /* MASConstraintMaker.m */,
-				101B20462736A6658A632DB273180405 /* MASLayoutConstraint.h */,
-				B446A3C4BF37D23DABB5B09F111BF4C5 /* MASLayoutConstraint.m */,
-				57C3FF68096F8514CF6D0D2E5E3F888C /* Masonry.h */,
-				F79D256BDBE4E64D7838A7F45FA807C4 /* MASUtilities.h */,
-				52E93E6762FDFE7310113956FF3548D9 /* MASViewAttribute.h */,
-				E463153A9127F5836064B3C3A4FE398F /* MASViewAttribute.m */,
-				852C39B0B516F3E893A6C5DE31C37B9F /* MASViewConstraint.h */,
-				0A2BE1DE5621736E3A0A047FBDE5AEA9 /* MASViewConstraint.m */,
-				77A6D68042DE661E165AF658E6D996D6 /* NSArray+MASAdditions.h */,
-				E50138E3A3542EF98C16EB05553E6120 /* NSArray+MASAdditions.m */,
-				10B8EF6DDBC6CAA15E58111093840891 /* NSArray+MASShorthandAdditions.h */,
-				617E4E2DB46A8D59029F52B405DA3DF5 /* NSLayoutConstraint+MASDebugAdditions.h */,
-				449B9DE8EABE29B556CCF263BC0FFA33 /* NSLayoutConstraint+MASDebugAdditions.m */,
-				7B8678683CB1E92BAA4437268B84EF7C /* View+MASAdditions.h */,
-				2C55145510CAD5DABD17D5EB27538753 /* View+MASAdditions.m */,
-				FC9BE5E024A34645B5075189914A5379 /* View+MASShorthandAdditions.h */,
-				53B84F73D0E9EC7423C12ABED739EC0E /* ViewController+MASAdditions.h */,
-				B558D41D2C3F41AAD1470C6C3A8EE90C /* ViewController+MASAdditions.m */,
-				AD3BB4BBE0AAC95C0AD3C6644E18336B /* Support Files */,
-			);
-			name = Masonry;
-			path = Masonry;
-			sourceTree = "<group>";
-		};
-		40FF5494A940DC7E137D7044C3E493DE /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				431D59FC57AB6F928E60C9ECDF387119 /* MMDrawerController.h */,
-				FAD8EDB98311D114ED8989D12D76247D /* MMDrawerController.m */,
-				0A35CCC1AD6E241DF08C7F771F82FF78 /* UIViewController+MMDrawerController.h */,
-				53B23B6D6AF3192B51D1FA5F36DFCD77 /* UIViewController+MMDrawerController.m */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		6A2950CD04BAE8F2A533ACEB0B6A6F14 /* MMDrawerVisualStates */ = {
-			isa = PBXGroup;
-			children = (
-				37DB6F8A2E782C45092919DD43DD5DD7 /* MMDrawerVisualState.h */,
-				1A3F57D994E4F16FBA1AC438767FC9A7 /* MMDrawerVisualState.m */,
-			);
-			name = MMDrawerVisualStates;
-			sourceTree = "<group>";
-		};
-		71B1A52E4877C1E8332F902083D71371 /* MMDrawerController */ = {
-			isa = PBXGroup;
-			children = (
-				40FF5494A940DC7E137D7044C3E493DE /* Core */,
-				147BDE8E07DDF38C741608113477CEA8 /* MMDrawerBarButtonItem */,
-				6A2950CD04BAE8F2A533ACEB0B6A6F14 /* MMDrawerVisualStates */,
-				7332DE3A4FBA6E29B58BE8DDB4AC28FC /* Subclass */,
-				B7DCF41F80A194698DAD7545F1E442DB /* Support Files */,
+				BA8A4ACD733ED736BDC01C8749DF870B /* Core */,
+				89BD096C5DEFA54F2090FB098E76954B /* MMDrawerBarButtonItem */,
+				0C737D30F677B92FC0EE31A6D2D577AF /* MMDrawerVisualStates */,
+				F3DED5132FBBD42A360A014A47431B2A /* Subclass */,
+				30D54C9F09D3E11AD98409A8A63ECE52 /* Support Files */,
 			);
 			name = MMDrawerController;
 			path = MMDrawerController;
 			sourceTree = "<group>";
 		};
-		7332DE3A4FBA6E29B58BE8DDB4AC28FC /* Subclass */ = {
+		28EA7981F5AEEB5B49318604ABDF3AA7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				78676226F4BCFD46D25B2B07FFDE1F1A /* MMDrawerController+Subclass.h */,
+				4F0554481F890F2F0BB4D0A6D092D488 /* FMDB */,
+				D8BCC81D2962E94C0535054B38153941 /* Masonry */,
+				10998B3B06429D7B79F3EAA5E73D630C /* MMDrawerController */,
+				D607D4A1C4FC7D97F5BC30BC3604F50A /* TYPagerController */,
 			);
-			name = Subclass;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		30D54C9F09D3E11AD98409A8A63ECE52 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D173D4900A299D872BF693559F865798 /* MMDrawerController.modulemap */,
+				CA4BA7110587BABA1759CD558F8B5BBD /* MMDrawerController-dummy.m */,
+				F6A6202CA387F72D8C97E5C99EBBEB76 /* MMDrawerController-Info.plist */,
+				0D306D191EFC11914CBC0825AC6E4DEB /* MMDrawerController-prefix.pch */,
+				6A0FD42A5F7980FF2AD5CE73468AE847 /* MMDrawerController-umbrella.h */,
+				E16A99E2191E3CA9ED40DACA963851AE /* MMDrawerController.debug.xcconfig */,
+				183FEFA2B4031563F4812ED16C403058 /* MMDrawerController.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MMDrawerController";
+			sourceTree = "<group>";
+		};
+		42C21B62BD1C569821C68630E6A1F9DE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E72DB13803DFC0CDD40A7E45F194D9D7 /* Masonry.modulemap */,
+				9E1A11FDD6652588185780B674DCA146 /* Masonry-dummy.m */,
+				4C28B973331B404308710CD28209BF95 /* Masonry-Info.plist */,
+				5A0AFCE2AA2E57C6F3A82FF1753DEBD8 /* Masonry-prefix.pch */,
+				2BA363F30D3EB839C97B742ACDD46181 /* Masonry-umbrella.h */,
+				3E2E2C2429DFEF17ECE2551B67908350 /* Masonry.debug.xcconfig */,
+				F1BAA839628848D414BD6B4125603D9E /* Masonry.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Masonry";
+			sourceTree = "<group>";
+		};
+		4F0554481F890F2F0BB4D0A6D092D488 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				9FF0BE6FE8F667CF0F278E6BAA6C7882 /* standard */,
+				D746FD578DB632B8FC74969D1EC36377 /* Support Files */,
+			);
+			name = FMDB;
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		7DC04CA53931E251520B08EF4E296791 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A436848721DD73737EBFC708E037CFBA /* TYPagerController.modulemap */,
+				CAB893DE2A28027BFBE5951AB8C73B24 /* TYPagerController-dummy.m */,
+				4D2D4DB32660484780BE581BEE1C3539 /* TYPagerController-Info.plist */,
+				0A748177D20450E5329CCBB06CF7DE28 /* TYPagerController-prefix.pch */,
+				F735EB46F4C8FF300E83A685807AF37A /* TYPagerController-umbrella.h */,
+				68F2A7ED1DC2ABB23BB5E82D06C8F761 /* TYPagerController.debug.xcconfig */,
+				522F196FD86756DDCC0AA97CF8697398 /* TYPagerController.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TYPagerController";
 			sourceTree = "<group>";
 		};
 		84500DE8FA3C1A04FB6C1A7869926382 /* iOS */ = {
@@ -395,45 +397,42 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		8C7B67A6E9093C5BF12EA2248E5FF312 /* Products */ = {
+		89BD096C5DEFA54F2090FB098E76954B /* MMDrawerBarButtonItem */ = {
 			isa = PBXGroup;
 			children = (
-				1FFED36A657123030ABB700256D73F15 /* Masonry */,
-				6C74481CBCB87684F62CB0E10BA4B66E /* MMDrawerController */,
-				CFC1A590675B1E148B54700FD1CB6508 /* Pods-Timi */,
-				E17A27C61C0D6057B87BE9B9FB822B29 /* TYPagerController */,
+				7F201CCA6BF681A7293BFFC64614516D /* MMDrawerBarButtonItem.h */,
+				BAC55905F01BF655D5F8A1D87C4ED54E /* MMDrawerBarButtonItem.m */,
 			);
-			name = Products;
+			name = MMDrawerBarButtonItem;
 			sourceTree = "<group>";
 		};
-		AD3BB4BBE0AAC95C0AD3C6644E18336B /* Support Files */ = {
+		9FF0BE6FE8F667CF0F278E6BAA6C7882 /* standard */ = {
 			isa = PBXGroup;
 			children = (
-				1686C8BE2EF5117B2D3F9BDF32CB1E10 /* Masonry.modulemap */,
-				B7F95CD775C3F24C005826CC4D49003E /* Masonry-dummy.m */,
-				265B2681DD2D0CDC0F6A8CC59B600961 /* Masonry-Info.plist */,
-				1F157655BE8C53D8B441F82BBB33958F /* Masonry-prefix.pch */,
-				EB6A9299F87266FFAA2D182FABF2543A /* Masonry-umbrella.h */,
-				D96703B38F3A0647C33A8D1B6167FF24 /* Masonry.debug.xcconfig */,
-				B5690DD7D76E060A1F48A824016E4891 /* Masonry.release.xcconfig */,
+				0D0A5B0AFEF230F3716CCE977B99512D /* FMDatabase.h */,
+				CB2F7980AC1CD13D63471FDC255CCC21 /* FMDatabase.m */,
+				197B6534EDF84FED5C5AB2F122DCA5B3 /* FMDatabaseAdditions.h */,
+				2CD586B64084300466ABF499048BF320 /* FMDatabaseAdditions.m */,
+				4C29D6AAA2C330A0D8419E56F931C3EF /* FMDatabasePool.h */,
+				FA510710C7F7FA504EE7BEEF5B50E31E /* FMDatabasePool.m */,
+				ADC053B38094331A95AF3CA74E3D1E67 /* FMDatabaseQueue.h */,
+				D6CD5E0540C4E3B9A539EE8CE119ACEC /* FMDatabaseQueue.m */,
+				7C8BB031B998BEBD0E192EBB13D4A208 /* FMDB.h */,
+				4AC5C419E9897AFAA34AB4AE22C55290 /* FMResultSet.h */,
+				FD2FB27D3815796284B0E6C2CE523EBF /* FMResultSet.m */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Masonry";
+			name = standard;
 			sourceTree = "<group>";
 		};
-		B7DCF41F80A194698DAD7545F1E442DB /* Support Files */ = {
+		BA8A4ACD733ED736BDC01C8749DF870B /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				83F5ECE96AC2912AAB85BF3B8211D228 /* MMDrawerController.modulemap */,
-				5EB9B4CF1D03F326F4D35BADCB9D666E /* MMDrawerController-dummy.m */,
-				60D4055F330C165B1D1422485E98DFB1 /* MMDrawerController-Info.plist */,
-				E383DBA028E04BC5A58EEED36687CE44 /* MMDrawerController-prefix.pch */,
-				39F7861913D8B9CB2206DE2D2108493B /* MMDrawerController-umbrella.h */,
-				C7085ED46DE48BB2F2609A337FF0B0C9 /* MMDrawerController.debug.xcconfig */,
-				DF784A446FCC573C82306A94F7EC2B12 /* MMDrawerController.release.xcconfig */,
+				B15E57EC20B0EBB3AA05934FDD6EC2FA /* MMDrawerController.h */,
+				F6DA2A570CA45D523ADA2C37A98C02AA /* MMDrawerController.m */,
+				1C1DE92922741982318F028C1D44BA4B /* UIViewController+MMDrawerController.h */,
+				3DD030C376AA39CC7CB0F88630DAAC3B /* UIViewController+MMDrawerController.m */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/MMDrawerController";
+			name = Core;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -441,10 +440,84 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
-				0E523FC43732F04898CF78F9389E54D8 /* Pods */,
-				8C7B67A6E9093C5BF12EA2248E5FF312 /* Products */,
+				28EA7981F5AEEB5B49318604ABDF3AA7 /* Pods */,
+				E1DAE65D319D692C22A9929731166869 /* Products */,
 				DC7F33C92409536A39DF36DFBD3BDAD5 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		D607D4A1C4FC7D97F5BC30BC3604F50A /* TYPagerController */ = {
+			isa = PBXGroup;
+			children = (
+				493E207771A15691DF839EC78D6445AD /* TYPagerController.h */,
+				F7FD6E4627ACDBFA3CB9F75823DF8ACA /* TYPagerController.m */,
+				3C0C33C06503CE40DB1FC92E4C5C4E85 /* TYPagerView.h */,
+				700677AC2628797C0588C5317DD9EB9B /* TYPagerView.m */,
+				DD880F27CC553D564F9F3C45A76862C5 /* TYPagerViewLayout.h */,
+				A5EB4223BB4BF4E9629D5F1447331CE2 /* TYPagerViewLayout.m */,
+				A61A98A0C8D9F6DEF45A6A5E9AEFCA3F /* TYTabPagerBar.h */,
+				E3F5F3AD710E930FBC4F3BF77C97CF4E /* TYTabPagerBar.m */,
+				5748ACA28C4B9A258F0E397A19F928D3 /* TYTabPagerBarCell.h */,
+				1C5EF8C39D77618FBBB3D4384AB867FF /* TYTabPagerBarCell.m */,
+				91AFD8817514A2912DC261A3005A7293 /* TYTabPagerBarLayout.h */,
+				4AC01557AD5B985170ADDE4301352780 /* TYTabPagerBarLayout.m */,
+				7AB4C5AD522DD568D5523FDF85702EC0 /* TYTabPagerController.h */,
+				F3095BA4A8B39DBEE4CAB2949D41B635 /* TYTabPagerController.m */,
+				F1392D9F4BF9D35F492BF45687B633AA /* TYTabPagerView.h */,
+				0DF06F6C94C0978112847D2E94B15FB3 /* TYTabPagerView.m */,
+				7DC04CA53931E251520B08EF4E296791 /* Support Files */,
+			);
+			name = TYPagerController;
+			path = TYPagerController;
+			sourceTree = "<group>";
+		};
+		D746FD578DB632B8FC74969D1EC36377 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				868EAABCB2E524AA9B80A122EB8A69C5 /* FMDB.modulemap */,
+				181C808A49495CABAF20558115046B17 /* FMDB-dummy.m */,
+				57D69029477DDD2BD229AE9E656CB909 /* FMDB-Info.plist */,
+				B1961AA9555A5D7EC4C58F9BD4E465A3 /* FMDB-prefix.pch */,
+				4934998579119A114D9F17F548BDEB90 /* FMDB-umbrella.h */,
+				8AAD729F535DF9192A41528EA51E81FF /* FMDB.debug.xcconfig */,
+				39C681954A60B24ABC7E12CBF1D00D90 /* FMDB.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FMDB";
+			sourceTree = "<group>";
+		};
+		D8BCC81D2962E94C0535054B38153941 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				B711B1D4EE716377EC4C1C9787DC6437 /* MASCompositeConstraint.h */,
+				B1E0E301E0A3D0958731416FD6EFEF0C /* MASCompositeConstraint.m */,
+				43DE0AA1FBF512E6E990A378AF017C86 /* MASConstraint.h */,
+				0C0946F7D40B040F17A4C1D6248CAEB2 /* MASConstraint.m */,
+				E1E8B353C83DB731B1D09F111FD3F288 /* MASConstraint+Private.h */,
+				B4ED22CA0D5C53C0F19FCE785F85408A /* MASConstraintMaker.h */,
+				081A79B39801F0BF464E06734C86FD37 /* MASConstraintMaker.m */,
+				5D6FBFB5B3D600493FA5FB9483033FD6 /* MASLayoutConstraint.h */,
+				DCCAB793A69DBAA84F82EB7E5AAB0D86 /* MASLayoutConstraint.m */,
+				8D57739D0BF1DE1AF733736B295992DD /* Masonry.h */,
+				6E76DFC3D3CDE8A5AE3445067733A039 /* MASUtilities.h */,
+				5E1FD23C11C919DD3D1E037147BE080F /* MASViewAttribute.h */,
+				F1B8D0DB3FA569C61244B0D40355ABE1 /* MASViewAttribute.m */,
+				BF97F98511A594F28BCE69FB493EA4B8 /* MASViewConstraint.h */,
+				BFBDE37DDC9CB6A434C79EC919675DC1 /* MASViewConstraint.m */,
+				EFC42107658E2A774F552A3AC8C4DC66 /* NSArray+MASAdditions.h */,
+				3BA90246B844AF0AB7B2D05F24786C03 /* NSArray+MASAdditions.m */,
+				23152AF04B8E9815379489E4A8C2BE51 /* NSArray+MASShorthandAdditions.h */,
+				B3353F89145B614417848FA31D5F4A37 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				513C18BDC61189751CDA3B860CF3550C /* NSLayoutConstraint+MASDebugAdditions.m */,
+				9799EF40F35A25DB9FB6D416BAA318E5 /* View+MASAdditions.h */,
+				C35D76CB68D4AA855E807B7FD75D4223 /* View+MASAdditions.m */,
+				96CD2088B0A08D3D0EDBE2CB8767A7A2 /* View+MASShorthandAdditions.h */,
+				7A0CFA546534548D733FF11576A159AB /* ViewController+MASAdditions.h */,
+				E7620597A936130DED46B6953443A0A9 /* ViewController+MASAdditions.m */,
+				42C21B62BD1C569821C68630E6A1F9DE /* Support Files */,
+			);
+			name = Masonry;
+			path = Masonry;
 			sourceTree = "<group>";
 		};
 		DC7F33C92409536A39DF36DFBD3BDAD5 /* Targets Support Files */ = {
@@ -455,9 +528,43 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		E1DAE65D319D692C22A9929731166869 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3A80BA70CFB7F75C5391BEBBBA8C9DA /* FMDB */,
+				1FFED36A657123030ABB700256D73F15 /* Masonry */,
+				6C74481CBCB87684F62CB0E10BA4B66E /* MMDrawerController */,
+				CFC1A590675B1E148B54700FD1CB6508 /* Pods-Timi */,
+				E17A27C61C0D6057B87BE9B9FB822B29 /* TYPagerController */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3DED5132FBBD42A360A014A47431B2A /* Subclass */ = {
+			isa = PBXGroup;
+			children = (
+				643D1EE4C26E249E091BD8300E1A1159 /* MMDrawerController+Subclass.h */,
+			);
+			name = Subclass;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		1D8E4317C43E801B146629D24251A1E5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3959A6F13D70E595F272F07FB8B00BD /* FMDatabase.h in Headers */,
+				24CA5241C775CE3C9E9DF46D10859EAA /* FMDatabaseAdditions.h in Headers */,
+				58D385B7DBB612B6A3A06EA670C015F1 /* FMDatabasePool.h in Headers */,
+				5F29492846530A428B1198F7A167EA91 /* FMDatabaseQueue.h in Headers */,
+				32B7E25EECD5D8CD154A0F6263A8EB4F /* FMDB.h in Headers */,
+				3EB06038EA8B2F16AA51FF27905876A7 /* FMDB-umbrella.h in Headers */,
+				8246D862087C7890593899AEA5898697 /* FMResultSet.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		99A8659D86DFD4C224D177332D003EDC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -481,11 +588,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DB6F7D9F5D55C89F9511B40253EB1FE2 /* Headers */ = {
+		BC027010C857C556E51B670EDD4BA3D1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B4D39D6284E966E195C8CA62AD907C1 /* Pods-Timi-umbrella.h in Headers */,
+				1D91E03CA22CDD784B6C9B0D746E3D27 /* Pods-Timi-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -541,23 +648,42 @@
 		};
 		7A248B2A9CC4F6D7A28FB787AA9DF94B /* Pods-Timi */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 38912223A588669E870BE79A531B3BF7 /* Build configuration list for PBXNativeTarget "Pods-Timi" */;
+			buildConfigurationList = 40880148324B747EF7C630C68E717601 /* Build configuration list for PBXNativeTarget "Pods-Timi" */;
 			buildPhases = (
-				DB6F7D9F5D55C89F9511B40253EB1FE2 /* Headers */,
-				791F426DBB006BF92536B377DFC277B6 /* Sources */,
-				A34DD6191AA972F2528580A6EB54801C /* Frameworks */,
-				9A102FDF9488268B2957E0694ABCE5F2 /* Resources */,
+				BC027010C857C556E51B670EDD4BA3D1 /* Headers */,
+				8CEF175C0488B5E0A7C59DE8E6CA32D2 /* Sources */,
+				1F761A39B220B463E3544A86584C51AB /* Frameworks */,
+				F4567EFCDCBFC6703C15C9DD7CEC697C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1700DE4F89C8D5CF18908127B85C46DB /* PBXTargetDependency */,
-				A7E116895D17033E96B7EFDC0FE56B27 /* PBXTargetDependency */,
-				E8EF1027437A5ADB0CE88CF96A4E88F3 /* PBXTargetDependency */,
+				5B92B5C538C91E13D096292E8F152B0D /* PBXTargetDependency */,
+				7F2072EF266F2B138EC7812DAAB2946C /* PBXTargetDependency */,
+				98B3960AA8BAACA6FC5A6DE976E9BD95 /* PBXTargetDependency */,
+				7E098B8ECD719CBA8D6E29866154F67B /* PBXTargetDependency */,
 			);
 			name = "Pods-Timi";
 			productName = Pods_Timi;
 			productReference = CFC1A590675B1E148B54700FD1CB6508 /* Pods-Timi */;
+			productType = "com.apple.product-type.framework";
+		};
+		8592E0E389D40AC17881400ADC67ABC0 /* FMDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69FA85BFF587E84927EC6224938E617F /* Build configuration list for PBXNativeTarget "FMDB" */;
+			buildPhases = (
+				1D8E4317C43E801B146629D24251A1E5 /* Headers */,
+				4A16EBB77E9792704EF119C3C0F5FF30 /* Sources */,
+				46CE7976A327A98FA11B937B79401E29 /* Frameworks */,
+				391A0FAA8EEAFC4A6C713A0DC407ABB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FMDB;
+			productName = FMDB;
+			productReference = A3A80BA70CFB7F75C5391BEBBBA8C9DA /* FMDB */;
 			productType = "com.apple.product-type.framework";
 		};
 		9F488B190830FB77035EF1E70DE82DA3 /* TYPagerController */ = {
@@ -614,10 +740,11 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 8C7B67A6E9093C5BF12EA2248E5FF312 /* Products */;
+			productRefGroup = E1DAE65D319D692C22A9929731166869 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				8592E0E389D40AC17881400ADC67ABC0 /* FMDB */,
 				55AF53E6C77A10ED4985E04D74A8878E /* Masonry */,
 				C7E4C2A7FC80BA612284F4B22564355F /* MMDrawerController */,
 				7A248B2A9CC4F6D7A28FB787AA9DF94B /* Pods-Timi */,
@@ -628,6 +755,13 @@
 
 /* Begin PBXResourcesBuildPhase section */
 		1D5C8E2B61B8E2CF285C62ACE94E4B2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		391A0FAA8EEAFC4A6C713A0DC407ABB7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -648,7 +782,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9A102FDF9488268B2957E0694ABCE5F2 /* Resources */ = {
+		F4567EFCDCBFC6703C15C9DD7CEC697C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -692,6 +826,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4A16EBB77E9792704EF119C3C0F5FF30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4585CF5705D4E00C8B158BE074FA1BF6 /* FMDatabase.m in Sources */,
+				EFBCD5F499464C4A8042EBCFAB4ACC1A /* FMDatabaseAdditions.m in Sources */,
+				73C10CDFEAC1F11878A7B3AD41B9907C /* FMDatabasePool.m in Sources */,
+				77BFEC0CB11BC106F2C8251E2E5D8578 /* FMDatabaseQueue.m in Sources */,
+				176F8093A462DA87177AE2DC38C74F3A /* FMDB-dummy.m in Sources */,
+				8FC5684C4684961A4B867842E66D7798 /* FMResultSet.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4A64072E052E933839779AF3FEBCF531 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -704,41 +851,47 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		791F426DBB006BF92536B377DFC277B6 /* Sources */ = {
+		8CEF175C0488B5E0A7C59DE8E6CA32D2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C256C84D93256799A9A8F31438BC634 /* Pods-Timi-dummy.m in Sources */,
+				04BB5C66CD757513F3C705EE26F588AA /* Pods-Timi-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1700DE4F89C8D5CF18908127B85C46DB /* PBXTargetDependency */ = {
+		5B92B5C538C91E13D096292E8F152B0D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = MMDrawerController;
-			target = C7E4C2A7FC80BA612284F4B22564355F /* MMDrawerController */;
-			targetProxy = 5A9CE40B92CFE15A2E38AAB40B0408AB /* PBXContainerItemProxy */;
+			name = FMDB;
+			target = 8592E0E389D40AC17881400ADC67ABC0 /* FMDB */;
+			targetProxy = 363E2DC972CAC085323458648B7F5769 /* PBXContainerItemProxy */;
 		};
-		A7E116895D17033E96B7EFDC0FE56B27 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Masonry;
-			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
-			targetProxy = AEC29D743C1E67557A2E3D6BEFBEF4EB /* PBXContainerItemProxy */;
-		};
-		E8EF1027437A5ADB0CE88CF96A4E88F3 /* PBXTargetDependency */ = {
+		7E098B8ECD719CBA8D6E29866154F67B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TYPagerController;
 			target = 9F488B190830FB77035EF1E70DE82DA3 /* TYPagerController */;
-			targetProxy = 5841D04E5CF1F65E223A1634E0629110 /* PBXContainerItemProxy */;
+			targetProxy = 3E29F7A49C67D5366FF884FE5262FB8C /* PBXContainerItemProxy */;
+		};
+		7F2072EF266F2B138EC7812DAAB2946C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MMDrawerController;
+			target = C7E4C2A7FC80BA612284F4B22564355F /* MMDrawerController */;
+			targetProxy = 9262DDD745A9E27D4ABCE314AB7CEB5D /* PBXContainerItemProxy */;
+		};
+		98B3960AA8BAACA6FC5A6DE976E9BD95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Masonry;
+			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
+			targetProxy = 9CBF51CC2AC206609F53E8BF281D8DA7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		00C2FEE612983D1B98999B808683C0E0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0FAF3C9D71083308BF33E9971A2BE1D9 /* TYPagerController.release.xcconfig */;
+			baseConfigurationReference = 522F196FD86756DDCC0AA97CF8697398 /* TYPagerController.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -836,7 +989,175 @@
 			};
 			name = Debug;
 		};
-		3C1AB6911793C6916D3A03759D54B0C3 /* Debug */ = {
+		45DAD911842B7D6515B7254D288B98D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 183FEFA2B4031563F4812ED16C403058 /* MMDrawerController.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MMDrawerController/MMDrawerController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MMDrawerController/MMDrawerController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MMDrawerController/MMDrawerController.modulemap";
+				PRODUCT_MODULE_NAME = MMDrawerController;
+				PRODUCT_NAME = MMDrawerController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		574336E93FEE5E80463961C3B5210418 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E2E2C2429DFEF17ECE2551B67908350 /* Masonry.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Masonry/Masonry-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Masonry/Masonry.modulemap";
+				PRODUCT_MODULE_NAME = Masonry;
+				PRODUCT_NAME = Masonry;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		77B9BFB6652FA6A57FFA61D3AF79D4EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39C681954A60B24ABC7E12CBF1D00D90 /* FMDB.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FMDB/FMDB-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FMDB/FMDB-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FMDB/FMDB.modulemap";
+				PRODUCT_MODULE_NAME = FMDB;
+				PRODUCT_NAME = FMDB;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7FD737DA317870F745569EA44C512FE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AAD729F535DF9192A41528EA51E81FF /* FMDB.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FMDB/FMDB-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FMDB/FMDB-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FMDB/FMDB.modulemap";
+				PRODUCT_MODULE_NAME = FMDB;
+				PRODUCT_NAME = FMDB;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		83A1CD5A0D744E6C5C16EB552F459A6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1BAA839628848D414BD6B4125603D9E /* Masonry.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Masonry/Masonry-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Masonry/Masonry.modulemap";
+				PRODUCT_MODULE_NAME = Masonry;
+				PRODUCT_NAME = Masonry;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8CCFE2C5C82AC00E36CA6736714EA380 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 13B272AFF1ED883E1C95B8EE8A554536 /* Pods-Timi.debug.xcconfig */;
 			buildSettings = {
@@ -871,144 +1192,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		45DAD911842B7D6515B7254D288B98D3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF784A446FCC573C82306A94F7EC2B12 /* MMDrawerController.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MMDrawerController/MMDrawerController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MMDrawerController/MMDrawerController-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/MMDrawerController/MMDrawerController.modulemap";
-				PRODUCT_MODULE_NAME = MMDrawerController;
-				PRODUCT_NAME = MMDrawerController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		4E0303DDDC4EBA8BC4646A6C9E7141A0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27D34639C3C83D23AC15B85BFCE83600 /* Pods-Timi.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Timi/Pods-Timi-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Timi/Pods-Timi.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		574336E93FEE5E80463961C3B5210418 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D96703B38F3A0647C33A8D1B6167FF24 /* Masonry.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Masonry/Masonry-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Masonry/Masonry.modulemap";
-				PRODUCT_MODULE_NAME = Masonry;
-				PRODUCT_NAME = Masonry;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		83A1CD5A0D744E6C5C16EB552F459A6A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B5690DD7D76E060A1F48A824016E4891 /* Masonry.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Masonry/Masonry-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Masonry/Masonry.modulemap";
-				PRODUCT_MODULE_NAME = Masonry;
-				PRODUCT_NAME = Masonry;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1074,7 +1257,7 @@
 		};
 		D451557474C00CA2CD61C6A531DB618F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 05D004F9617BAB4EA435AA4F59BB9A65 /* TYPagerController.debug.xcconfig */;
+			baseConfigurationReference = 68F2A7ED1DC2ABB23BB5E82D06C8F761 /* TYPagerController.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1105,9 +1288,46 @@
 			};
 			name = Debug;
 		};
+		DB8E3C4D5FA1867F6F6499384CED9E2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27D34639C3C83D23AC15B85BFCE83600 /* Pods-Timi.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Timi/Pods-Timi-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Timi/Pods-Timi.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		FDE26AA339E8577F8E91C651CC26C228 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7085ED46DE48BB2F2609A337FF0B0C9 /* MMDrawerController.debug.xcconfig */;
+			baseConfigurationReference = E16A99E2191E3CA9ED40DACA963851AE /* MMDrawerController.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1159,11 +1379,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		38912223A588669E870BE79A531B3BF7 /* Build configuration list for PBXNativeTarget "Pods-Timi" */ = {
+		40880148324B747EF7C630C68E717601 /* Build configuration list for PBXNativeTarget "Pods-Timi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3C1AB6911793C6916D3A03759D54B0C3 /* Debug */,
-				4E0303DDDC4EBA8BC4646A6C9E7141A0 /* Release */,
+				8CCFE2C5C82AC00E36CA6736714EA380 /* Debug */,
+				DB8E3C4D5FA1867F6F6499384CED9E2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1173,6 +1393,15 @@
 			buildConfigurations = (
 				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
 				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69FA85BFF587E84927EC6224938E617F /* Build configuration list for PBXNativeTarget "FMDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FD737DA317870F745569EA44C512FE4 /* Debug */,
+				77B9BFB6652FA6A57FFA61D3AF79D4EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

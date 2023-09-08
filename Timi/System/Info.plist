@@ -5,6 +5,7 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>AlimamaAgileVF-Thin.ttf</string>
+		<string>helvetica-neue-thin.ttf</string>
 	</array>
 </dict>
 </plist>

@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		33A122B56B7F30AE48747E73 /* Pods_Timi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42674F69973E7CA9EF620155 /* Pods_Timi.framework */; };
+		8453B3A62AA968A5005A4010 /* TMBillModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8453B3A52AA968A5005A4010 /* TMBillModel.m */; };
+		8453B3AA2AA96DCF005A4010 /* Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8453B3A92AA96DCF005A4010 /* Tool.m */; };
+		8453B3AE2AA977A8005A4010 /* UIView+Exention.m in Sources */ = {isa = PBXBuildFile; fileRef = 8453B3AD2AA977A8005A4010 /* UIView+Exention.m */; };
+		8453B3B02AA9C656005A4010 /* helvetica-neue-thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8453B3AF2AA9C656005A4010 /* helvetica-neue-thin.ttf */; };
 		848649602AA6CC6700438552 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8486495F2AA6CC6700438552 /* AppDelegate.m */; };
 		848649662AA6CC6700438552 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848649652AA6CC6700438552 /* ViewController.m */; };
 		848649692AA6CC6700438552 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848649672AA6CC6700438552 /* Main.storyboard */; };
@@ -25,14 +29,21 @@
 		848649B32AA8483C00438552 /* QZTimeLineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 848649B22AA8483C00438552 /* QZTimeLineCell.m */; };
 		848649B62AA86B5200438552 /* UNBorderLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 848649B52AA86B5200438552 /* UNBorderLabel.m */; };
 		848649BA2AA8761600438552 /* HomeTableInsertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 848649B92AA8761600438552 /* HomeTableInsertView.m */; };
-		848649BD2AA8792500438552 /* HomeTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 848649BC2AA8792500438552 /* HomeTableHeaderView.m */; };
 		848649BF2AA8867900438552 /* AlimamaAgileVF-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 848649BE2AA8867900438552 /* AlimamaAgileVF-Thin.ttf */; };
 		848649C32AA956F900438552 /* ReadMe.md in Resources */ = {isa = PBXBuildFile; fileRef = 848649C02AA956C100438552 /* ReadMe.md */; };
+		84E8D42B2AAAFBDB00DA1177 /* UIViewController+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E8D42A2AAAFBDB00DA1177 /* UIViewController+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		42674F69973E7CA9EF620155 /* Pods_Timi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Timi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DAD560ED84A320735A748D8 /* Pods-Timi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Timi.release.xcconfig"; path = "Target Support Files/Pods-Timi/Pods-Timi.release.xcconfig"; sourceTree = "<group>"; };
+		8453B3A42AA968A5005A4010 /* TMBillModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMBillModel.h; sourceTree = "<group>"; };
+		8453B3A52AA968A5005A4010 /* TMBillModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMBillModel.m; sourceTree = "<group>"; };
+		8453B3A82AA96DCF005A4010 /* Tool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tool.h; sourceTree = "<group>"; };
+		8453B3A92AA96DCF005A4010 /* Tool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tool.m; sourceTree = "<group>"; };
+		8453B3AC2AA97771005A4010 /* UIView+Exention.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Exention.h"; sourceTree = "<group>"; };
+		8453B3AD2AA977A8005A4010 /* UIView+Exention.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Exention.m"; sourceTree = "<group>"; };
+		8453B3AF2AA9C656005A4010 /* helvetica-neue-thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "helvetica-neue-thin.ttf"; sourceTree = "<group>"; };
 		8486495B2AA6CC6700438552 /* Timi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8486495E2AA6CC6700438552 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8486495F2AA6CC6700438552 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -68,10 +79,10 @@
 		848649B72AA86C2800438552 /* FontConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontConfig.h; sourceTree = "<group>"; };
 		848649B82AA8761600438552 /* HomeTableInsertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeTableInsertView.h; sourceTree = "<group>"; };
 		848649B92AA8761600438552 /* HomeTableInsertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeTableInsertView.m; sourceTree = "<group>"; };
-		848649BB2AA8792500438552 /* HomeTableHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeTableHeaderView.h; sourceTree = "<group>"; };
-		848649BC2AA8792500438552 /* HomeTableHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeTableHeaderView.m; sourceTree = "<group>"; };
 		848649BE2AA8867900438552 /* AlimamaAgileVF-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AlimamaAgileVF-Thin.ttf"; sourceTree = "<group>"; };
 		848649C02AA956C100438552 /* ReadMe.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
+		84E8D4292AAAFBDB00DA1177 /* UIViewController+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Extension.h"; sourceTree = "<group>"; };
+		84E8D42A2AAAFBDB00DA1177 /* UIViewController+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Extension.m"; sourceTree = "<group>"; };
 		CE2CFB13145DE35B4D34B352 /* Pods-Timi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Timi.debug.xcconfig"; path = "Target Support Files/Pods-Timi/Pods-Timi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +113,16 @@
 				42674F69973E7CA9EF620155 /* Pods_Timi.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8453B3A72AA96D87005A4010 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				84E8D42C2AAAFC5200DA1177 /* Extension */,
+				8453B3A82AA96DCF005A4010 /* Tool.h */,
+				8453B3A92AA96DCF005A4010 /* Tool.m */,
+			);
+			path = common;
 			sourceTree = "<group>";
 		};
 		848649522AA6CC6700438552 = {
@@ -149,6 +170,7 @@
 		8486497B2AA6F4B900438552 /* Utile */ = {
 			isa = PBXGroup;
 			children = (
+				8453B3A72AA96D87005A4010 /* common */,
 				848649862AA6FE3E00438552 /* private */,
 				8486497C2AA6F4E000438552 /* 3rdLib */,
 			);
@@ -176,6 +198,7 @@
 		848649812AA6F55B00438552 /* System */ = {
 			isa = PBXGroup;
 			children = (
+				8453B3AF2AA9C656005A4010 /* helvetica-neue-thin.ttf */,
 				848649BE2AA8867900438552 /* AlimamaAgileVF-Thin.ttf */,
 				848649642AA6CC6700438552 /* ViewController.h */,
 				848649652AA6CC6700438552 /* ViewController.m */,
@@ -231,16 +254,13 @@
 		8486498B2AA7018100438552 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				84E8D42D2AAB07D400DA1177 /* cell */,
 				848649AE2AA8448000438552 /* QZHomeHeaderView.h */,
 				848649AF2AA8448100438552 /* QZHomeHeaderView.m */,
-				848649B12AA8483C00438552 /* QZTimeLineCell.h */,
-				848649B22AA8483C00438552 /* QZTimeLineCell.m */,
 				848649B42AA86B5200438552 /* UNBorderLabel.h */,
 				848649B52AA86B5200438552 /* UNBorderLabel.m */,
 				848649B82AA8761600438552 /* HomeTableInsertView.h */,
 				848649B92AA8761600438552 /* HomeTableInsertView.m */,
-				848649BB2AA8792500438552 /* HomeTableHeaderView.h */,
-				848649BC2AA8792500438552 /* HomeTableHeaderView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -248,6 +268,8 @@
 		8486498C2AA7018A00438552 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8453B3A42AA968A5005A4010 /* TMBillModel.h */,
+				8453B3A52AA968A5005A4010 /* TMBillModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -351,6 +373,26 @@
 			path = model;
 			sourceTree = "<group>";
 		};
+		84E8D42C2AAAFC5200DA1177 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8453B3AC2AA97771005A4010 /* UIView+Exention.h */,
+				8453B3AD2AA977A8005A4010 /* UIView+Exention.m */,
+				84E8D4292AAAFBDB00DA1177 /* UIViewController+Extension.h */,
+				84E8D42A2AAAFBDB00DA1177 /* UIViewController+Extension.m */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		84E8D42D2AAB07D400DA1177 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				848649B12AA8483C00438552 /* QZTimeLineCell.h */,
+				848649B22AA8483C00438552 /* QZTimeLineCell.m */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -412,6 +454,7 @@
 			files = (
 				8486496E2AA6CC6800438552 /* LaunchScreen.storyboard in Resources */,
 				8486496B2AA6CC6800438552 /* Assets.xcassets in Resources */,
+				8453B3B02AA9C656005A4010 /* helvetica-neue-thin.ttf in Resources */,
 				848649C32AA956F900438552 /* ReadMe.md in Resources */,
 				848649692AA6CC6700438552 /* Main.storyboard in Resources */,
 				848649BF2AA8867900438552 /* AlimamaAgileVF-Thin.ttf in Resources */,
@@ -472,6 +515,7 @@
 				848649AD2AA82F6300438552 /* AccountBookVC.m in Sources */,
 				8486497A2AA6F15900438552 /* BaseNavigationController.m in Sources */,
 				848649662AA6CC6700438552 /* ViewController.m in Sources */,
+				8453B3AA2AA96DCF005A4010 /* Tool.m in Sources */,
 				848649B32AA8483C00438552 /* QZTimeLineCell.m in Sources */,
 				8486499D2AA702C900438552 /* MineViewController.m in Sources */,
 				848649602AA6CC6700438552 /* AppDelegate.m in Sources */,
@@ -480,8 +524,10 @@
 				848649852AA6FDA600438552 /* BaseTabBarController.m in Sources */,
 				848649BA2AA8761600438552 /* HomeTableInsertView.m in Sources */,
 				8486498F2AA701CD00438552 /* HomeViewController.m in Sources */,
+				8453B3AE2AA977A8005A4010 /* UIView+Exention.m in Sources */,
+				8453B3A62AA968A5005A4010 /* TMBillModel.m in Sources */,
 				8486497F2AA6F4E000438552 /* UIColor+UIColor_hexString.m in Sources */,
-				848649BD2AA8792500438552 /* HomeTableHeaderView.m in Sources */,
+				84E8D42B2AAAFBDB00DA1177 /* UIViewController+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -632,8 +678,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -641,8 +688,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rongban.Timi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -661,8 +711,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -670,8 +721,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rongban.Timi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
