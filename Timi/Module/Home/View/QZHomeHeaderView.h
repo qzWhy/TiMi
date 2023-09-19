@@ -11,6 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface QZHomeHeaderView : UIView
 
+@property (nonatomic, copy) void(^addBtnClickBlock)(void);
 @property (nonatomic, strong) UIImageView *plusImgView;
 
 @end

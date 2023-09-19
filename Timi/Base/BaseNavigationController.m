@@ -18,6 +18,23 @@
     [self configNavigationBar];
 }
 
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    // 如果不是根控制器, 就有返回按钮
+    if (self.viewControllers.count > 0) {
+        viewController.hidesBottomBarWhenPushed = YES;
+        self.navigationBar.topItem.backBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
+    }
+    
+    if (self.viewControllers.count == 1) {
+      viewController.hidesBottomBarWhenPushed = YES;
+    } else {
+      viewController.hidesBottomBarWhenPushed = NO;
+    }
+    
+    [super pushViewController:viewController animated:animated];
+}
+
+
 /**
  这个方法一旦设置就不能更改。慎用
  */

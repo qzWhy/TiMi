@@ -11,6 +11,9 @@
 #import "MineViewController.h"
 #import "BaseNavigationController.h"
 #import <MMDrawerController/MMDrawerController.h>
+
+#import "ContainerViewController.h"
+
 #import "AccountBookVC.h"
 @interface BaseTabBarController ()
 
@@ -33,7 +36,11 @@
     BaseNavigationController *accNav = [[BaseNavigationController alloc] initWithRootViewController:vc];
     HomeViewController *home = [HomeViewController new];
     BaseNavigationController *HomeNav = [[BaseNavigationController alloc] initWithRootViewController:home];
-    MMDrawerController *drawerController = [[MMDrawerController alloc] initWithCenterViewController:HomeNav leftDrawerViewController:accNav];
+    
+    ContainerViewController *drawerController = [[ContainerViewController alloc] initWithCenterViewController:HomeNav leftDrawerViewController:accNav];
+    AppDelegate *app = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    app.baseVC = drawerController;
+//    MMDrawerController *drawerController = [[MMDrawerController alloc] initWithCenterViewController:HomeNav leftDrawerViewController:accNav];
     /** 设置打开/关闭抽屉的手势 */
     drawerController.openDrawerGestureModeMask = MMOpenDrawerGestureModeAll;
     drawerController.closeDrawerGestureModeMask = MMCloseDrawerGestureModeAll;
@@ -43,6 +50,7 @@
     drawerController.title = @"首页";
     [drawerController.tabBarItem setImage:[[UIImage imageNamed:@"jizhang-unselected"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     [drawerController.tabBarItem setSelectedImage:[[UIImage imageNamed:@"jizhang"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    BaseNavigationController *drawerNav = [[BaseNavigationController alloc] initWithRootViewController:drawerController];
     
     
     ShopViewController *shop = [ShopViewController new];
@@ -58,7 +66,7 @@
     [mine.tabBarItem setSelectedImage:[[UIImage imageNamed:@"wode"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     BaseNavigationController *mineNavig = [[BaseNavigationController alloc] initWithRootViewController:mine];
     
-    self.viewControllers = @[drawerController,shopNavig,mineNavig];
+    self.viewControllers = @[drawerNav,shopNavig,mineNavig];
 }
 
 @end

@@ -6,7 +6,7 @@
 //
 
 #import "ShopViewController.h"
-
+#import "AddItemViewController.h"
 @interface ShopViewController ()
 
 @end
@@ -16,8 +16,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = QZColorRandom;
+    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 40)];
+    btn.backgroundColor = [UIColor greenColor];
+    [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+    
 }
-
+- (void)btnClick {
+    AddItemViewController *vc = [AddItemViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 /*
 #pragma mark - Navigation
 

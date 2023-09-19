@@ -5,11 +5,10 @@
 //  Created by rongbang on 2023/9/6.
 //
 
-#import <UIKit/UIKit.h>
-
+#import <MMDrawerController/MMDrawerController.h>
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AccountBookVC : UIViewController
+@interface AccountBookVC : MMDrawerController
 
 @end
 

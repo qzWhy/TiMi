@@ -90,6 +90,18 @@
     [UIView drawCircleWithView:self.plusView corner:100];
 }
 
+- (void)rotate {
+    [self.plusImgView.layer setAnchorPoint:CGPointMake(0.5, 0.5)];
+    [self.plusImgView.layer setTransform:CATransform3DMakeRotation(0, 0, 0, 1)];
+    [UIView animateWithDuration:0.5 animations:^{
+        [self.plusImgView.layer setTransform:CATransform3DMakeRotation(M_PI_2, 0, 0, 1)];
+    } completion:^(BOOL finished) {
+        if (self.addBtnClickBlock) {
+            self.addBtnClickBlock();
+        }
+    }];
+}
+
 #pragma mark - 懒加载
 - (UIImageView *)bgImageView {
     if (!_bgImageView) {
@@ -102,6 +114,7 @@
     if (!_plusImgView) {
         _plusImgView = [UIImageView new];
         _plusImgView.image = [UIImage imageNamed:@"type_add"];
+        _plusImgView.userInteractionEnabled = YES;
     }
     return _plusImgView;
 }
@@ -109,6 +122,10 @@
     if (!_plusView) {
         _plusView = [UIView new];
         _plusView.backgroundColor = UIColor.whiteColor;
+        __weak typeof(self)weakSelf = self;
+        [_plusView addTapGestureRecognizerWithBlock:^(UIGestureRecognizer *gestureRecognizer) {
+            [weakSelf rotate];
+        }];
     }
     return _plusView;
 }

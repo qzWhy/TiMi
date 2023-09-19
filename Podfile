@@ -8,5 +8,7 @@ pod 'Masonry'
 pod 'MMDrawerController'
 pod 'TYPagerController'
 pod 'FMDB'
+pod 'HHTransition'
+pod 'JXCategoryView'
 
 end

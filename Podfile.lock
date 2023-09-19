@@ -2,6 +2,8 @@ PODS:
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
+  - HHTransition (3.1.2)
+  - JXCategoryView (1.6.1)
   - Masonry (1.1.0)
   - MMDrawerController (0.6.0):
     - MMDrawerController/Core (= 0.6.0)
@@ -19,6 +21,8 @@ PODS:
 
 DEPENDENCIES:
   - FMDB
+  - HHTransition
+  - JXCategoryView
   - Masonry
   - MMDrawerController
   - TYPagerController
@@ -26,16 +30,20 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - FMDB
+    - HHTransition
+    - JXCategoryView
     - Masonry
     - MMDrawerController
     - TYPagerController
 
 SPEC CHECKSUMS:
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  HHTransition: 67c1bc632c4838e4eb28f07b9be1b927362ae07d
+  JXCategoryView: 7b1ee69ede4843c581688afe84d0f047723262f2
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MMDrawerController: e3a54a5570388463ad3b36975251575b50c4e1a0
   TYPagerController: 262556ecef99986d26ed77fb1288a198ed42f4af
 
-PODFILE CHECKSUM: 294baf5f1d7831c22449d58473d312433b1b92b2
+PODFILE CHECKSUM: 919527dd57e9ab710e11e98750d7118ebf50584c
 
 COCOAPODS: 1.12.1

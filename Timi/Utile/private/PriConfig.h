@@ -66,4 +66,10 @@ NO)
 
 #define STR(str) [Tool isBlankString:str] ? @"" : str
 
+
+#define STATUSHEIGHT [UIApplication.sharedApplication.keyWindow qz_safeStatusHeight]
+
+#define SAFEBOTTOMHEIGHT [UIApplication.sharedApplication.keyWindow qz_safeBottomHeight]
+
+#define weakself(self) __weak __typeof(self) weakSelf = self
 #endif /* PriConfig_h */

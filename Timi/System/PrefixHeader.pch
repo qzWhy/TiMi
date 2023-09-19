@@ -15,7 +15,9 @@
 #import "UIViewController+Extension.h"
 #import "PriConfig.h"
 #import <Masonry/Masonry.h>
-
+#import "UIView+Tap.h"
+#import "AppDelegate.h"
+#import "UIWindow+QZSafeArea.h"
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 

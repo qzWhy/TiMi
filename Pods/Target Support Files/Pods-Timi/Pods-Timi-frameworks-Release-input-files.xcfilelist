@@ -1,5 +1,7 @@
 ${PODS_ROOT}/Target Support Files/Pods-Timi/Pods-Timi-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework
+${BUILT_PRODUCTS_DIR}/HHTransition/HHTransition.framework
+${BUILT_PRODUCTS_DIR}/JXCategoryView/JXCategoryView.framework
 ${BUILT_PRODUCTS_DIR}/MMDrawerController/MMDrawerController.framework
 ${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework
 ${BUILT_PRODUCTS_DIR}/TYPagerController/TYPagerController.framework

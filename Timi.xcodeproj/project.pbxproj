@@ -12,6 +12,8 @@
 		8453B3AA2AA96DCF005A4010 /* Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8453B3A92AA96DCF005A4010 /* Tool.m */; };
 		8453B3AE2AA977A8005A4010 /* UIView+Exention.m in Sources */ = {isa = PBXBuildFile; fileRef = 8453B3AD2AA977A8005A4010 /* UIView+Exention.m */; };
 		8453B3B02AA9C656005A4010 /* helvetica-neue-thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8453B3AF2AA9C656005A4010 /* helvetica-neue-thin.ttf */; };
+		847E62BE2AB13D89008437B7 /* UIView+Tap.m in Sources */ = {isa = PBXBuildFile; fileRef = 847E62BC2AB13D89008437B7 /* UIView+Tap.m */; };
+		847E62C52AB14F4D008437B7 /* AddItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847E62C42AB14F4D008437B7 /* AddItemViewController.m */; };
 		848649602AA6CC6700438552 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8486495F2AA6CC6700438552 /* AppDelegate.m */; };
 		848649662AA6CC6700438552 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848649652AA6CC6700438552 /* ViewController.m */; };
 		848649692AA6CC6700438552 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848649672AA6CC6700438552 /* Main.storyboard */; };
@@ -31,6 +33,14 @@
 		848649BA2AA8761600438552 /* HomeTableInsertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 848649B92AA8761600438552 /* HomeTableInsertView.m */; };
 		848649BF2AA8867900438552 /* AlimamaAgileVF-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 848649BE2AA8867900438552 /* AlimamaAgileVF-Thin.ttf */; };
 		848649C32AA956F900438552 /* ReadMe.md in Resources */ = {isa = PBXBuildFile; fileRef = 848649C02AA956C100438552 /* ReadMe.md */; };
+		84D1062C2AB81B4300F816AB /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D1062B2AB81B4300F816AB /* ContainerViewController.m */; };
+		84D106322AB839E800F816AB /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D1062E2AB839E800F816AB /* ListViewController.m */; };
+		84D106332AB839E800F816AB /* ContentBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D1062F2AB839E800F816AB /* ContentBaseViewController.m */; };
+		84D106362AB83A5500F816AB /* IncomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D106352AB83A5500F816AB /* IncomeViewController.m */; };
+		84D106392AB83AAF00F816AB /* ExpenditureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D106382AB83AAF00F816AB /* ExpenditureViewController.m */; };
+		84D1063C2AB8461600F816AB /* UIWindow+QZSafeArea.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D1063B2AB8461600F816AB /* UIWindow+QZSafeArea.m */; };
+		84D1063F2AB84C5500F816AB /* TopItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D1063E2AB84C5500F816AB /* TopItemView.m */; };
+		84D106422AB855C400F816AB /* MyKeyBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D106412AB855C400F816AB /* MyKeyBoardView.m */; };
 		84E8D42B2AAAFBDB00DA1177 /* UIViewController+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E8D42A2AAAFBDB00DA1177 /* UIViewController+Extension.m */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +54,10 @@
 		8453B3AC2AA97771005A4010 /* UIView+Exention.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Exention.h"; sourceTree = "<group>"; };
 		8453B3AD2AA977A8005A4010 /* UIView+Exention.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Exention.m"; sourceTree = "<group>"; };
 		8453B3AF2AA9C656005A4010 /* helvetica-neue-thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "helvetica-neue-thin.ttf"; sourceTree = "<group>"; };
+		847E62BC2AB13D89008437B7 /* UIView+Tap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Tap.m"; sourceTree = "<group>"; };
+		847E62BD2AB13D89008437B7 /* UIView+Tap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Tap.h"; sourceTree = "<group>"; };
+		847E62C32AB14F4D008437B7 /* AddItemViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddItemViewController.h; sourceTree = "<group>"; };
+		847E62C42AB14F4D008437B7 /* AddItemViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddItemViewController.m; sourceTree = "<group>"; };
 		8486495B2AA6CC6700438552 /* Timi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8486495E2AA6CC6700438552 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8486495F2AA6CC6700438552 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -81,6 +95,22 @@
 		848649B92AA8761600438552 /* HomeTableInsertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeTableInsertView.m; sourceTree = "<group>"; };
 		848649BE2AA8867900438552 /* AlimamaAgileVF-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AlimamaAgileVF-Thin.ttf"; sourceTree = "<group>"; };
 		848649C02AA956C100438552 /* ReadMe.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
+		84D1062A2AB81B4300F816AB /* ContainerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContainerViewController.h; sourceTree = "<group>"; };
+		84D1062B2AB81B4300F816AB /* ContainerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContainerViewController.m; sourceTree = "<group>"; };
+		84D1062E2AB839E800F816AB /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		84D1062F2AB839E800F816AB /* ContentBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentBaseViewController.m; sourceTree = "<group>"; };
+		84D106302AB839E800F816AB /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		84D106312AB839E800F816AB /* ContentBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentBaseViewController.h; sourceTree = "<group>"; };
+		84D106342AB83A5500F816AB /* IncomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IncomeViewController.h; sourceTree = "<group>"; };
+		84D106352AB83A5500F816AB /* IncomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IncomeViewController.m; sourceTree = "<group>"; };
+		84D106372AB83AAF00F816AB /* ExpenditureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExpenditureViewController.h; sourceTree = "<group>"; };
+		84D106382AB83AAF00F816AB /* ExpenditureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExpenditureViewController.m; sourceTree = "<group>"; };
+		84D1063A2AB8461600F816AB /* UIWindow+QZSafeArea.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIWindow+QZSafeArea.h"; sourceTree = "<group>"; };
+		84D1063B2AB8461600F816AB /* UIWindow+QZSafeArea.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+QZSafeArea.m"; sourceTree = "<group>"; };
+		84D1063D2AB84C5500F816AB /* TopItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopItemView.h; sourceTree = "<group>"; };
+		84D1063E2AB84C5500F816AB /* TopItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopItemView.m; sourceTree = "<group>"; };
+		84D106402AB855C400F816AB /* MyKeyBoardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyKeyBoardView.h; sourceTree = "<group>"; };
+		84D106412AB855C400F816AB /* MyKeyBoardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyKeyBoardView.m; sourceTree = "<group>"; };
 		84E8D4292AAAFBDB00DA1177 /* UIViewController+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Extension.h"; sourceTree = "<group>"; };
 		84E8D42A2AAAFBDB00DA1177 /* UIViewController+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Extension.m"; sourceTree = "<group>"; };
 		CE2CFB13145DE35B4D34B352 /* Pods-Timi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Timi.debug.xcconfig"; path = "Target Support Files/Pods-Timi/Pods-Timi.debug.xcconfig"; sourceTree = "<group>"; };
@@ -123,6 +153,48 @@
 				8453B3A92AA96DCF005A4010 /* Tool.m */,
 			);
 			path = common;
+			sourceTree = "<group>";
+		};
+		847E62BF2AB14EF5008437B7 /* 收入支出 */ = {
+			isa = PBXGroup;
+			children = (
+				84D1062D2AB839E800F816AB /* Base */,
+				847E62C22AB14F0F008437B7 /* model */,
+				847E62C12AB14F08008437B7 /* view */,
+				847E62C02AB14F01008437B7 /* controller */,
+			);
+			path = "收入支出";
+			sourceTree = "<group>";
+		};
+		847E62C02AB14F01008437B7 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				847E62C32AB14F4D008437B7 /* AddItemViewController.h */,
+				847E62C42AB14F4D008437B7 /* AddItemViewController.m */,
+				84D106342AB83A5500F816AB /* IncomeViewController.h */,
+				84D106352AB83A5500F816AB /* IncomeViewController.m */,
+				84D106372AB83AAF00F816AB /* ExpenditureViewController.h */,
+				84D106382AB83AAF00F816AB /* ExpenditureViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		847E62C12AB14F08008437B7 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				84D1063D2AB84C5500F816AB /* TopItemView.h */,
+				84D1063E2AB84C5500F816AB /* TopItemView.m */,
+				84D106402AB855C400F816AB /* MyKeyBoardView.h */,
+				84D106412AB855C400F816AB /* MyKeyBoardView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		847E62C22AB14F0F008437B7 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		848649522AA6CC6700438552 = {
@@ -234,6 +306,7 @@
 		848649892AA7017100438552 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				847E62BF2AB14EF5008437B7 /* 收入支出 */,
 				848649A72AA82F0F00438552 /* 账本 */,
 				8486498C2AA7018A00438552 /* Model */,
 				8486498B2AA7018100438552 /* View */,
@@ -247,6 +320,8 @@
 			children = (
 				8486498D2AA701CD00438552 /* HomeViewController.h */,
 				8486498E2AA701CD00438552 /* HomeViewController.m */,
+				84D1062A2AB81B4300F816AB /* ContainerViewController.h */,
+				84D1062B2AB81B4300F816AB /* ContainerViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -373,13 +448,28 @@
 			path = model;
 			sourceTree = "<group>";
 		};
+		84D1062D2AB839E800F816AB /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				84D106302AB839E800F816AB /* ListViewController.h */,
+				84D1062E2AB839E800F816AB /* ListViewController.m */,
+				84D106312AB839E800F816AB /* ContentBaseViewController.h */,
+				84D1062F2AB839E800F816AB /* ContentBaseViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		84E8D42C2AAAFC5200DA1177 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				847E62BD2AB13D89008437B7 /* UIView+Tap.h */,
+				847E62BC2AB13D89008437B7 /* UIView+Tap.m */,
 				8453B3AC2AA97771005A4010 /* UIView+Exention.h */,
 				8453B3AD2AA977A8005A4010 /* UIView+Exention.m */,
 				84E8D4292AAAFBDB00DA1177 /* UIViewController+Extension.h */,
 				84E8D42A2AAAFBDB00DA1177 /* UIViewController+Extension.m */,
+				84D1063A2AB8461600F816AB /* UIWindow+QZSafeArea.h */,
+				84D1063B2AB8461600F816AB /* UIWindow+QZSafeArea.m */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -511,7 +601,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				848649962AA7027300438552 /* ShopViewController.m in Sources */,
+				84D1063C2AB8461600F816AB /* UIWindow+QZSafeArea.m in Sources */,
 				848649B02AA8448100438552 /* QZHomeHeaderView.m in Sources */,
+				84D106322AB839E800F816AB /* ListViewController.m in Sources */,
+				84D1062C2AB81B4300F816AB /* ContainerViewController.m in Sources */,
 				848649AD2AA82F6300438552 /* AccountBookVC.m in Sources */,
 				8486497A2AA6F15900438552 /* BaseNavigationController.m in Sources */,
 				848649662AA6CC6700438552 /* ViewController.m in Sources */,
@@ -519,15 +612,22 @@
 				848649B32AA8483C00438552 /* QZTimeLineCell.m in Sources */,
 				8486499D2AA702C900438552 /* MineViewController.m in Sources */,
 				848649602AA6CC6700438552 /* AppDelegate.m in Sources */,
+				84D106362AB83A5500F816AB /* IncomeViewController.m in Sources */,
 				848649B62AA86B5200438552 /* UNBorderLabel.m in Sources */,
+				84D1063F2AB84C5500F816AB /* TopItemView.m in Sources */,
 				848649712AA6CC6800438552 /* main.m in Sources */,
+				84D106392AB83AAF00F816AB /* ExpenditureViewController.m in Sources */,
+				84D106422AB855C400F816AB /* MyKeyBoardView.m in Sources */,
 				848649852AA6FDA600438552 /* BaseTabBarController.m in Sources */,
 				848649BA2AA8761600438552 /* HomeTableInsertView.m in Sources */,
+				84D106332AB839E800F816AB /* ContentBaseViewController.m in Sources */,
+				847E62C52AB14F4D008437B7 /* AddItemViewController.m in Sources */,
 				8486498F2AA701CD00438552 /* HomeViewController.m in Sources */,
 				8453B3AE2AA977A8005A4010 /* UIView+Exention.m in Sources */,
 				8453B3A62AA968A5005A4010 /* TMBillModel.m in Sources */,
 				8486497F2AA6F4E000438552 /* UIColor+UIColor_hexString.m in Sources */,
 				84E8D42B2AAAFBDB00DA1177 /* UIViewController+Extension.m in Sources */,
+				847E62BE2AB13D89008437B7 /* UIView+Tap.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

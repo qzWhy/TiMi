@@ -20,4 +20,15 @@
 #define ALIFont14 [UIFont fontWithName:@"Alimama Agile VF" size:14]
 #define ALIFont16 [UIFont fontWithName:@"Alimama Agile VF" size:16]
 #define ALIFont18 [UIFont fontWithName:@"Alimama Agile VF" size:18]
+#define ALIFont20 [UIFont fontWithName:@"Alimama Agile VF" size:20]
+#define ALIFont25 [UIFont fontWithName:@"Alimama Agile VF" size:25]
+
+#define NeueFont14 [UIFont fontWithName:@"Helvetica Neue" size:14];
+#define NeueFont16 [UIFont fontWithName:@"Helvetica Neue" size:16];
+#define NeueFont18 [UIFont fontWithName:@"Helvetica Neue" size:18];
+#define NeueFont20 [UIFont fontWithName:@"Helvetica Neue" size:20];
+#define NeueFont25 [UIFont fontWithName:@"Helvetica Neue" size:25];
+#define NeueFont30 [UIFont fontWithName:@"Helvetica Neue" size:30];
+#define TextColor [UIColor colorWithHexString:@"#333333"]
+//HelveticaNeue
 #endif /* FontConfig_h */
