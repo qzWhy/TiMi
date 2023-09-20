@@ -22,7 +22,7 @@
     [self.view addSubview:self.btmView];
     [_btmView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.bottom.mas_equalTo(0);
-        make.height.mas_equalTo(UNScreenWidth * 0.5 + SAFEBOTTOMHEIGHT);
+        make.height.mas_equalTo(UNScreenWidth * 0.625 + SAFEBOTTOMHEIGHT);
     }];
     [_topView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.left.right.mas_equalTo(0);
@@ -43,9 +43,12 @@
         weakself(self);
         _btmView.numberClickBackBlock = ^(NSString * _Nonnull str, BOOL isOK) {
             if (isOK) {
-                [self dismissViewControllerAnimated:YES completion:nil];
+                [weakSelf dismissViewControllerAnimated:YES completion:nil];
             }
             weakSelf.topView.str = str;
+        };
+        _btmView.btnClickBlock = ^(NSInteger tag) {
+            NSLog(@"---->%ld",tag);
         };
     }
     return _btmView;

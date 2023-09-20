@@ -6,6 +6,7 @@
 //
 
 #import "MyKeyBoardView.h"
+#import "ToolBarView.h"
 
 typedef NS_ENUM(NSUInteger, QZKeyBoardOpreateKey) {
     QZKeyBoardOpreateKeyNone = 0,
@@ -31,10 +32,21 @@ typedef NS_ENUM(NSUInteger, QZKeyBoardOpreateKey) {
 /**操作键 + 或 -**/
 @property (nonatomic, copy) NSString *opreateKeyStr;
 
+@property (nonatomic, strong) ToolBarView *toolBarView;
+
 @end
 
 @implementation MyKeyBoardView
-
+- (ToolBarView *)toolBarView {
+    if (!_toolBarView) {
+        _toolBarView = [ToolBarView new];
+        weakself(self);
+        _toolBarView.btnClickBlock = ^(NSInteger tag) {
+            [weakSelf toolbarClickWithTag:tag];
+        };
+    }
+    return _toolBarView;
+}
 - (NSMutableArray *)dataArray {
     if (!_dataArray) {
         _dataArray = [NSMutableArray array];
@@ -59,15 +71,23 @@ typedef NS_ENUM(NSUInteger, QZKeyBoardOpreateKey) {
 }
 
 - (void)setupUI {
+    self.backgroundColor = [UIColor colorWithHexString:@"EBEBEB"];
     CGFloat width = (UNScreenWidth - 2)/4;
     CGFloat height = width / 2;
+    [self addSubview:self.toolBarView];
+    [_toolBarView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(0);
+        make.height.mas_equalTo(height);
+        make.left.right.mas_equalTo(0);
+    }];
+    
     self.contentStr = @"";
     self.dealStr = @"";
     self.resultNum = 0;
     for (int i = 0; i < self.numbers.count; i++) {
         CGFloat row = i % 4;
         CGFloat line = i / 4;
-        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(row *width, height *line, width, height)];
+        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(row *width, height + height *line, width, height)];
         label.userInteractionEnabled = YES;
         [label addTapGestureRecognizerWithBlock:^(UIGestureRecognizer *gestureRecognizer) {
             [self myNumberHadBeClick:self.numbers[i]];
@@ -89,6 +109,13 @@ typedef NS_ENUM(NSUInteger, QZKeyBoardOpreateKey) {
         label.backgroundColor = [UIColor colorWithHexString:@"EBEBEB"];
         [self addSubview:label];
         [self.dataArray addObject:label];
+    }
+    
+    
+}
+- (void)toolbarClickWithTag:(NSInteger)tag {
+    if (self.btnClickBlock) {
+        self.btnClickBlock(tag);
     }
 }
 

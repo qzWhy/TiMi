@@ -12,7 +12,9 @@
         1.1 将.ttf文件拖入项目中
         1.2 在plist文件中添加Fonts provided by application数组
         1.3 在数组下添加一个item将拖入的文件名写入到value记得后缀.ttf
-
+二、收支
+    添加计算器功能（复杂的逻辑）
+    新加转场效果
 解决手势冲突：
 要遵循手势代理
 - (BOOL)gestureRecognizer:(UIGestureRecognizer*)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {

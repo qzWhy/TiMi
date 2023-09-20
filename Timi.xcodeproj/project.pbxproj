@@ -41,6 +41,7 @@
 		84D1063C2AB8461600F816AB /* UIWindow+QZSafeArea.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D1063B2AB8461600F816AB /* UIWindow+QZSafeArea.m */; };
 		84D1063F2AB84C5500F816AB /* TopItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D1063E2AB84C5500F816AB /* TopItemView.m */; };
 		84D106422AB855C400F816AB /* MyKeyBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D106412AB855C400F816AB /* MyKeyBoardView.m */; };
+		84D106452AB9923100F816AB /* ToolBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D106442AB9923100F816AB /* ToolBarView.m */; };
 		84E8D42B2AAAFBDB00DA1177 /* UIViewController+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E8D42A2AAAFBDB00DA1177 /* UIViewController+Extension.m */; };
 /* End PBXBuildFile section */
 
@@ -111,6 +112,8 @@
 		84D1063E2AB84C5500F816AB /* TopItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopItemView.m; sourceTree = "<group>"; };
 		84D106402AB855C400F816AB /* MyKeyBoardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyKeyBoardView.h; sourceTree = "<group>"; };
 		84D106412AB855C400F816AB /* MyKeyBoardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyKeyBoardView.m; sourceTree = "<group>"; };
+		84D106432AB9923100F816AB /* ToolBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolBarView.h; sourceTree = "<group>"; };
+		84D106442AB9923100F816AB /* ToolBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolBarView.m; sourceTree = "<group>"; };
 		84E8D4292AAAFBDB00DA1177 /* UIViewController+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Extension.h"; sourceTree = "<group>"; };
 		84E8D42A2AAAFBDB00DA1177 /* UIViewController+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Extension.m"; sourceTree = "<group>"; };
 		CE2CFB13145DE35B4D34B352 /* Pods-Timi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Timi.debug.xcconfig"; path = "Target Support Files/Pods-Timi/Pods-Timi.debug.xcconfig"; sourceTree = "<group>"; };
@@ -186,6 +189,8 @@
 				84D1063E2AB84C5500F816AB /* TopItemView.m */,
 				84D106402AB855C400F816AB /* MyKeyBoardView.h */,
 				84D106412AB855C400F816AB /* MyKeyBoardView.m */,
+				84D106432AB9923100F816AB /* ToolBarView.h */,
+				84D106442AB9923100F816AB /* ToolBarView.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -613,6 +618,7 @@
 				8486499D2AA702C900438552 /* MineViewController.m in Sources */,
 				848649602AA6CC6700438552 /* AppDelegate.m in Sources */,
 				84D106362AB83A5500F816AB /* IncomeViewController.m in Sources */,
+				84D106452AB9923100F816AB /* ToolBarView.m in Sources */,
 				848649B62AA86B5200438552 /* UNBorderLabel.m in Sources */,
 				84D1063F2AB84C5500F816AB /* TopItemView.m in Sources */,
 				848649712AA6CC6800438552 /* main.m in Sources */,
