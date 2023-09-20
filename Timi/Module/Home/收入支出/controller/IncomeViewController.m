@@ -8,6 +8,7 @@
 #import "IncomeViewController.h"
 #import "TopItemView.h"
 #import "MyKeyBoardView.h"
+#import "QZCalendarDateViewController.h"
 @interface IncomeViewController ()
 @property (nonatomic, strong) TopItemView *topView;
 @property (nonatomic, strong) MyKeyBoardView *btmView;
@@ -49,6 +50,10 @@
         };
         _btmView.btnClickBlock = ^(NSInteger tag) {
             NSLog(@"---->%ld",tag);
+            if (tag == 1) {
+                QZCalendarDateViewController *vc = [QZCalendarDateViewController new];
+                [weakSelf presentViewController:vc animated:YES completion:nil];
+            }
         };
     }
     return _btmView;
