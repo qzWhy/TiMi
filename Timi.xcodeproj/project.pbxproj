@@ -38,6 +38,7 @@
 		84A2F23D2ABABF680039050A /* QZCalendarCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A2F23C2ABABF680039050A /* QZCalendarCollectionViewCell.m */; };
 		84A2F2402ABAC1EF0039050A /* QZCalendarDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A2F23F2ABAC1EF0039050A /* QZCalendarDateViewController.m */; };
 		84A2F2432ABAC73D0039050A /* QZCalendarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A2F2422ABAC73D0039050A /* QZCalendarModel.m */; };
+		84A2F2462ABBED9D0039050A /* LeftAndRightButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A2F2452ABBED9D0039050A /* LeftAndRightButtonView.m */; };
 		84D1062C2AB81B4300F816AB /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D1062B2AB81B4300F816AB /* ContainerViewController.m */; };
 		84D106322AB839E800F816AB /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D1062E2AB839E800F816AB /* ListViewController.m */; };
 		84D106332AB839E800F816AB /* ContentBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D1062F2AB839E800F816AB /* ContentBaseViewController.m */; };
@@ -111,6 +112,8 @@
 		84A2F23F2ABAC1EF0039050A /* QZCalendarDateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QZCalendarDateViewController.m; sourceTree = "<group>"; };
 		84A2F2412ABAC73D0039050A /* QZCalendarModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QZCalendarModel.h; sourceTree = "<group>"; };
 		84A2F2422ABAC73D0039050A /* QZCalendarModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QZCalendarModel.m; sourceTree = "<group>"; };
+		84A2F2442ABBED9D0039050A /* LeftAndRightButtonView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeftAndRightButtonView.h; sourceTree = "<group>"; };
+		84A2F2452ABBED9D0039050A /* LeftAndRightButtonView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftAndRightButtonView.m; sourceTree = "<group>"; };
 		84D1062A2AB81B4300F816AB /* ContainerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContainerViewController.h; sourceTree = "<group>"; };
 		84D1062B2AB81B4300F816AB /* ContainerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContainerViewController.m; sourceTree = "<group>"; };
 		84D1062E2AB839E800F816AB /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
@@ -480,6 +483,8 @@
 				84A2F23F2ABAC1EF0039050A /* QZCalendarDateViewController.m */,
 				84A2F2412ABAC73D0039050A /* QZCalendarModel.h */,
 				84A2F2422ABAC73D0039050A /* QZCalendarModel.m */,
+				84A2F2442ABBED9D0039050A /* LeftAndRightButtonView.h */,
+				84A2F2452ABBED9D0039050A /* LeftAndRightButtonView.m */,
 			);
 			path = QZCalendar;
 			sourceTree = "<group>";
@@ -666,6 +671,7 @@
 				84D106332AB839E800F816AB /* ContentBaseViewController.m in Sources */,
 				847E62C52AB14F4D008437B7 /* AddItemViewController.m in Sources */,
 				8486498F2AA701CD00438552 /* HomeViewController.m in Sources */,
+				84A2F2462ABBED9D0039050A /* LeftAndRightButtonView.m in Sources */,
 				84A2F2432ABAC73D0039050A /* QZCalendarModel.m in Sources */,
 				8453B3AE2AA977A8005A4010 /* UIView+Exention.m in Sources */,
 				8453B3A62AA968A5005A4010 /* TMBillModel.m in Sources */,

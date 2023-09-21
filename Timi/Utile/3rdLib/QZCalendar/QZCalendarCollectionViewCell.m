@@ -7,6 +7,9 @@
 
 #import "QZCalendarCollectionViewCell.h"
 
+#define QZCalendarTextColor [UIColor colorWithHexString:@"333333"]
+#define QZCalendarUNTextColor [UIColor colorWithHexString:@"D2D2D2"]
+
 @interface QZCalendarCollectionViewCell ()
 
 @property (nonatomic, strong) UILabel *titleLabel;
@@ -15,23 +18,24 @@
 
 @implementation QZCalendarCollectionViewCell
 
-- (void)setIsCurrentMonth:(BOOL)isCurrentMonth {
-    _isCurrentMonth = isCurrentMonth;
-    if (isCurrentMonth) {
-        self.titleLabel.textColor = [UIColor colorWithHexString:@"636363"];
+- (void)setModel:(QZCalendarModel *)model {
+    _model = model;
+    self.titleLabel.text = model.day;
+    if (model.isToday) {
+        self.titleLabel.textColor = [UIColor whiteColor];
+        self.selectedCircle.hidden = NO;
     } else {
-        self.titleLabel.textColor = [UIColor colorWithHexString:@"D6D6D6"];
+        self.selectedCircle.hidden = YES;
+        if (model.isDateMonth) {
+            if (model.isOver) {
+                self.titleLabel.textColor = QZCalendarUNTextColor;
+            } else {
+                self.titleLabel.textColor = QZCalendarTextColor;
+            }
+        } else {
+            self.titleLabel.textColor = QZCalendarUNTextColor;
+        }
     }
-}
-
-- (void)setIsTody:(BOOL)isTody {
-    _isTody = isTody;
-    self.selectedCircle.hidden = !isTody;
-}
-
-- (void)setTitle:(NSString *)title {
-    _title = title;
-    self.titleLabel.text = title;
 }
 
 - (instancetype)initWithFrame:(CGRect)frame {
@@ -58,7 +62,7 @@
     if (!_titleLabel) {
         _titleLabel = [UILabel new];
         _titleLabel.text = @"2";
-        _titleLabel.textColor = [UIColor colorWithHexString:@"#333333"];
+        _titleLabel.textColor = [UIColor colorWithHexString:@"#636363"];
         _titleLabel.textAlignment = NSTextAlignmentCenter;
         _titleLabel.font = [UIFont boldSystemFontOfSize:14];
     }

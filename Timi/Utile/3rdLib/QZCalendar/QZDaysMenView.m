@@ -8,6 +8,8 @@
 #import "QZDaysMenView.h"
 #import "QZCalendarCollectionViewCell.h"
 #import "QZCalendarHelper.h"
+#import "QZCalendarModel.h"
+#import "LeftAndRightButtonView.h"
 #define QZSCREENWIDTH [UIScreen mainScreen].bounds.size.width
 #define QZSCREENHEIGHT [UIScreen mainScreen].bounds.size.height
 #define MARGIN 20
@@ -18,13 +20,58 @@
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, strong) QZCalendarHelper *calendarHelper;
 @property (nonatomic, strong) NSArray *weeks;
+@property (nonatomic, strong) NSMutableArray *dateArray;
+@property (nonatomic, strong) LeftAndRightButtonView *yearView;
+@property (nonatomic, strong) LeftAndRightButtonView *monthView;
+@property (nonatomic, strong) NSDate *date;
 @end
 
 @implementation QZDaysMenView
 
+- (LeftAndRightButtonView *)yearView {
+    if (!_yearView) {
+        _yearView = [[LeftAndRightButtonView alloc] initWithFrame:CGRectMake(0, 0, QZSCREENWIDTH * 0.5, 40)];
+        __weak __typeof(self)weakSelf = self;
+        _yearView.btnClickBlock = ^(NSInteger tag) {
+            if (tag == 0) {//0是左侧
+                weakSelf.date = [QZCalendarHelper previousYearDateWithDate:weakSelf.date];
+                [weakSelf getDataSource];
+            } else {
+                weakSelf.date = [QZCalendarHelper nextYearDateWithDate:weakSelf.date];
+                [weakSelf getDataSource];
+            }
+        };
+    }
+    return _yearView;
+}
+
+- (LeftAndRightButtonView *)monthView {
+    if (!_monthView) {
+        _monthView = [[LeftAndRightButtonView alloc] initWithFrame:CGRectMake(QZSCREENWIDTH *0.5, 0, QZSCREENWIDTH *0.5, 40)];
+        __weak __typeof(self)weakSelf = self;
+        _monthView.btnClickBlock = ^(NSInteger tag) {
+            if (tag == 0) {//0是左侧
+                weakSelf.date = [QZCalendarHelper previousMonthDateWithDate:weakSelf.date];
+                [weakSelf getDataSource];
+            } else {
+                weakSelf.date = [QZCalendarHelper nextMonthDateWithDate:weakSelf.date];
+                [weakSelf getDataSource];
+            }
+        };
+    }
+    return _monthView;
+}
+
+- (NSMutableArray *)dateArray {
+    if (!_dateArray) {
+        _dateArray = [NSMutableArray array];
+    }
+    return _dateArray;
+}
+
 - (NSArray *)weeks {
     if (!_weeks) {
-        _weeks = @[@"周一",@"周二",@"周三",@"周四",@"周五",@"周六",@"周日"];
+        _weeks = @[@"周日",@"周一",@"周二",@"周三",@"周四",@"周五",@"周六"];
     }
     return _weeks;
 }
@@ -34,6 +81,8 @@
     self = [super initWithFrame:frame];
     if (self) {
         [self setupUI];
+        self.date = [NSDate date];
+        [self getDataSource];
     }
     return self;
 }
@@ -41,16 +90,29 @@
 - (void)setupUI {
     self.backgroundColor = [UIColor whiteColor];
     self.calendarHelper = [QZCalendarHelper sharedCalendarHelper];
+    [self addSubview:self.yearView];
+    [self addSubview:self.monthView];
     [self setWeekView];
     [self addSubview:self.collectionView];
     [_collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(ITEMHEIGHT);
+        make.top.mas_equalTo(ITEMHEIGHT * 2);
         make.left.right.bottom.mas_equalTo(0);
     }];
 }
+
+- (void)getDataSource {
+    [self.dateArray removeAllObjects];
+    NSArray *arr = [QZCalendarModel achieveCalendarModelWithData:self.date];
+    self.yearView.title = [NSString stringWithFormat:@"%ld年",[QZCalendarHelper getYearWithDate:self.date]] ;
+    self.monthView.title = [NSString stringWithFormat:@"%ld月",[QZCalendarHelper getMonthWithDate:self.date]] ;
+    [self.dateArray addObjectsFromArray:arr];
+    [self.collectionView reloadData];
+}
+
+
 - (void)setWeekView {
     for (int i = 0; i < self.weeks.count; i++) {
-        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(MARGIN + ITEMWIDTH * i, 0, ITEMWIDTH, ITEMHEIGHT)];
+        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(MARGIN + ITEMWIDTH * i, 40, ITEMWIDTH, ITEMHEIGHT)];
         label.text = self.weeks[i];
         label.textAlignment = NSTextAlignmentCenter;
         label.textColor = [UIColor colorWithHexString:@"909090"];
@@ -79,7 +141,7 @@
     return 1;
 }
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 42;
+    return self.dateArray.count;
 }
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -87,26 +149,17 @@
     if (!cell) {
         cell = [[QZCalendarCollectionViewCell alloc] init];
     }
-    NSInteger tags = indexPath.row;
-    if (tags < self.calendarHelper.weekDay + 1) {
-        NSInteger title = self.calendarHelper.lastMonthDays - self.calendarHelper.weekDay;
-        cell.title = [NSString stringWithFormat:@"%ld",title + indexPath.row];
-        cell.isCurrentMonth = NO;
-    } else if (tags >= self.calendarHelper.weekDay && tags <= self.calendarHelper.weekDay + self.calendarHelper.days){
-        NSInteger tag2 = tags - self.calendarHelper.weekDay;
-        cell.title = [NSString stringWithFormat:@"%ld", tag2];
-        if (tags == self.calendarHelper.day) {
-            cell.isTody = YES;
-        }
-        
-        cell.isTody = tag2 == self.calendarHelper.day;
-        cell.isCurrentMonth = YES;
-    } else {
-        NSInteger tag2 = tags - self.calendarHelper.weekDay - self.calendarHelper.days;
-        cell.title = [NSString stringWithFormat:@"%ld", tag2];
-        cell.isCurrentMonth = NO;
-    }
+    cell.model = self.dateArray[indexPath.row];
     return cell;
 }
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    QZCalendarModel *model = self.dateArray[indexPath.row];
+    if (model.isDateMonth) {
+        if (self.selectDateBlock) {
+            self.selectDateBlock(self.yearView.title, self.monthView.title, model.day);
+        }
+    }
+}
+
 
 @end

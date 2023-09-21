@@ -30,7 +30,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) NSInteger days;
 /**上个月总天数**/
 @property (nonatomic, assign) NSInteger lastMonthDays;
-
+/**当前年月**/
+@property (nonatomic, strong) NSDateFormatter *formatter;
 
 /**获取date的下个月日期*/
 - (NSDate *)nextMonthDateWithDate:(NSDate *)date;
@@ -46,6 +47,22 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSInteger)getWeekDayWithDate:(NSDate *)date;
 /**获取该日期的月份的总天数**/
 - (NSInteger)getMonthDaysWithDate:(NSDate *)date;
+
+
+/**月**/
++ (NSInteger)getMonthWithDate:(NSDate *)date;
+/**年**/
++ (NSInteger)getYearWithDate:(NSDate *)date;
+/**获取该日期的月份的总天数**/
++ (NSInteger)getMonthDaysWithDate:(NSDate *)date;
+/**获取date的下个月日期*/
++ (NSDate *)nextMonthDateWithDate:(NSDate *)date;
+/** 获取date的上个月日期*/
++ (NSDate *)previousMonthDateWithDate:(NSDate *)date;
+/** 获取date的上年日期*/
++ (NSDate *)previousYearDateWithDate:(NSDate *)date;
+/**获取date的下一年日期*/
++ (NSDate *)nextYearDateWithDate:(NSDate *)date;
 
 @end
 

@@ -37,9 +37,21 @@
     NSDateComponents *dateComponent = [self.calendar components:NSCalendarUnitYear fromDate:date];
     return dateComponent.year;
 }
+/**年**/
++ (NSInteger)getYearWithDate:(NSDate *)date {
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSDateComponents *dateComponent = [calendar components:NSCalendarUnitYear fromDate:date];
+    return dateComponent.year;
+}
 /**月**/
 - (NSInteger)getMonthWithDate:(NSDate *)date {
     NSDateComponents *dateComponent = [self.calendar components:NSCalendarUnitMonth fromDate:date];
+    return dateComponent.month;
+}
+/**月**/
++ (NSInteger)getMonthWithDate:(NSDate *)date {
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSDateComponents *dateComponent = [calendar components:NSCalendarUnitMonth fromDate:date];
     return dateComponent.month;
 }
 /**日**/
@@ -59,12 +71,35 @@
     NSUInteger numberOfDaysInMonth = daysOfMonth.length;
     return numberOfDaysInMonth;
 }
+/**获取该日期的月份的总天数**/
++ (NSInteger)getMonthDaysWithDate:(NSDate *)date {
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSRange daysOfMonth = [calendar rangeOfUnit:NSCalendarUnitDay inUnit:NSCalendarUnitMonth forDate:date];
+    NSUInteger numberOfDaysInMonth = daysOfMonth.length;
+    return numberOfDaysInMonth;
+}
 
 /**获取date的下个月日期*/
 - (NSDate *)nextMonthDateWithDate:(NSDate *)date {
     NSDateComponents *components = [[NSDateComponents alloc]init];
     components.month =1;
     NSDate *nextMonthDate = [self.calendar dateByAddingComponents:components toDate:date options:NSCalendarMatchStrictly];
+    return nextMonthDate;
+}
+/**获取date的下个月日期*/
++ (NSDate *)nextMonthDateWithDate:(NSDate *)date {
+    NSDateComponents *components = [[NSDateComponents alloc]init];
+    components.month =1;
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSDate *nextMonthDate = [calendar dateByAddingComponents:components toDate:date options:NSCalendarMatchStrictly];
+    return nextMonthDate;
+}
+/**获取date的下一年日期*/
++ (NSDate *)nextYearDateWithDate:(NSDate *)date {
+    NSDateComponents *components = [[NSDateComponents alloc]init];
+    components.month = 12;
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSDate *nextMonthDate = [calendar dateByAddingComponents:components toDate:date options:NSCalendarMatchStrictly];
     return nextMonthDate;
 }
 
@@ -75,5 +110,36 @@
     NSDate *previousMonthDate = [self.calendar dateByAddingComponents:components toDate:date options:NSCalendarMatchStrictly];
     return previousMonthDate;
 }
+/** 获取date的上个月日期*/
++ (NSDate *)previousMonthDateWithDate:(NSDate *)date {
+    NSDateComponents *components = [[NSDateComponents alloc]init];
+    components.month = -1;
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSDate *previousMonthDate = [calendar dateByAddingComponents:components toDate:date options:NSCalendarMatchStrictly];
+    return previousMonthDate;
+}
+/** 获取date的上年日期*/
++ (NSDate *)previousYearDateWithDate:(NSDate *)date {
+    NSDateComponents *components = [[NSDateComponents alloc]init];
+    components.month = -12;
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSDate *previousMonthDate = [calendar dateByAddingComponents:components toDate:date options:NSCalendarMatchStrictly];
+    return previousMonthDate;
+}
+/**获取date上个月总天数**/
 
+
+
+- (NSDateFormatter *)createFormatterWithDateFormat:(NSString *)dateFormat
+{
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    formatter.dateFormat = dateFormat;
+    return formatter;
+}
++ (NSDateFormatter *)createFormatterWithDateFormat:(NSString *)dateFormat
+{
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    formatter.dateFormat = dateFormat;
+    return formatter;
+}
 @end

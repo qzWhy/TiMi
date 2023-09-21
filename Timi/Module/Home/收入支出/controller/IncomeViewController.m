@@ -52,6 +52,7 @@
             NSLog(@"---->%ld",tag);
             if (tag == 1) {
                 QZCalendarDateViewController *vc = [QZCalendarDateViewController new];
+                vc.modalPresentationStyle = UIModalPresentationOverFullScreen;
                 [weakSelf presentViewController:vc animated:YES completion:nil];
             }
         };
