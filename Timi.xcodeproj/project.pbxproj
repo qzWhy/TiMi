@@ -39,6 +39,9 @@
 		84A2F2402ABAC1EF0039050A /* QZCalendarDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A2F23F2ABAC1EF0039050A /* QZCalendarDateViewController.m */; };
 		84A2F2432ABAC73D0039050A /* QZCalendarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A2F2422ABAC73D0039050A /* QZCalendarModel.m */; };
 		84A2F2462ABBED9D0039050A /* LeftAndRightButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A2F2452ABBED9D0039050A /* LeftAndRightButtonView.m */; };
+		84A2F2492ABD47150039050A /* AddItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A2F2482ABD47150039050A /* AddItemView.m */; };
+		84A2F24E2ABD48470039050A /* AddItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A2F24D2ABD48470039050A /* AddItemCollectionViewCell.m */; };
+		84A2F2512ABD5D750039050A /* ItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A2F2502ABD5D750039050A /* ItemModel.m */; };
 		84D1062C2AB81B4300F816AB /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D1062B2AB81B4300F816AB /* ContainerViewController.m */; };
 		84D106322AB839E800F816AB /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D1062E2AB839E800F816AB /* ListViewController.m */; };
 		84D106332AB839E800F816AB /* ContentBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D1062F2AB839E800F816AB /* ContentBaseViewController.m */; };
@@ -114,6 +117,12 @@
 		84A2F2422ABAC73D0039050A /* QZCalendarModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QZCalendarModel.m; sourceTree = "<group>"; };
 		84A2F2442ABBED9D0039050A /* LeftAndRightButtonView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeftAndRightButtonView.h; sourceTree = "<group>"; };
 		84A2F2452ABBED9D0039050A /* LeftAndRightButtonView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftAndRightButtonView.m; sourceTree = "<group>"; };
+		84A2F2472ABD47150039050A /* AddItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddItemView.h; sourceTree = "<group>"; };
+		84A2F2482ABD47150039050A /* AddItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddItemView.m; sourceTree = "<group>"; };
+		84A2F24C2ABD48470039050A /* AddItemCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddItemCollectionViewCell.h; sourceTree = "<group>"; };
+		84A2F24D2ABD48470039050A /* AddItemCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddItemCollectionViewCell.m; sourceTree = "<group>"; };
+		84A2F24F2ABD5D750039050A /* ItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemModel.h; sourceTree = "<group>"; };
+		84A2F2502ABD5D750039050A /* ItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemModel.m; sourceTree = "<group>"; };
 		84D1062A2AB81B4300F816AB /* ContainerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContainerViewController.h; sourceTree = "<group>"; };
 		84D1062B2AB81B4300F816AB /* ContainerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContainerViewController.m; sourceTree = "<group>"; };
 		84D1062E2AB839E800F816AB /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
@@ -203,6 +212,7 @@
 		847E62C12AB14F08008437B7 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				84A2F24A2ABD47F10039050A /* addItem */,
 				84D1063D2AB84C5500F816AB /* TopItemView.h */,
 				84D1063E2AB84C5500F816AB /* TopItemView.m */,
 				84D106402AB855C400F816AB /* MyKeyBoardView.h */,
@@ -216,6 +226,8 @@
 		847E62C22AB14F0F008437B7 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				84A2F24F2ABD5D750039050A /* ItemModel.h */,
+				84A2F2502ABD5D750039050A /* ItemModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -489,6 +501,17 @@
 			path = QZCalendar;
 			sourceTree = "<group>";
 		};
+		84A2F24A2ABD47F10039050A /* addItem */ = {
+			isa = PBXGroup;
+			children = (
+				84A2F2472ABD47150039050A /* AddItemView.h */,
+				84A2F2482ABD47150039050A /* AddItemView.m */,
+				84A2F24C2ABD48470039050A /* AddItemCollectionViewCell.h */,
+				84A2F24D2ABD48470039050A /* AddItemCollectionViewCell.m */,
+			);
+			path = addItem;
+			sourceTree = "<group>";
+		};
 		84D1062D2AB839E800F816AB /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -654,13 +677,16 @@
 				8486497A2AA6F15900438552 /* BaseNavigationController.m in Sources */,
 				848649662AA6CC6700438552 /* ViewController.m in Sources */,
 				8453B3AA2AA96DCF005A4010 /* Tool.m in Sources */,
+				84A2F2492ABD47150039050A /* AddItemView.m in Sources */,
 				848649B32AA8483C00438552 /* QZTimeLineCell.m in Sources */,
 				84A2F2372ABA8B470039050A /* QZCalendarHelper.m in Sources */,
 				84A2F2402ABAC1EF0039050A /* QZCalendarDateViewController.m in Sources */,
 				8486499D2AA702C900438552 /* MineViewController.m in Sources */,
 				848649602AA6CC6700438552 /* AppDelegate.m in Sources */,
 				84D106362AB83A5500F816AB /* IncomeViewController.m in Sources */,
+				84A2F2512ABD5D750039050A /* ItemModel.m in Sources */,
 				84D106452AB9923100F816AB /* ToolBarView.m in Sources */,
+				84A2F24E2ABD48470039050A /* AddItemCollectionViewCell.m in Sources */,
 				848649B62AA86B5200438552 /* UNBorderLabel.m in Sources */,
 				84D1063F2AB84C5500F816AB /* TopItemView.m in Sources */,
 				848649712AA6CC6800438552 /* main.m in Sources */,

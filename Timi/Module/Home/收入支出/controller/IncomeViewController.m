@@ -10,10 +10,12 @@
 #import "MyKeyBoardView.h"
 #import "QZCalendarDateViewController.h"
 #import "ToolBarView.h"
+#import "AddItemView.h"
 @interface IncomeViewController ()
 @property (nonatomic, strong) TopItemView *topView;
 @property (nonatomic, strong) MyKeyBoardView *btmView;
 @property (nonatomic, strong) ToolBarView *toolBarView;
+@property (nonatomic, strong) AddItemView *middleView;
 @property (nonatomic, strong) NSDate *date;
 @end
 
@@ -25,7 +27,15 @@
     [self.view addSubview:self.topView];
     [self.view addSubview:self.btmView];
     [self.view addSubview:self.toolBarView];
+    [self.view addSubview:self.middleView];
+
     self.date = [NSDate date];
+
+    [_middleView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(_topView.mas_bottom);
+        make.bottom.equalTo(_toolBarView.mas_top);
+        make.left.right.mas_equalTo(0);
+    }];
     [_toolBarView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.bottom.equalTo(_btmView.mas_top);
         make.height.mas_equalTo(UNScreenWidth * 0.125);
@@ -81,5 +91,11 @@
         };
     }
     return _btmView;
+}
+- (AddItemView *)middleView {
+    if (!_middleView) {
+        _middleView = [AddItemView new];
+    }
+    return _middleView;
 }
 @end
