@@ -11,7 +11,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface QZCalendarDateViewController : UIViewController
 
-@property (nonatomic, copy) void(^selectDateBlock)(NSString *year, NSString *month, NSString *day);
+@property (nonatomic, strong) NSDate *date;
+
+@property (nonatomic, copy) void(^selectDateBlock)(NSString *year, NSString *month, NSString *day, NSDate *date);
 
 @end
 

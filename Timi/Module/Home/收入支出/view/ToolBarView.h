@@ -13,6 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy) void(^btnClickBlock)(NSInteger tag);
 
+@property (nonatomic, copy) NSString *yearStr;
+@property (nonatomic, copy) NSString *dayStr;
+
 @end
 
 NS_ASSUME_NONNULL_END

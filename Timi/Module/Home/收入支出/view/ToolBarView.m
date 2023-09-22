@@ -17,6 +17,18 @@
 
 @implementation ToolBarView
 
+- (void)setYearStr:(NSString *)yearStr {
+    _yearStr = yearStr;
+    self.yearLabel.text = yearStr;
+    self.yearLabel.textColor = [UIColor colorWithHexString:@"E9AA44"];
+}
+
+- (void)setDayStr:(NSString *)dayStr {
+    _dayStr = dayStr;
+    self.dayLabel.text = dayStr;
+    self.dayLabel.textColor = [UIColor colorWithHexString:@"E9AA44"];
+}
+
 - (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -95,7 +107,6 @@
     if (!_editBtn) {
         _editBtn = [UIButton new];
         [_editBtn setImage:[UIImage imageNamed:@"addItem_remark"] forState:UIControlStateNormal];
-        weakself(self);
         [_editBtn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
     }
     return _editBtn;

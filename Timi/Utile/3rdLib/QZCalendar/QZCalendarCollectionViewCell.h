@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 //@property (nonatomic, copy) NSString *title;
 //@property (nonatomic, assign) BOOL isCurrentMonth;
 //@property (nonatomic, assign) BOOL isTody;
-
+@property (nonatomic, assign) BOOL isSelected;
 @property (nonatomic, strong) QZCalendarModel *model;
 
 @end

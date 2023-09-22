@@ -25,6 +25,9 @@
 }
 
 - (void)setupUI {
+    if (!self.date) {
+        self.date = [NSDate date];
+    }
     [self.view addSubview:self.dayView];
     [_dayView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.bottom.mas_equalTo(0);
@@ -47,11 +50,12 @@
 
 - (QZDaysMenView *)dayView {
     if (!_dayView) {
-        _dayView = [QZDaysMenView new];
+        _dayView = [[QZDaysMenView alloc] initWithFrame:CGRectZero];
+        _dayView.date = self.date;
         __weak __typeof(self)weakSelf = self;
-        _dayView.selectDateBlock = ^(NSString * _Nonnull year, NSString * _Nonnull month, NSString * _Nonnull day) {
+        _dayView.selectDateBlock = ^(NSString * _Nonnull year, NSString * _Nonnull month, NSString * _Nonnull day, NSDate *date) {
             if (weakSelf.selectDateBlock) {
-                weakSelf.selectDateBlock(year, month, day);
+                weakSelf.selectDateBlock(year, month, day, date);
             }
             [weakSelf dissmiss];
         };

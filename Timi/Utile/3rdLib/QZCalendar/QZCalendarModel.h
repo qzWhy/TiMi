@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**是否超过当前日期**/
 @property (nonatomic, assign) BOOL isOver;
 @property (nonatomic, assign) BOOL isToday;
+@property (nonatomic, assign) BOOL isSelected;
 /**根据日期信息获取日期数组 会有固定42条数据 **/
 + (NSArray<QZCalendarModel *> *)achieveCalendarModelWithData:(NSDate *)date;
 

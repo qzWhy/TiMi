@@ -18,6 +18,13 @@ NS_ASSUME_NONNULL_BEGIN
 @interface QZCalendarHelper : NSObject
 
 + (instancetype)sharedCalendarHelper;
+/**用作变量**/
+@property (nonatomic, assign) NSInteger selectYear;
+@property (nonatomic, assign) NSInteger selectMonth;
+@property (nonatomic, assign) NSInteger selectDay;
+/**结束**/
+
+
 
 /**年月日**/
 @property (nonatomic, copy) NSString *title;
@@ -43,12 +50,16 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSInteger)getMonthWithDate:(NSDate *)date;
 /**日**/
 - (NSInteger)getDayWithDate:(NSDate *)date;
-/**本月第一天为周几 周一：1 周日为：0**/
+/**周几 周一：1 周日为：0**/
 - (NSInteger)getWeekDayWithDate:(NSDate *)date;
 /**获取该日期的月份的总天数**/
 - (NSInteger)getMonthDaysWithDate:(NSDate *)date;
 
-
++ (NSInteger)getWeekDayWithDate:(NSDate *)date;
+/**年-月**/
++ (NSString *)getDateFormatWithDate:(NSDate *)date;
+/**日**/
++ (NSInteger)getDayWithDate:(NSDate *)date;
 /**月**/
 + (NSInteger)getMonthWithDate:(NSDate *)date;
 /**年**/
@@ -63,6 +74,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSDate *)previousYearDateWithDate:(NSDate *)date;
 /**获取date的下一年日期*/
 + (NSDate *)nextYearDateWithDate:(NSDate *)date;
+/**将字符串日期转换为date**/
++ (NSDate *)strToDateWithStr:(NSString *)str;
 
 @end
 

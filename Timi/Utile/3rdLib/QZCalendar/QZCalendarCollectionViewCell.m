@@ -22,10 +22,9 @@
     _model = model;
     self.titleLabel.text = model.day;
     if (model.isToday) {
-        self.titleLabel.textColor = [UIColor whiteColor];
-        self.selectedCircle.hidden = NO;
+        self.titleLabel.textColor = [UIColor colorWithHexString:@"E9AA44"];
     } else {
-        self.selectedCircle.hidden = YES;
+        
         if (model.isDateMonth) {
             if (model.isOver) {
                 self.titleLabel.textColor = QZCalendarUNTextColor;
@@ -36,6 +35,22 @@
             self.titleLabel.textColor = QZCalendarUNTextColor;
         }
     }
+    if (model.isSelected) {
+        self.titleLabel.textColor = [UIColor whiteColor];
+        self.selectedCircle.hidden = NO;
+    } else {    
+        self.selectedCircle.hidden = YES;
+    }
+}
+- (void)setIsSelected:(BOOL)isSelected {
+    _isSelected = isSelected;
+    if (isSelected) {
+        self.titleLabel.textColor = [UIColor whiteColor];
+        self.selectedCircle.hidden = NO;
+    } else {
+        self.selectedCircle.hidden = YES;
+    }
+
 }
 
 - (instancetype)initWithFrame:(CGRect)frame {

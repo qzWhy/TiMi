@@ -23,7 +23,7 @@
 @property (nonatomic, strong) NSMutableArray *dateArray;
 @property (nonatomic, strong) LeftAndRightButtonView *yearView;
 @property (nonatomic, strong) LeftAndRightButtonView *monthView;
-@property (nonatomic, strong) NSDate *date;
+
 @end
 
 @implementation QZDaysMenView
@@ -76,13 +76,16 @@
     return _weeks;
 }
 
+- (void)setDate:(NSDate *)date {
+    _date = date;
+    [self getDataSource];
+}
+
 - (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
         [self setupUI];
-        self.date = [NSDate date];
-        [self getDataSource];
     }
     return self;
 }
@@ -149,17 +152,41 @@
     if (!cell) {
         cell = [[QZCalendarCollectionViewCell alloc] init];
     }
-    cell.model = self.dateArray[indexPath.row];
+    QZCalendarModel *model = self.dateArray[indexPath.row];
+    cell.model = model;
     return cell;
 }
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     QZCalendarModel *model = self.dateArray[indexPath.row];
     if (model.isDateMonth) {
         if (self.selectDateBlock) {
-            self.selectDateBlock(self.yearView.title, self.monthView.title, model.day);
+            
+            NSString *ymStr = [QZCalendarHelper getDateFormatWithDate:self.date];
+            NSString *dayStr = @"0";
+            if ([model.day integerValue] < 10) {
+                dayStr = [NSString stringWithFormat:@"0%@",model.day];
+            } else {
+                dayStr = model.day;
+            }
+            NSString *dateFormart = [NSString stringWithFormat:@"%@-%@",ymStr,dayStr];
+            NSDate *date1 = [self strToDateWithStr:dateFormart];
+            self.calendarHelper.selectDay = [QZCalendarHelper getDayWithDate:date1];
+            self.calendarHelper.selectYear = [QZCalendarHelper getYearWithDate:date1];
+            self.calendarHelper.selectMonth = [QZCalendarHelper getMonthWithDate:date1];
+            self.selectDateBlock(self.yearView.title, self.monthView.title,  [NSString stringWithFormat:@"%@日",model.day],date1);
         }
     }
 }
 
-
+- (NSDate *)strToDateWithStr:(NSString *)str {
+    
+    NSDateFormatter *formatterTime = [NSDateFormatter new];
+    
+    formatterTime.dateFormat = @"yyyy-MM-dd";
+    
+    formatterTime.timeZone = [NSTimeZone timeZoneWithAbbreviation:@"GMT"];
+    
+    NSDate *dateTime = [formatterTime dateFromString:str];
+    return dateTime;
+}
 @end
