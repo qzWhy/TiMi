@@ -6,10 +6,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "ItemModel.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface AddItemCollectionViewCell : UICollectionViewCell
+
+@property (nonatomic, strong) ItemModel *model;
 
 @end
 

@@ -6,12 +6,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ContainerViewController.h"
+#import "MMDrawerController.h"
 #import "BaseNavigationController.h"
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property (nonatomic, strong) ContainerViewController *baseVC;
-@property (nonatomic, strong) BaseNavigationController *baseNav;
+@property (nonatomic, strong) MMDrawerController *baseVC;
 @end
 

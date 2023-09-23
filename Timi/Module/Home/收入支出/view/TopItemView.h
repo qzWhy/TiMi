@@ -6,13 +6,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "ItemModel.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TopItemView : UIView
 
+@property (nonatomic, strong) ItemModel *model;
 @property (nonatomic, copy) NSString *str;
-
 @end
 
 NS_ASSUME_NONNULL_END

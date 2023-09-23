@@ -6,10 +6,13 @@
 //
 
 #import "AddItemView.h"
+#import "ItemModel.h"
 #import "AddItemCollectionViewCell.h"
 @interface AddItemView ()<UICollectionViewDelegate, UICollectionViewDataSource>
 
 @property (nonatomic, strong) UICollectionView *collectionView;
+
+@property (nonatomic, strong) NSMutableArray *dataArray;
 
 @end
 
@@ -20,6 +23,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         [self setupUI];
+        [self getDataSource];
     }
     return self;
 }
@@ -31,12 +35,22 @@
     }];
 }
 
+- (void)getDataSource {
+    NSArray *data = [ItemModel getItemDataSource];
+    self.dataArray = [data subarrayWithRange:NSMakeRange(0, 20)].mutableCopy;
+    ItemModel *model = [ItemModel new];
+    model.imgStr = @"type_add";
+    model.title = @"编辑";
+    [self.dataArray addObject:model];
+    [self.collectionView reloadData];
+}
+
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return 1;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 14;
+    return self.dataArray.count;
 }
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -44,7 +58,15 @@
     if (!cell) {
         cell = [[AddItemCollectionViewCell alloc] initWithFrame:CGRectZero];
     }
+    cell.model = self.dataArray[indexPath.row];
     return cell;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    ItemModel *model = self.dataArray[indexPath.row];
+    if (self.selectItemBlock) {
+        self.selectItemBlock(model,indexPath.row == self.dataArray.count - 1);
+    }
 }
 
 - (UICollectionView *)collectionView {
@@ -61,6 +83,13 @@
         _collectionView.dataSource = self;
     }
     return _collectionView;
+}
+
+- (NSMutableArray *)dataArray {
+    if (!_dataArray) {
+        _dataArray = [NSMutableArray array];
+    }
+    return _dataArray;
 }
 
 @end

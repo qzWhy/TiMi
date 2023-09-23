@@ -12,8 +12,6 @@
 #import "BaseNavigationController.h"
 #import <MMDrawerController/MMDrawerController.h>
 
-#import "ContainerViewController.h"
-
 #import "AccountBookVC.h"
 @interface BaseTabBarController ()
 
@@ -37,7 +35,7 @@
     HomeViewController *home = [HomeViewController new];
     BaseNavigationController *HomeNav = [[BaseNavigationController alloc] initWithRootViewController:home];
     
-    ContainerViewController *drawerController = [[ContainerViewController alloc] initWithCenterViewController:HomeNav leftDrawerViewController:accNav];
+    MMDrawerController *drawerController = [[MMDrawerController alloc] initWithCenterViewController:HomeNav leftDrawerViewController:accNav];
     AppDelegate *app = (AppDelegate *)[UIApplication sharedApplication].delegate;
     app.baseVC = drawerController;
 //    MMDrawerController *drawerController = [[MMDrawerController alloc] initWithCenterViewController:HomeNav leftDrawerViewController:accNav];
@@ -50,7 +48,7 @@
     drawerController.title = @"首页";
     [drawerController.tabBarItem setImage:[[UIImage imageNamed:@"jizhang-unselected"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     [drawerController.tabBarItem setSelectedImage:[[UIImage imageNamed:@"jizhang"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
-    BaseNavigationController *drawerNav = [[BaseNavigationController alloc] initWithRootViewController:drawerController];
+//    BaseNavigationController *drawerNav = [[BaseNavigationController alloc] initWithRootViewController:drawerController];
     
     
     ShopViewController *shop = [ShopViewController new];
@@ -66,7 +64,7 @@
     [mine.tabBarItem setSelectedImage:[[UIImage imageNamed:@"wode"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     BaseNavigationController *mineNavig = [[BaseNavigationController alloc] initWithRootViewController:mine];
     
-    self.viewControllers = @[drawerNav,shopNavig,mineNavig];
+    self.viewControllers = @[drawerController,shopNavig,mineNavig];
 }
 
 @end

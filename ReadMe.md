@@ -15,6 +15,23 @@
         将.ttf文件拖入项目中
         在plist文件中添加Fonts provided by application数组
         在数组下添加一个item将拖入的文件名写入到value记得后缀.ttf（可以手动加.ttf）
+###  获取plist文件数据
+```
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"IconImgDic" ofType:@"plist"];
+    NSMutableDictionary *IconDic = [[NSMutableDictionary alloc]initWithContentsOfFile:plistPath];
+```
+同样在使用时，利用了model进行处理：
+```
+    /**获取plist文件中的图片文字字典**/
+    + (NSDictionary *)getIconDictionary;
+    /**获取itemmodel数组 **/
+    + (NSArray<ItemModel *> *)getItemDataSource;
+```
+从一个数组获取前20条数据组成一个新的数组：
+```
+    NSArray *data = [ItemModel getItemDataSource];
+    self.dataArray = [data subarrayWithRange:NSMakeRange(0, 20)].mutableCopy;
+```
 ## 计算器功能
    ### 说明
    计算器看似简单其实里面各种逻辑很是复杂我在点击自制键盘后根据点击的键位作了很多判断，具体可以查看项目中MyKeyBoardView的.m文件：

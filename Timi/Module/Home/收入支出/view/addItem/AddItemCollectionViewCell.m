@@ -18,6 +18,12 @@
 
 @implementation AddItemCollectionViewCell
 
+- (void)setModel:(ItemModel *)model {
+    _model = model;
+    self.iconImgView.image = [UIImage imageNamed:model.imgStr];
+    self.titleLabel.text = model.title;
+}
+
 - (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];

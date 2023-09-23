@@ -34,24 +34,35 @@
     [super pushViewController:viewController animated:animated];
 }
 
-
-/**
- 这个方法一旦设置就不能更改。慎用
- */
 - (void)configNavigationBar {
-    /** 两个设置导航栏背景颜色的方式 一、图片渲染 二、直接设置bartintcolor */
-    //一、
+    UIColor *titleColor = [UIColor colorWithHexString: @"000E18"];
+    UINavigationBar *bar = self.navigationBar;
     UIColor *navigationColor = [UIColor clearColor];
-    [self.navigationBar setBackgroundImage:[[UIColor createImageWithColor:navigationColor] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forBarMetrics:UIBarMetricsDefault];
-    [self.navigationBar setShadowImage:[UIImage new]];
-    ///这里最好设置背景
-    self.view.backgroundColor = navigationColor;
-    //二、 ///这个方法设置的颜色在图片的下方
-    [self.navigationBar setBarTintColor:[UIColor clearColor]];//设置导航栏背景的颜色
+    if (@available(iOS 13.0, *)) {
+        UINavigationBarAppearance *barAppearance = [UINavigationBarAppearance new];
+        [barAppearance configureWithTransparentBackground];
+        barAppearance.backgroundImage = [UIColor createImageWithColor:navigationColor];
+        barAppearance.shadowImage = [UIColor createImageWithColor:navigationColor];
+        barAppearance.shadowColor = UIColor.clearColor;
+        barAppearance.backgroundColor = navigationColor;
+        barAppearance.largeTitleTextAttributes = @{NSForegroundColorAttributeName: [UIColor labelColor]};
+        barAppearance.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor labelColor],NSFontAttributeName:[UIFont systemFontOfSize:18 weight:UIFontWeightMedium]};
+        bar.tintColor = titleColor;
+        // UINavigationBarAppearance 会覆盖原有的导航栏设置，这里需要重新设置返回按钮隐藏
+        barAppearance.backButtonAppearance.normal.titlePositionAdjustment = UIOffsetMake(-1000, 0);
+        bar.standardAppearance = barAppearance;
+        bar.scrollEdgeAppearance = barAppearance;
+        bar.compactAppearance = barAppearance;
+        
+    } else {
+        // Fallback on earlier versions
+        bar.tintColor = UIColor.whiteColor;
+        bar.barTintColor = [UIColor colorWithHexString:@"F3595A"];
+        bar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor blackColor],NSFontAttributeName:[UIFont systemFontOfSize:18 weight:UIFontWeightMedium]};
+    }
+    /**这个是避免内容被导航栏遮盖**/
+    bar.translucent = NO;
     
-    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
-    //设置导航栏title的字体及颜色i
-    [self.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor darkGrayColor],NSForegroundColorAttributeName, [UIFont systemFontOfSize:18],NSFontAttributeName , nil]];
 }
 
 

@@ -11,10 +11,16 @@
 #import "QZCalendarDateViewController.h"
 #import "ToolBarView.h"
 #import "AddItemView.h"
+#import "RemarkViewController.h"
+
 @interface IncomeViewController ()
+/**上方显示条**/
 @property (nonatomic, strong) TopItemView *topView;
+/**下方键盘**/
 @property (nonatomic, strong) MyKeyBoardView *btmView;
+/**工具条**/
 @property (nonatomic, strong) ToolBarView *toolBarView;
+/**选择类型**/
 @property (nonatomic, strong) AddItemView *middleView;
 @property (nonatomic, strong) NSDate *date;
 @end
@@ -50,23 +56,40 @@
         make.height.mas_equalTo(60);
     }];
 }
+- (void)toolBarViewSideBtnClickWithTag:(NSInteger)tag {
+    if (tag == 1) {
+        QZCalendarDateViewController *vc = [QZCalendarDateViewController new];
+        vc.date = self.date;
+        
+        vc.selectDateBlock = ^(NSString * _Nonnull year, NSString * _Nonnull month, NSString * _Nonnull day, NSDate *date) {
+            self.toolBarView.yearStr = year;
+            self.toolBarView.dayStr = [NSString stringWithFormat:@"%@%@",month,day];
+            self.date = date;
+        };
+        vc.modalPresentationStyle = UIModalPresentationOverFullScreen;
+        [self presentViewController:vc animated:NO completion:nil];
+    } else {
+        RemarkViewController *vc = [RemarkViewController new];
+        BaseNavigationController *nav = [[BaseNavigationController alloc] initWithRootViewController:vc];
+            
+        [self hh_presentViewController:nav presentStyle:HHPresentStyleMoveIn completion:nil];
+    }
+}
+
+- (void)chooseItemType:(ItemModel *)model isLast:(BOOL)isLast {
+    if (isLast) {//进入编辑页
+        
+    } else {
+        self.topView.model = model;
+    }
+}
 
 - (ToolBarView *)toolBarView {
     if (!_toolBarView) {
         _toolBarView = [ToolBarView new];
         weakself(self);
         _toolBarView.btnClickBlock = ^(NSInteger tag) {
-            if (tag == 1) {
-                QZCalendarDateViewController *vc = [QZCalendarDateViewController new];
-                vc.date = weakSelf.date;
-                vc.selectDateBlock = ^(NSString * _Nonnull year, NSString * _Nonnull month, NSString * _Nonnull day, NSDate *date) {
-                    weakSelf.toolBarView.yearStr = year;
-                    weakSelf.toolBarView.dayStr = [NSString stringWithFormat:@"%@%@",month,day];
-                    weakSelf.date = date;
-                };
-                vc.modalPresentationStyle = UIModalPresentationOverFullScreen;
-                [weakSelf presentViewController:vc animated:NO completion:nil];
-            }
+            [weakSelf toolBarViewSideBtnClickWithTag:tag];
         };
     }
     return _toolBarView;
@@ -95,6 +118,10 @@
 - (AddItemView *)middleView {
     if (!_middleView) {
         _middleView = [AddItemView new];
+        weakself(self);
+        _middleView.selectItemBlock = ^(ItemModel * _Nonnull model, BOOL isLast) {
+            [weakSelf chooseItemType:model isLast:isLast];
+        };
     }
     return _middleView;
 }

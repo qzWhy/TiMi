@@ -17,6 +17,12 @@
 
 @implementation TopItemView
 
+- (void)setModel:(ItemModel *)model {
+    _model = model;
+    self.iconImgView.image = [UIImage imageNamed:model.imgStr];
+    self.nameLabel.text = model.title;
+}
+
 - (void)setStr:(NSString *)str {
     _str = str;
     CGFloat floatstr = [str floatValue];

@@ -14,6 +14,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *imgStr;
 @property (nonatomic, copy) NSString *title;
 
+/**获取plist文件中的图片文字字典**/
++ (NSDictionary *)getIconDictionary;
+/**获取itemmodel数组 **/
++ (NSArray<ItemModel *> *)getItemDataSource;
+
 @end
 
 NS_ASSUME_NONNULL_END

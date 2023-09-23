@@ -42,7 +42,10 @@
 		84A2F2492ABD47150039050A /* AddItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A2F2482ABD47150039050A /* AddItemView.m */; };
 		84A2F24E2ABD48470039050A /* AddItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A2F24D2ABD48470039050A /* AddItemCollectionViewCell.m */; };
 		84A2F2512ABD5D750039050A /* ItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A2F2502ABD5D750039050A /* ItemModel.m */; };
-		84D1062C2AB81B4300F816AB /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D1062B2AB81B4300F816AB /* ContainerViewController.m */; };
+		84A2F2842ABD937B0039050A /* IconImgDic.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84A2F2832ABD937B0039050A /* IconImgDic.plist */; };
+		84A2F28B2ABE7C340039050A /* RemarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A2F28A2ABE7C340039050A /* RemarkViewController.m */; };
+		84A2F2912ABE91B80039050A /* UNTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A2F2902ABE91B80039050A /* UNTextView.m */; };
+		84A2F2982ABEE22E0039050A /* KeyboardToolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A2F2972ABEE22E0039050A /* KeyboardToolView.m */; };
 		84D106322AB839E800F816AB /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D1062E2AB839E800F816AB /* ListViewController.m */; };
 		84D106332AB839E800F816AB /* ContentBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D1062F2AB839E800F816AB /* ContentBaseViewController.m */; };
 		84D106362AB83A5500F816AB /* IncomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D106352AB83A5500F816AB /* IncomeViewController.m */; };
@@ -73,9 +76,7 @@
 		8486495F2AA6CC6700438552 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		848649642AA6CC6700438552 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		848649652AA6CC6700438552 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		848649682AA6CC6700438552 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8486496A2AA6CC6800438552 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8486496D2AA6CC6800438552 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8486496F2AA6CC6800438552 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		848649702AA6CC6800438552 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		848649782AA6F15900438552 /* BaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
@@ -123,8 +124,15 @@
 		84A2F24D2ABD48470039050A /* AddItemCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddItemCollectionViewCell.m; sourceTree = "<group>"; };
 		84A2F24F2ABD5D750039050A /* ItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemModel.h; sourceTree = "<group>"; };
 		84A2F2502ABD5D750039050A /* ItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemModel.m; sourceTree = "<group>"; };
-		84D1062A2AB81B4300F816AB /* ContainerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContainerViewController.h; sourceTree = "<group>"; };
-		84D1062B2AB81B4300F816AB /* ContainerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContainerViewController.m; sourceTree = "<group>"; };
+		84A2F2832ABD937B0039050A /* IconImgDic.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = IconImgDic.plist; sourceTree = "<group>"; };
+		84A2F2892ABE7C340039050A /* RemarkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemarkViewController.h; sourceTree = "<group>"; };
+		84A2F28A2ABE7C340039050A /* RemarkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemarkViewController.m; sourceTree = "<group>"; };
+		84A2F28F2ABE91B80039050A /* UNTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UNTextView.h; sourceTree = "<group>"; };
+		84A2F2902ABE91B80039050A /* UNTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UNTextView.m; sourceTree = "<group>"; };
+		84A2F2942ABEDD8C0039050A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		84A2F2952ABEDD8D0039050A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
+		84A2F2962ABEE22E0039050A /* KeyboardToolView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardToolView.h; sourceTree = "<group>"; };
+		84A2F2972ABEE22E0039050A /* KeyboardToolView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardToolView.m; sourceTree = "<group>"; };
 		84D1062E2AB839E800F816AB /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
 		84D1062F2AB839E800F816AB /* ContentBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentBaseViewController.m; sourceTree = "<group>"; };
 		84D106302AB839E800F816AB /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
@@ -228,6 +236,7 @@
 			children = (
 				84A2F24F2ABD5D750039050A /* ItemModel.h */,
 				84A2F2502ABD5D750039050A /* ItemModel.m */,
+				84A2F2832ABD937B0039050A /* IconImgDic.plist */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -340,6 +349,7 @@
 		848649892AA7017100438552 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				84A2F2852ABE7BD60039050A /* 备注 */,
 				847E62BF2AB14EF5008437B7 /* 收入支出 */,
 				848649A72AA82F0F00438552 /* 账本 */,
 				8486498C2AA7018A00438552 /* Model */,
@@ -354,8 +364,6 @@
 			children = (
 				8486498D2AA701CD00438552 /* HomeViewController.h */,
 				8486498E2AA701CD00438552 /* HomeViewController.m */,
-				84D1062A2AB81B4300F816AB /* ContainerViewController.h */,
-				84D1062B2AB81B4300F816AB /* ContainerViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -512,6 +520,43 @@
 			path = addItem;
 			sourceTree = "<group>";
 		};
+		84A2F2852ABE7BD60039050A /* 备注 */ = {
+			isa = PBXGroup;
+			children = (
+				84A2F2882ABE7BFC0039050A /* model */,
+				84A2F2872ABE7BF60039050A /* view */,
+				84A2F2862ABE7BED0039050A /* controller */,
+			);
+			path = "备注";
+			sourceTree = "<group>";
+		};
+		84A2F2862ABE7BED0039050A /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				84A2F2892ABE7C340039050A /* RemarkViewController.h */,
+				84A2F28A2ABE7C340039050A /* RemarkViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		84A2F2872ABE7BF60039050A /* view */ = {
+			isa = PBXGroup;
+			children = (
+				84A2F28F2ABE91B80039050A /* UNTextView.h */,
+				84A2F2902ABE91B80039050A /* UNTextView.m */,
+				84A2F2962ABEE22E0039050A /* KeyboardToolView.h */,
+				84A2F2972ABEE22E0039050A /* KeyboardToolView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		84A2F2882ABE7BFC0039050A /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		84D1062D2AB839E800F816AB /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -587,11 +632,11 @@
 			};
 			buildConfigurationList = 848649562AA6CC6700438552 /* Build configuration list for PBXProject "Timi" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = "zh-Hans";
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 848649522AA6CC6700438552;
 			productRefGroup = 8486495C2AA6CC6700438552 /* Products */;
@@ -613,6 +658,7 @@
 				8453B3B02AA9C656005A4010 /* helvetica-neue-thin.ttf in Resources */,
 				848649C32AA956F900438552 /* ReadMe.md in Resources */,
 				848649692AA6CC6700438552 /* Main.storyboard in Resources */,
+				84A2F2842ABD937B0039050A /* IconImgDic.plist in Resources */,
 				848649BF2AA8867900438552 /* AlimamaAgileVF-Thin.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -668,11 +714,11 @@
 			files = (
 				848649962AA7027300438552 /* ShopViewController.m in Sources */,
 				84D1063C2AB8461600F816AB /* UIWindow+QZSafeArea.m in Sources */,
+				84A2F2912ABE91B80039050A /* UNTextView.m in Sources */,
 				848649B02AA8448100438552 /* QZHomeHeaderView.m in Sources */,
 				84D106322AB839E800F816AB /* ListViewController.m in Sources */,
 				84A2F23A2ABABA3C0039050A /* QZDaysMenView.m in Sources */,
 				84A2F23D2ABABF680039050A /* QZCalendarCollectionViewCell.m in Sources */,
-				84D1062C2AB81B4300F816AB /* ContainerViewController.m in Sources */,
 				848649AD2AA82F6300438552 /* AccountBookVC.m in Sources */,
 				8486497A2AA6F15900438552 /* BaseNavigationController.m in Sources */,
 				848649662AA6CC6700438552 /* ViewController.m in Sources */,
@@ -681,6 +727,7 @@
 				848649B32AA8483C00438552 /* QZTimeLineCell.m in Sources */,
 				84A2F2372ABA8B470039050A /* QZCalendarHelper.m in Sources */,
 				84A2F2402ABAC1EF0039050A /* QZCalendarDateViewController.m in Sources */,
+				84A2F2982ABEE22E0039050A /* KeyboardToolView.m in Sources */,
 				8486499D2AA702C900438552 /* MineViewController.m in Sources */,
 				848649602AA6CC6700438552 /* AppDelegate.m in Sources */,
 				84D106362AB83A5500F816AB /* IncomeViewController.m in Sources */,
@@ -690,6 +737,7 @@
 				848649B62AA86B5200438552 /* UNBorderLabel.m in Sources */,
 				84D1063F2AB84C5500F816AB /* TopItemView.m in Sources */,
 				848649712AA6CC6800438552 /* main.m in Sources */,
+				84A2F28B2ABE7C340039050A /* RemarkViewController.m in Sources */,
 				84D106392AB83AAF00F816AB /* ExpenditureViewController.m in Sources */,
 				84D106422AB855C400F816AB /* MyKeyBoardView.m in Sources */,
 				848649852AA6FDA600438552 /* BaseTabBarController.m in Sources */,
@@ -713,7 +761,7 @@
 		848649672AA6CC6700438552 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				848649682AA6CC6700438552 /* Base */,
+				84A2F2942ABEDD8C0039050A /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -721,7 +769,7 @@
 		8486496C2AA6CC6800438552 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8486496D2AA6CC6800438552 /* Base */,
+				84A2F2952ABEDD8D0039050A /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -733,6 +781,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -791,6 +840,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
