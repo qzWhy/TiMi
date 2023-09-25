@@ -72,7 +72,7 @@
         RemarkViewController *vc = [RemarkViewController new];
         BaseNavigationController *nav = [[BaseNavigationController alloc] initWithRootViewController:vc];
             
-        [self hh_presentViewController:nav presentStyle:HHPresentStyleMoveIn completion:nil];
+        [self hh_presentViewController:nav presentStyle:HHPresentStyleSlipFromBottom completion:nil];
     }
 }
 

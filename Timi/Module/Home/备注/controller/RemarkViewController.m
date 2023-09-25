@@ -26,7 +26,7 @@
     self.view.backgroundColor = UIColor.whiteColor;
     [self setupNav];
     [self setupUI];
-    
+    [self ivarArray:[UITextView class]];
 }
 
 - (void)setupUI {
