@@ -15,7 +15,8 @@
 @property (nonatomic, strong) KeyboardToolView *toolView;
 @property (nonatomic, strong) UILabel *timeLabel;
 @property (nonatomic, strong) UNTextView *textView;
-
+@property (nonatomic, strong) NSString *remarkStr;
+@property (nonatomic, assign) NSInteger limitNum;
 @end
 
 @implementation RemarkViewController
@@ -24,9 +25,10 @@
     [super viewDidLoad];
     self.title = @"备注";
     self.view.backgroundColor = UIColor.whiteColor;
+    self.remarkStr = @"";
+    self.limitNum = 5;
     [self setupNav];
     [self setupUI];
-    [self ivarArray:[UITextView class]];
 }
 
 - (void)setupUI {
@@ -100,6 +102,9 @@
 - (void)backBtnClick {
     [self.navigationController dismissViewControllerAnimated:YES completion:nil];
 }
+
+
+#pragma mark - 懒加载
 - (UILabel *)timeLabel {
     if (!_timeLabel) {
         _timeLabel = [UILabel new];
@@ -128,11 +133,59 @@
 }
 
 #pragma mark - UITextViewDelegate
-- (void)textViewDidChange:(UITextView *)textView {
-    NSLog(@"%@",textView.text);
-}
-/**这里是textview监听点击的最后一个键是什么**/
-//- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text {
+//- (void)textViewDidChange:(UITextView *)textView {
+//    NSString *str = textView.text;
+//    UITextRange *selectedRange = [textView markedTextRange];
+//    //获取高亮部分 中文联想
+//    UITextPosition *posi = [textView positionFromPosition:selectedRange.start offset:0];
+//
+//    //如果在变化中是高亮部分在变，就不要计算
+//    if (selectedRange && posi) {
+//        return;
+//    }
+//    NSInteger realLength = str.length;
+//    NSRange selection = textView.selectedRange;
+//    NSString *headText = [str substringToIndex:selection.location];//光标前的文本
+//    NSString *tailText = [str substringFromIndex:selection.location];//光标后的文本
+//    NSInteger restLength = self.limitNum - tailText.length;
+//    if (realLength > self.limitNum) {
+//        //解决半个emoji 定位到index位置时，返回在此位置的完整字符的range
+//        NSRange range = [str rangeOfComposedCharacterSequenceAtIndex:restLength];
+//        NSString *subHeadText = [str substringToIndex:range.location];
+//
+//        textView.text = [subHeadText stringByAppendingString:tailText];
+//        [textView setSelectedRange:NSMakeRange(restLength, 0)];
+//        //解决粘贴过多之后，撤销粘贴 奔溃问题 --不会出现弹窗
+//        [textView.undoManager removeAllActions];
+//    }
+//}
+
+
+///**这里是textview监听点击的最后一个键是什么**/
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text {
+    NSString *str = textView.text;
+    NSLog(@"%ld",str.length);
+    if ([text isEqualToString:@""]) {//删除键
+        self.toolView.count = textView.text.length + text.length;
+        return YES;
+    }
+    if (str.length >= self.limitNum) {
+        return NO;
+    } else {
+        NSInteger restLength = self.limitNum - str.length;
+        NSInteger textLength = text.length;
+        if (textLength > restLength) {
+
+            NSString *str1 = [text substringToIndex:restLength];
+            textView.text = str1;
+            self.toolView.count = self.limitNum;
+            return NO;
+        }
+        self.toolView.count = textView.text.length + text.length;
+        return YES;
+    }
+
+
 //    if ([text isEqualToString:@"\n"]){ //判断输入的字是否是回车，即按下return
 //        //在这里做你响应return键的代码
 //        [self.textView resignFirstResponder];
@@ -141,7 +194,7 @@
 //    }
 //
 //    return YES;
-//}
+}
 /**可以查看类中的私有变量**/
 - (NSArray *)ivarArray:(Class)cls {
     unsigned int stuIvarCount = 0;

@@ -5,6 +5,7 @@ PODS:
   - HHTransition (3.1.2)
   - JXCategoryView (1.6.1)
   - Masonry (1.1.0)
+  - MBProgressHUD (1.2.0)
   - MMDrawerController (0.6.0):
     - MMDrawerController/Core (= 0.6.0)
     - MMDrawerController/MMDrawerBarButtonItem (= 0.6.0)
@@ -24,6 +25,7 @@ DEPENDENCIES:
   - HHTransition
   - JXCategoryView
   - Masonry
+  - MBProgressHUD
   - MMDrawerController
   - TYPagerController
 
@@ -33,6 +35,7 @@ SPEC REPOS:
     - HHTransition
     - JXCategoryView
     - Masonry
+    - MBProgressHUD
     - MMDrawerController
     - TYPagerController
 
@@ -41,9 +44,10 @@ SPEC CHECKSUMS:
   HHTransition: 67c1bc632c4838e4eb28f07b9be1b927362ae07d
   JXCategoryView: 7b1ee69ede4843c581688afe84d0f047723262f2
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MMDrawerController: e3a54a5570388463ad3b36975251575b50c4e1a0
   TYPagerController: 262556ecef99986d26ed77fb1288a198ed42f4af
 
-PODFILE CHECKSUM: 919527dd57e9ab710e11e98750d7118ebf50584c
+PODFILE CHECKSUM: a574a5a37ee7e05741238a89b6f1aa5be940b2cd
 
 COCOAPODS: 1.12.1

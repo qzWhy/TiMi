@@ -46,6 +46,7 @@
 		84A2F28B2ABE7C340039050A /* RemarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A2F28A2ABE7C340039050A /* RemarkViewController.m */; };
 		84A2F2912ABE91B80039050A /* UNTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A2F2902ABE91B80039050A /* UNTextView.m */; };
 		84A2F2982ABEE22E0039050A /* KeyboardToolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A2F2972ABEE22E0039050A /* KeyboardToolView.m */; };
+		84A2F29F2AC12EAF0039050A /* UNProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A2F29E2AC12EAF0039050A /* UNProgressHUD.m */; };
 		84D106322AB839E800F816AB /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D1062E2AB839E800F816AB /* ListViewController.m */; };
 		84D106332AB839E800F816AB /* ContentBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D1062F2AB839E800F816AB /* ContentBaseViewController.m */; };
 		84D106362AB83A5500F816AB /* IncomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D106352AB83A5500F816AB /* IncomeViewController.m */; };
@@ -133,6 +134,8 @@
 		84A2F2952ABEDD8D0039050A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
 		84A2F2962ABEE22E0039050A /* KeyboardToolView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardToolView.h; sourceTree = "<group>"; };
 		84A2F2972ABEE22E0039050A /* KeyboardToolView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardToolView.m; sourceTree = "<group>"; };
+		84A2F29D2AC12EAF0039050A /* UNProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UNProgressHUD.h; sourceTree = "<group>"; };
+		84A2F29E2AC12EAF0039050A /* UNProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UNProgressHUD.m; sourceTree = "<group>"; };
 		84D1062E2AB839E800F816AB /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
 		84D1062F2AB839E800F816AB /* ContentBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentBaseViewController.m; sourceTree = "<group>"; };
 		84D106302AB839E800F816AB /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
@@ -296,6 +299,7 @@
 		8486497C2AA6F4E000438552 /* 3rdLib */ = {
 			isa = PBXGroup;
 			children = (
+				84A2F2992AC129A30039050A /* UNProgressHUD */,
 				84A2F2342ABA8A5F0039050A /* QZCalendar */,
 			);
 			path = 3rdLib;
@@ -557,6 +561,15 @@
 			path = model;
 			sourceTree = "<group>";
 		};
+		84A2F2992AC129A30039050A /* UNProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				84A2F29D2AC12EAF0039050A /* UNProgressHUD.h */,
+				84A2F29E2AC12EAF0039050A /* UNProgressHUD.m */,
+			);
+			path = UNProgressHUD;
+			sourceTree = "<group>";
+		};
 		84D1062D2AB839E800F816AB /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -731,6 +744,7 @@
 				8486499D2AA702C900438552 /* MineViewController.m in Sources */,
 				848649602AA6CC6700438552 /* AppDelegate.m in Sources */,
 				84D106362AB83A5500F816AB /* IncomeViewController.m in Sources */,
+				84A2F29F2AC12EAF0039050A /* UNProgressHUD.m in Sources */,
 				84A2F2512ABD5D750039050A /* ItemModel.m in Sources */,
 				84D106452AB9923100F816AB /* ToolBarView.m in Sources */,
 				84A2F24E2ABD48470039050A /* AddItemCollectionViewCell.m in Sources */,

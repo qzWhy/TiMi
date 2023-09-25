@@ -10,5 +10,6 @@ pod 'TYPagerController'
 pod 'FMDB'
 pod 'HHTransition'
 pod 'JXCategoryView'
+pod 'MBProgressHUD'
 
 end
